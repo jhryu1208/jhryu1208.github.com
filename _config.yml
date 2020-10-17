@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 locale                   : "ko-KR"
 title                    : "Zaid.Ryu Laboratory"
 title_separator          : "&#124;"
-subtitle                 : "위치가 어디인지 확인" # site tagline that appears below site title in masthead
+subtitle                 : "Version 1.0" # site tagline that appears below site title in masthead
 name                     : "Jihyun Ryu"
 description              : "Python, SQl 및 데이터엔지니어 등 다양한 공부를 기록해두는 블로그"
 url                      : "https://jhryu1208.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -26,7 +26,7 @@ baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jhryu1208/jhryu1208.github.com" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : "I don't know the word give up" # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "블로그 넘모 어렵고" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
@@ -95,13 +95,13 @@ analytics:
 author:
   name             : "Jihyun Ryu"
   avatar           : "/assets/images/image1.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "지금 포기하면 나중에 더 큰 시련에도 포기하겠지?"
+  bio              : "Python, SQl 및 데이터엔지니어 등 다양한 공부를 기록해두는 블로그"
   location         : "Republic of Korea"
   email            : "jhryu1208@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "jhryu1208@gmail.com"
+    # label: "Email"
+    #  icon: "fas fa-fw fa-envelope-square"
+    #  url: "jhryu1208@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://jhryu1208.github.io/"
