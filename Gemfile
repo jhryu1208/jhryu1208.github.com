@@ -1,5 +1,8 @@
 source "https://rubygems.org"
-gemspec
 
-gem 'jekyll-admin', group: :jekyll_plugins
-gem 'jekyll-sitemap'
+gem "jekyll", "~> 3.8"
+gem "jekyll-paginate", "~> 1.1"
+gem "jekyll-feed", "~> 0.9"
+gem "jekyll-sitemap", "~> 1.0"
+gem "jekyll-redirect-from", "~> 0.12"
+gem "classifier-reborn"

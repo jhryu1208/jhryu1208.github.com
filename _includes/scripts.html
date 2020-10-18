@@ -1,28 +1,40 @@
-{% if site.footer_scripts %}
-  {% for script in site.footer_scripts %}
-    <script src="{{ script | relative_url }}"></script>
-  {% endfor %}
-{% else %}
-  <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+{% if site.google_analytics %}
+<script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', '{{ site.google_analytics }}', 'auto');
+  ga('send', 'pageview');
+  loadJSDeferred('https://www.google-analytics.com/analytics.js');
+</script>
 {% endif %}
 
-{% if site.search == true or page.layout == "search" %}
-  {%- assign search_provider = site.search_provider | default: "lunr" -%}
-  {%- case search_provider -%}
-    {%- when "lunr" -%}
-      {% include_cached search/lunr-search-scripts.html %}
-    {%- when "google" -%}
-      {% include_cached search/google-search-scripts.html %}
-    {%- when "algolia" -%}
-      {% include_cached search/algolia-search-scripts.html %}
-  {%- endcase -%}
-{% endif %}
+{% assign google_fonts = site.google_fonts | default:"Roboto+Slab:700|Noto+Serif:400,400i,700,700i" %}
 
-{% include analytics.html %}
-{% include /comments-providers/scripts.html %}
+{% capture icons_url %}{% link assets/icomoon/style.css %}{% endcapture %}
+<!--[if gt IE 8]><!---->
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    {% unless site.no_google_fonts %}
+    google: {
+      families: '{{ google_fonts }}'.split('|')
+    },
+    {% endunless %}
 
-{% if site.after_footer_scripts %}
-  {% for script in site.after_footer_scripts %}
-    <script src="{{ script | relative_url }}"></script>
-  {% endfor %}
-{% endif %}
+    custom: {
+      families: ['icomoon'],
+      urls: ['{{ icons_url | relative_url }}']
+    }
+  });
+</script>
+<!--<![endif]-->
+
+{% unless page.redirect %}
+  <!--[if gt IE 9]><!---->
+  {% capture js_url %}{% link assets/js/hydejack.js %}?v=6.4.0{% endcapture %}
+  <script>loadJSDeferred('{{ js_url | relative_url }}');</script>
+
+  {% comment %}
+    {% include my-scripts.html %}
+  {% endcomment %}
+  <!--<![endif]-->
+{% endunless %}
