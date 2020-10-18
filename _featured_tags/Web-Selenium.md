@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: basic
-slug: basic
-category: basic
+title: Selenium
+slug: Selenium
+category: web
 menu: false
 order: 2
 ---

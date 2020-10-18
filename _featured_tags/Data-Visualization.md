@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: Analytics
-slug: analytics
+title: Visualization
+slug: Visualization
 category: data
 menu: false
-order: 11
+order: 3
 ---

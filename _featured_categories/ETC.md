@@ -1,10 +1,10 @@
 ---
 layout: list
-title: Python
-slug: python
+title: ETC
+slug: etc
 menu: true
 submenu: true
-order: 6
+order: 7
 description: >
-  Python description
+  기타등등!
 ---
