@@ -2,7 +2,7 @@
 layout: post
 title:  "[Machine Learning with Python] Introduction"
 subtitle:   "MLP.Introduction"
-categories:Machine Learning
+categories : Machine Learning
 tags: machine leanring
 comments: true
 ---
