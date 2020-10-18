@@ -2,7 +2,7 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               매일 매일  
+title:               매일 매일
                      레벨업!!
 
 # The unique resource location of your page.
@@ -51,7 +51,7 @@ google_analytics:    UA-110573232-1
 disqus_shortname:    jhryu1208
 
 # This text will appear in the footer of every page. Markdown enabled.
-copyright:           '&copy; 2017. by Seongyun Byeon'
+copyright:           '&copy; 2020. by Jihyun Ryu'
 
 # Format of the permalinks
 permalink:           pretty
