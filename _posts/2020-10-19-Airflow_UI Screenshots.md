@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Airflow] Tutorial"
-subtitle: "[Airflow] Tutorial"
+title:  "[Airflow] Airflow UI/Screenshots"
+subtitle: "[Airflow] Airflow UI/Screenshots"
 categories: oss
 tags: Airflow
 comments: true
