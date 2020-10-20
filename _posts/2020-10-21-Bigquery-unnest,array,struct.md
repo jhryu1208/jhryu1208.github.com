@@ -152,13 +152,13 @@ FROM sequences;
 	- `ARRAY`를 일련의 행으로 변환
 	- `UNNEST` 연산자는 `ARRAY`를 입력으로 받고 배열안의 각 요소를 행 하나 하나에 개별적으로 반환한 테이블을 생성한다.
 	- `UNNEST()` 내부에는 단 하나의 행만 생성하는 (ex. 스칼라서브쿼리) 반환하는 값을 넣을 수 있다.
-	
+
 ```SQL
 SELECT *
 # UNNEST 내부에 1행만을 반환하는 배열이 들어갔다
-FROM UNNEST(['foo', 'bar', 'baz', 'qux', 
+FROM UNNEST(['foo', 'bar', 'baz', 'qux',
 		     'corge', 'garply', 'waldo', 'fred']) AS element
-  
+
 WITH OFFSET AS offset # WITH OFFSET 절을 같이 사용하여 표현하는 경우가 많다.
 
 ORDER BY offset;
@@ -168,22 +168,22 @@ ORDER BY offset;
 - `CROSS JOIN`
 	- 각 행의 다른 열 값을 보존하면서, <U>다수 행의 `ARRAY`를 평면화할 때 사용</u>
 	- `CROSS JOIN`말고 `,`를 사용해도 동일한 결과를 얻을 수 있다.
-	
+
 ```SQL
 WITH sequences AS
   (SELECT 1 AS id, [0, 1, 1, 2, 3, 5] AS some_numbers
    UNION ALL SELECT 2 AS id, [2, 4, 8, 16, 32] AS some_numbers
    UNION ALL SELECT 3 AS id, [5, 10] AS some_numbers)
-   
+
 SELECT id, flattened_numbers
 FROM sequences
-	 CROSS JOIN 
+	 CROSS JOIN
 	 # sequences 서브쿼리는 3개의 행을 반환하기에, 그냥 넣으면 오류가 발생한다.
 	 # 따라서, CROSS JOIN 사용 권장
 	 UNNEST(sequences.some_numbers) AS flattened_numbers;
 
 # 또는
-# FROM sequences, 
+# FROM sequences,
 #      UNNEST(sequences.some_numbers) AS flattened_numbers;
 ```
 <img width="500" alt="4(2)" src="https://user-images.githubusercontent.com/53929665/96611764-f9cca700-1337-11eb-8fe3-a401efec2343.PNG">
@@ -192,6 +192,7 @@ FROM sequences
 ---
 ### [ 5.  구조체 - STRUCT ]
 - 구조체로, BigQuery UI에서 RECORD로 표현된다.
+
 ### (5-1) STRUCT 생성
 #### (5-1-1)  `(`, `)` 사용
 ```SQL
@@ -236,7 +237,7 @@ SELECT STRUCT(1 as hi, 2 as hello, 'HI' as awesome) AS struct_test
   SELECT
     ARRAY(
       SELECT AS STRUCT 1 as hi, 2, 3
-      UNION ALL 
+      UNION ALL
       SELECT AS STRUCT 4 as hi, 5, 6
     ) AS new_array
 ```
@@ -247,4 +248,3 @@ SELECT STRUCT(1 as hi, 2 as hello, 'HI' as awesome) AS struct_test
 #### index
 - GCP BigQuery Array Document : https://cloud.google.com/bigquery/docs/reference/standard-sql/arrays
 - zzsza님의 github 블로그 : https://zzsza.github.io/gcp/2020/04/12/bigquery-unnest-array-struct/#bigquery-struct
-
