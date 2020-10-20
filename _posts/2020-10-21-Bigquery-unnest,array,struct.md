@@ -7,16 +7,16 @@ tags: bigquery
 comments: true
 ---
 
-### BigQuery `ARRAY`, `UNNEST`, `STRUCT` (1)
+#### BigQuery `ARRAY`, `UNNEST`, `STRUCT` (1)
 - 본 포스팅은 BigQuery의 `ARRAY`, `UNNEST`, `STRUCT`에 관한  <u>기본적인</u> 정보를  다룹니다.
 
-#### CONTENTS
-- BASIC
+#### contents
 - 배열 생성
 - 배열 요소 접근 - `OFFSET`, `ORDINARY`
 - 길이확인 -`ARRAY_LENGTH`
 - 배열 평면화 - `UNNEST`
 - 구조체 - `STRUCT`
+
 ---
 
 ### [ 0. BASIC ]
