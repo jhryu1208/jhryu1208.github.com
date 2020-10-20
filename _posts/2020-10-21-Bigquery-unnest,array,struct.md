@@ -63,6 +63,7 @@ FROM  (SELECT CAST(5 AS INT64) AS a,
 - 또한, `ARRAY<원하는데이터자료형> `을 배열 리스트앞에 선언하여 기존 배열의 데이터 자료형을 변환시켜 출력할 수 있다.
 
 아래의 쿼리문 결과, 정수형으로 이루어진 배열은 실수형태로 출력된 것을 확인할 수 있다.
+
 ``` SQL
 SELECT ARRAY<FLOAT64>[1, 2, 3] AS floats;
 ```
@@ -79,13 +80,15 @@ SELECT ARRAY<FLOAT64>[1, 2, 3] AS floats;
 ```SQL
 SELECT GENERATE_ARRAY(11, 33, 2) AS odds;
 ```
-<img width="100" alt="(1-2-1) 1" src="https://user-images.githubusercontent.com/53929665/96611754-f76a4d00-1337-11eb-9e7f-cd22169cb27a.PNG">
+<img width="50" alt="(1-2-1) 1" src="https://user-images.githubusercontent.com/53929665/96611754-f76a4d00-1337-11eb-9e7f-cd22169cb27a.PNG">
 
 step 값이 음수일 때도 정상적으로 표현된다.
+
 ```SQL
 SELECT GENERATE_ARRAY(21, 14, -1) AS countdown;
 ```
-<img width="150" alt="(1-2-1) 2" src="https://user-images.githubusercontent.com/53929665/96611757-f802e380-1337-11eb-8c82-7581ea46a321.PNG">
+
+<img width="75" alt="(1-2-1) 2" src="https://user-images.githubusercontent.com/53929665/96611757-f802e380-1337-11eb-8c82-7581ea46a321.PNG">
 
 
 #### (1-2-2) 날짜 배열 생성
@@ -94,10 +97,12 @@ SELECT GENERATE_ARRAY(21, 14, -1) AS countdown;
 	- DATE값 집합을 생성할 수 있다.
 
 아래의 쿼리 결과,  7일 단위씩 배열이 생성되는 것을 확인할 수 있다.
+
 ```SQL
 SELECT  GENERATE_DATE_ARRAY('2017-11-21', '2017-12-31', INTERVAL 1 WEEK) AS date_array;
 ```
-<img width="150" alt="1-2-2" src="https://user-images.githubusercontent.com/53929665/96611758-f89b7a00-1337-11eb-97d3-9c6ff6d251b8.PNG">
+
+<img width="75" alt="1-2-2" src="https://user-images.githubusercontent.com/53929665/96611758-f89b7a00-1337-11eb-97d3-9c6ff6d251b8.PNG">
 
 ---
 ### [ 2. 배열 요소 접근 - OFFSET, ORDINARY ]
@@ -128,7 +133,8 @@ SELECT some_numbers,
        some_numbers[ORDINAL(3)] AS ordinal_1
 FROM sequences;
 ```
-<img width="300" alt="2" src="https://user-images.githubusercontent.com/53929665/96611759-f89b7a00-1337-11eb-86cf-af3feab2d30b.PNG">
+
+<img width="150" alt="2" src="https://user-images.githubusercontent.com/53929665/96611759-f89b7a00-1337-11eb-86cf-af3feab2d30b.PNG">
 
 ---
 ### [ 3. 길이확인 - ARRAY_LENGTH ]
@@ -144,7 +150,8 @@ SELECT some_numbers,
        ARRAY_LENGTH(some_numbers) AS len
 FROM sequences;
 ```
-<img width="250" alt="3" src="https://user-images.githubusercontent.com/53929665/96611760-f9341080-1337-11eb-9605-b840b60880f3.PNG">
+
+<img width="125" alt="3" src="https://user-images.githubusercontent.com/53929665/96611760-f9341080-1337-11eb-9605-b840b60880f3.PNG">
 
 ---
 ### [ 4. 배열 평면화 - UNNEST ]
@@ -163,7 +170,8 @@ WITH OFFSET AS offset # WITH OFFSET 절을 같이 사용하여 표현하는 경�
 
 ORDER BY offset;
 ```
-<img width="200" alt="4(1)" src="https://user-images.githubusercontent.com/53929665/96611762-f9341080-1337-11eb-8618-a8775a906f9c.PNG">
+
+<img width="100" alt="4(1)" src="https://user-images.githubusercontent.com/53929665/96611762-f9341080-1337-11eb-8618-a8775a906f9c.PNG">
 
 - `CROSS JOIN`
 	- 각 행의 다른 열 값을 보존하면서, <U>다수 행의 `ARRAY`를 평면화할 때 사용</u>
@@ -186,7 +194,8 @@ FROM sequences
 # FROM sequences,
 #      UNNEST(sequences.some_numbers) AS flattened_numbers;
 ```
-<img width="500" alt="4(2)" src="https://user-images.githubusercontent.com/53929665/96611764-f9cca700-1337-11eb-8fe3-a401efec2343.PNG">
+
+<img width="250" alt="4(2)" src="https://user-images.githubusercontent.com/53929665/96611764-f9cca700-1337-11eb-8fe3-a401efec2343.PNG">
 
 
 ---
@@ -195,22 +204,28 @@ FROM sequences
 
 ### (5-1) STRUCT 생성
 #### (5-1-1)  `(`, `)` 사용
+
 ```SQL
 SELECT (1,2,3) AS struct_test
+
 ```
-<img width="500" alt="5" src="https://user-images.githubusercontent.com/53929665/96611771-fafdd400-1337-11eb-9128-7ade18019f07.PNG">
+<img width="250" alt="5" src="https://user-images.githubusercontent.com/53929665/96611771-fafdd400-1337-11eb-9128-7ade18019f07.PNG">
 
 #### (5-1-2) `<`, `>` 안에 타입을 지정해서 사용
+
 ```SQL
 SELECT STRUCT<INT64, FLOAT64, STRING>(1, 2, 'HI') AS struct_test
 ```
-<img width="500" alt="5(2)" src="https://user-images.githubusercontent.com/53929665/96611768-fa653d80-1337-11eb-8d3e-5198cc9756b2.PNG">
+
+<img width="250" alt="5(2)" src="https://user-images.githubusercontent.com/53929665/96611768-fa653d80-1337-11eb-8d3e-5198cc9756b2.PNG">
 
 - 또한 다음과 같이 타입 앞에 이름을 지정할 수 있다.
+
 ```SQL
 SELECT STRUCT<hi INT64, hello FLOAT64, awesome STRING>(1, 2, 'HI') AS struct_test
 ```
-<img width="500" alt="5(3)" src="https://user-images.githubusercontent.com/53929665/96611769-fa653d80-1337-11eb-9313-676473ad44ad.PNG">
+
+<img width="250" alt="5(3)" src="https://user-images.githubusercontent.com/53929665/96611769-fa653d80-1337-11eb-9313-676473ad44ad.PNG">
 
 
 위의 경우를 응용하면 다음과 같이 표현할 수 있다.   
@@ -223,16 +238,20 @@ SELECT STRUCT<hi INT64, hello FLOAT64, awesome STRING>(1, 2, 'HI') AS struct_tes
          struct_example STRUCT<y INT64, z STRING>
          >((2, 'HI')) AS struct_test
 ```
-<img width="500" alt="응용한거" src="https://user-images.githubusercontent.com/53929665/96611773-fb966a80-1337-11eb-983e-d5ec9d8781fb.PNG">
+
+<img width="250" alt="응용한거" src="https://user-images.githubusercontent.com/53929665/96611773-fb966a80-1337-11eb-983e-d5ec9d8781fb.PNG">
 
 - 또 다른 경우, 타입을 지정하지 않고, AS로 이름을 지정할 수 있다.
+
 ```SQL
 SELECT STRUCT(1 as hi, 2 as hello, 'HI' as awesome) AS struct_test
 ```
-<img width="500" alt="5(4)" src="https://user-images.githubusercontent.com/53929665/96611770-fafdd400-1337-11eb-998b-09fbdd21ea28.PNG">
+
+<img width="250" alt="5(4)" src="https://user-images.githubusercontent.com/53929665/96611770-fafdd400-1337-11eb-998b-09fbdd21ea28.PNG">
 
 ### (5-2) `ARRAY` 안에 `STRUCT`를 사용하고 싶은 경우
 - `ARRAY(SELECT AS STRUCT)`의 형태를 사용한다.
+
 ```SQL
   SELECT
     ARRAY(
@@ -241,7 +260,8 @@ SELECT STRUCT(1 as hi, 2 as hello, 'HI' as awesome) AS struct_test
       SELECT AS STRUCT 4 as hi, 5, 6
     ) AS new_array
 ```
-<img width="500" alt="STURCT마지막" src="https://user-images.githubusercontent.com/53929665/96611772-fb966a80-1337-11eb-8b73-13eeca9ff069.PNG">
+
+<img width="250" alt="STURCT마지막" src="https://user-images.githubusercontent.com/53929665/96611772-fb966a80-1337-11eb-8b73-13eeca9ff069.PNG">
 
 
 ---
