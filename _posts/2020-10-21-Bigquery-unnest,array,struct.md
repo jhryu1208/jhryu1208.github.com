@@ -1,13 +1,13 @@
 ﻿---
 layout: post
-title:  "[BigQuery] ARRAY, UNNEST, STRUCT"
-subtitle: "[BigQuery] ARRAY, UNNEST, STRUCT"
+title:  "[BigQuery] ARRAY, UNNEST, STRUCT (1)"
+subtitle: "[BigQuery] ARRAY, UNNEST, STRUCT의 기본적인 생성과 특징"
 categories: gcp
 tags: bigquery
 comments: true
 ---
 
-#### BigQuery `ARRAY`, `UNNEST`, `STRUCT` (1)
+#### BigQuery `ARRAY`, `UNNEST`, `STRUCT`
 - 본 포스팅은 BigQuery의 `ARRAY`, `UNNEST`, `STRUCT`에 관한  <u>기본적인</u> 정보를  다룹니다.
 
 #### contents
