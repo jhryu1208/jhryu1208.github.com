@@ -8,6 +8,7 @@ tags: bigquery
 comments: true
 
 ---
+
 ##  BigQuery `ARRAY`, `UNNEST`, `STRUCT` (1)
 - 본 포스팅은 BigQuery의 `ARRAY`, `UNNEST`, `STRUCT`에 관한  <u>기본적인</u> 정보를  다룹니다.
 #### CONTENTS
