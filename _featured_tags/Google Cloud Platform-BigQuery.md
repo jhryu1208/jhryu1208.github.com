@@ -2,7 +2,7 @@
 layout: tag-blog
 title: BigQuery
 slug: bigquery
-category: google cloud platform
+category: gcp
 menu: false
 order: 1
 ---
