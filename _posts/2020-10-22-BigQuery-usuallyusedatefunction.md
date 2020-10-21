@@ -1,8 +1,3 @@
----
-
-
----
-
 <hr>
 <p>layout: post<br>
 title:  “[BigQuery] 자주 사용하는 자료형 변환 함수 정리”<br>
