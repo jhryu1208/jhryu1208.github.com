@@ -1,11 +1,8 @@
-<hr>
-<p>layout: post<br>
-title:  “[BigQuery] 자주 사용하는 자료형 변환 함수 정리”<br>
-subtitle: “[BigQuery] 자주 사용하는 자료형 변환 함수 정리”<br>
-categories: gcp<br>
-tags: bigquery<br>
-comments: true</p>
-<hr>
+---
+
+
+---
+
 <h4 id="bigquery--자주-사용하는-자료형-변환-함수-정리">BigQuery  자주 사용하는 자료형 변환 함수 정리</h4>
 <ul>
 <li>본 포스팅은 BigQuery사용 중 자주 이용하고 헷갈려하는 변환 함수들에 관하여 정리한 글입니다.</li>
