@@ -12,11 +12,8 @@ comments: true
 - 본 포스팅은 BigQuery의 `ARRAY`, `UNNEST`, `STRUCT`에 관한<br>  <u>검색, 집계</u>에 관한 정보를  다룹니다.
 
 #### contents
-- 배열 생성
-- 배열 요소 접근 - `OFFSET`, `ORDINARY`
-- 길이확인 -`ARRAY_LENGTH`
-- 배열 평면화 - `UNNEST`
-- 구조체 - `STRUCT`
+- 배열 검색 - `IN`, `EXSITS`
+- 배열과 집계 - `ARRAY_AGG`, `ARRAY_CONCAT_AGG`
 
 ---
 
@@ -25,7 +22,7 @@ comments: true
 - `UNNEST`의 `IN` 연산자
 		- 배열에 특정 값이 있는지 확인하기 위해서 사용한다.
 <br>
-- `UNNEST`의 EXIST 연산자
+- `UNNEST`의 `EXISTS` 연산자
 	- 배열에 조건과 일치하는 값이 있는지 확인
 
 ###  특정 값 검색
