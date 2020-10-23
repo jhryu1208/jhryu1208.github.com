@@ -10,9 +10,11 @@ comments: true
 #### Error Code: 2013. Lost connection to MySQL server during query
 ----
 
-워크밴치에서 쿼리를 날리고 설정된 타임아웃에 의해
+처음에는 이유도 모르고 많은 데이터를 가져오고 처리하려고 할 때마다
 **Error Code: 2013. Lost connection to MySQL server during query** 에러를 수십번도 보고있는 중이다.
-  
+ 
+ 하지만, 찾아보니 이유는  간단했다. 워크밴치에 설정된 타임아웃에 의해 생기는 오류였다. 
+ 
 자연스러운건가 싶었는데 이것도 워크밴치의 설정을 조금만 건드려서 쉽게 조절할 수 있었다.
 워크밴치의 다음 설정 루트를 통해 쉽게 해결할 수 있다.
 ```
