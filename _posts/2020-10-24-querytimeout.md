@@ -20,7 +20,10 @@ comments: true
 ```
 Edit → Preferences → SQL Editor → DBMS connection read time out (in seconds): 600
 ```
-덕분에 30초가 지나서 쿼리가 중단되는 일은 거의 없는 거 같다.
+덕분에 30초가 지나서 쿼리가 중단되는 일은 다음과 같이 거의 없는 거 같다.
+<img width="200" alt="ERRORCODE2013" src="https://user-images.githubusercontent.com/53929665/97024404-bcfbec80-1591-11eb-8dcc-9c689c56e14b.PNG">
+
+
 하지만, 쿼리를 최대한 깔끔하고 효율적으로 작성하는 방법에 대해서는 계속 공부해야겠다.
 REDASH에서 시각화하기위해서 쿼리 실행시 시간이 많이 경과되면 빠꾸먹는건 똑같으니깐...
 
