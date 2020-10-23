@@ -6,7 +6,8 @@ categories: devlang
 tags: (dbms)mysql
 comments: true
 ---
-#### [ MySQL Workbench - ERROR ] Error Code: 2013. Lost connection to MySQL server during query
+#### [ MySQL Workbench - ERROR ] 
+#### Error Code: 2013. Lost connection to MySQL server during query
 
 워크밴치에서 쿼리를 날리고 설정된 타임아웃에 의해
 **Error Code: 2013. Lost connection to MySQL server during query** 에러를 수십번도 보고있는 중이다.
