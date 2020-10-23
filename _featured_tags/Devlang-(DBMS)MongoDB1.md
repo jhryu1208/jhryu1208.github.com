@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: (DBMS)MongoDB
-slug: (dbms)mongodb
+title: (DBMS)MySQL
+slug: (dbms)mysql
 category: devlang
 menu: false
 order: 3
