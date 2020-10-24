@@ -117,3 +117,8 @@ FROM
 
 - 또 다른 응용으로 `WHERE`절을 추가하여 <u>상위 n%의 데이터</u>도 구할 수 있다.
 
+---
+
+#### index
+- MySQLTutorial : https://www.mysqltutorial.org/mysql-window-functions/mysql-percent_rank-function/
+
