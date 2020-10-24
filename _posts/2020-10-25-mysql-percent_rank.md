@@ -40,6 +40,8 @@ OVER (	PARTITION BY expr . . .
 - `ORDER BY`
 	- 함수를 적용할 논리적인 순서를 결정할 때 사용한다.
 
+---
+
 ### Example : PERCENT_RANK()
 
 - [sample database](https://www.mysqltutorial.org/mysql-sample-database.aspx)로 부터 `productLineSales` 테이블을 생성하여 예제로 사용할 것이다.
@@ -89,6 +91,8 @@ FROM
 	- Classic Cars는 productline 중에서 최상위임을 확인할 수 있다.
 	<br>
 	<img width="350" alt="1" src="https://user-images.githubusercontent.com/53929665/97085613-7a9de280-1659-11eb-93a6-37514e19a858.PNG">
+
+---
 
 ### Example : PERCENT_RANK() OVER the PARTITION
 
