@@ -18,10 +18,8 @@ comments: true
 
 ```SQL
 PERCENT_RANK()
-OVER     (		
-			PARTITION BY expr . . . 
-			ORDER BY expr [ASC|DESC] . . .
-				)
+OVER (	PARTITION BY expr . . . 
+		ORDER BY expr [ASC|DESC] . . . )
 ```
 
 - `PERCENT_RANK()`
