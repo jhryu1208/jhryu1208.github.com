@@ -39,7 +39,6 @@ OVER (	PARTITION BY expr . . .
 
 - `ORDER BY`
 	- 함수를 적용할 논리적인 순서를 결정할 때 사용한다.
-	- 하지만, `PERCENT_RANK()` 함수의 경우,  그룹된 파티션에 따라 독립적으로 수행되기에 사용되기에 `ORDER BY`를 같이 쓰는 경우는 드물다.
 
 ### Example : PERCENT_RANK()
 
