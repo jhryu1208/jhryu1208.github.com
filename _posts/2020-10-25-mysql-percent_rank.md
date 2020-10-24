@@ -7,7 +7,7 @@ tags: (dbms)mysql
 comments: true
 ---
 #### [ MySQL ] PERCENT_RANK 함수
-- 본 포스팅은 행의 percentile ranking을 구하기위한 함수인 `PERCENT_RANK()` 함수에 관하여 설명합니다.
+- 본 포스팅은 행의 percentile ranking을 구하기 위한 함수인 `PERCENT_RANK()` 함수에 관하여 설명합니다.
 - mysqltutorial.org의 설명을 기반으로 작성했습니다.
 
 ---
