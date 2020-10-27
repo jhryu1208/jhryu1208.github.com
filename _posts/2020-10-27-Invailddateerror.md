@@ -37,3 +37,7 @@ DATE_DIFF( CURRENT_DATE(), CAST(date_joined AS DATE), DAY)
 
 항상 자료형을  CAST할 때는 꼼꼼히 신경쓰는 습관을 가지자.
 
+---
+#### Index
+- https://kb.tableau.com/articles/issue/Error-Invalid-date-When-Connecting-to-BigQuery-Using-Custom-SQL
+
