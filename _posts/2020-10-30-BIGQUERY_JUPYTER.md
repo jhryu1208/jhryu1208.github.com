@@ -17,7 +17,7 @@ comments: true
 BigQuery의 데이터를 이용하여 ML을 수행해야하는 일이 있었습니다.
 그래서 GCP공식 문서에 따라, Jupyter Notebook을 연동시키는 작업을 진행하였지만 빅쿼리의 데이터를 데이터프레임으로 전환하는 과정에서 `pyarrow` 라이브러리가 import되지 않아서 진행할 수 없다는 둥, 없는` pyarrow`를 설치하려니깐 의존성확인에서 실패하는 둥 많은 고생을 겪었습니다. 
 
-이를 수행하기전에 `google colab`(같은 구글 플렛폼이라서 그런가...?)으로 더 간단한 과정 및 오류없이 수행이 가능했으나, colab에서 자동 출력되는 차트의 크기및  gui 그리고 유틸이 개인적으로는 취향이 아니라서 jupyer nootebook으로 바꾸기 위해 발버둥 쳤습니다.
+이를 수행하기전에 `google colab`(같은 구글 플렛폼이라서 그런가...?)으로 더 간단한 과정 및 오류없이 수행이 가능했으나, colab에서 자동 출력되는 차트의 크기및  gui 그리고 유틸이 개인적으로는 취향이 아니라서 jupyer nootebook으로 바꾸기 위해 발버둥 쳤습니다. 만약 colab으로 작업하는 것을 원하시는 분들은 다음 [링크](https://zzsza.github.io/data/2018/08/30/google-colab/)를 참조하시는 것을 권장드립니다.
 
 저와 같은 고생을 겪은 사람들이 있으시다면 해당 포스팅이 도움이 되었으면 좋겠습니다.
 
@@ -110,4 +110,5 @@ df_result = client.query (query) .to_dataframe ()
 -  https://gri-blog.hatenablog.com/entry/2019/10/21/135645
 - https://dololak.tistory.com/517
 - https://pypi.org/project/pyarrow/2.0.0/#files
+- https://zzsza.github.io/data/2018/08/30/google-colab/
 
