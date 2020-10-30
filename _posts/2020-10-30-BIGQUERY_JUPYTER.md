@@ -96,6 +96,7 @@ credentials = pydata_google_auth.get_user_credentials(
 - 마지막으로 다음과정을 진행하여 빅쿼리의 결과 테이블을 주피터노트북에서 확인할 수 있습니다.
 	- 자신이 수행하길 원하는 query를 기입하고
 	- `to_dataframe()` 메소드를 이용하는 것으로, `Pandas`의 Dataframe으로 출력하는 것 까지 가능합니다.<br>(하지만 저는 이 과정에서 `pyarrow`임포트 오류와 마주하였고 위와 같이 수행하여 해결하였습니다.)
+
 ```python
 from google.cloud import bigquery
 client = bigquery.Client (project = '<project_id>' , credentials = credentials) 
