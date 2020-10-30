@@ -73,7 +73,7 @@ pip install pyarrow-2.0.0-cp38-cp38-win_amd64.whl
 
 <br>
 
-- 먼저 필수 라이브러리들을 설치해줍니다.<br>(해당 라이브러리 외에 경고로 표시되는 라이브러리 또한 pip로 설치를 진행해줍시다.)py
+- 먼저 필수 라이브러리들을 설치해줍니다.<br>(해당 라이브러리 외에 경고로 표시되는 라이브러리 또한 pip로 설치를 진행해줍시다.)
 ```cmd
 pip install pydata-google-auth
 pip install google-cloud-bigquery
