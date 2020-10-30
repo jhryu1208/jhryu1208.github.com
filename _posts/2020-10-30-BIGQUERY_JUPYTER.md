@@ -10,6 +10,7 @@ comments: true
 - 본 포스팅은 GCP의 데이터를 Jupyter Notebook에서 작업할 수 있는 방법에 관하여 작성하였습니다.
 - <u>Windows 10 64bit</u> 환경에서 진행합니다.
 - `pyarrow` 가 `pip`나 `conda`를 통해서 의존성 문제에 막혀 설치가 안될 경우에 관한 해결법에 관해서도  다룹니다.
+
 ---
 
 ### <u>pyarrow 라이브러리 설치</u>
