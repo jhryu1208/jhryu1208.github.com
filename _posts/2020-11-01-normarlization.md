@@ -100,7 +100,7 @@ comments: true
 
 
 ---
-#### index
+### References
 - 파이썬으로 배우는 통계학 교과서
 - https://www.youtube.com/watch?v=pJCcGK5omhE
 - https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-12-%ED%8E%B8%ED%96%A5Bias%EC%99%80-%EB%B6%84%EC%82%B0Variance-Trade-off
