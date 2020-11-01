@@ -4,6 +4,7 @@ title:  "[Statistics-ML] 정규화"
 subtitle: "[Statistics-ML] 정규화"
 categories: data
 tags: sa
+use_math: true
 comments: true
 ---
 #### [Statistics ML] 정규화
