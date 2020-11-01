@@ -26,7 +26,9 @@ comments: true
 
 `현재 데이터를 잘 설명할 수 있는 모델`이란, Trainning error를 최소화하는 모델을 의미한다.<br>Trainning error를 최소화 시키기 위해서는 `MSE(평균 제곱의 오차)`가 최소가 되어야 한다.
 
+
 $$ MSE = \left(Y-\hat{Y}\right)^2 $$
+
 
 이때, `Expected MSE(MSE의 기댓값)`을 구하게되면  Irreducible Error, Bias, 그리고 Variance의 합이 산출된다. 여기서 Irreducible Error의 경우 우리가 어떻게 해볼 수 있는 값이 아니며, 집중해야할 것은 `Bias`와 `Variance` 이다.
 
@@ -68,11 +70,15 @@ $$ MSE = \left(Y-\hat{Y}\right)^2 $$
 
 아래의 예시를 살펴보자
 
+
 $$\underset{\beta}{\min}(y_i-\hat{y}_i)^2 $$
+
 
 위의 `MSE`에서 최소가되는 beta를 찾고자 한다. 하지만, 너무 복잡한 모델은 지향하고 싶다. 이럴 경우 `벌칙항(or 정규항)`을 도입하여 계수가 큰 값이 되는 것을 막는 기법을 `정규화`라고 부른다. <br>
 
+
 $$\underset{\beta}{\min}(y_i-\hat{y}_i)^2 + 5000{\beta}_3^2 + 5000{\beta}_4^2  $$
+
 
 따라서 <u>`벌칙항`을 추가하기 위해</u>,<br> 위와 같이 beta_3와 beta_4의 계수로 상당히 큰 숫자로 보이는 5000이라는 값을 곱해주고 전체 식에 더해주었다. 그렇다면, 위의 전체식이 최솟값을 되도록 할려면 beta_3와 beta_4는 어떤 값을 가져야만 할까?<br>
 
