@@ -42,7 +42,17 @@ comments: true
 아래의 그림을 참조하면 `Bias`와 `Variance`의 관계에 대해 더 쉽게 파악할 수 있다.<br>
 <img width="400" alt="1" src="https://user-images.githubusercontent.com/53929665/97800339-d975e400-1c77-11eb-8765-200434d40ad9.PNG">
 
-위에서 설명한 `Expected MSE`는 <u>미래 데이터의 예측 성능</u>이라고도 볼 수 있다.<br> 따라서 미래 데이터를 잘 예측한다는 것은 `Expected MSE` 가 낮은 모델을 의미하는 것이다. <br> <u>이때 `Expected MSE`를 줄이기 위해서는 `Bias`, `Variance` 혹은 모두 낮추어야한다.</u>
+위에서 설명한 `Expected MSE`는 <u>미래 데이터의 예측 성능</u>이라고도 볼 수 있다.<br> 따라서 미래 데이터를 잘 예측한다는 것은 `Expected MSE` 가 낮은 모델을 의미하는 것이다. <br> 모델을 만들 때, `Expected MSE`를 줄이기 위해서는 `Bias`, `Variance` 혹은 모두 낮추어야한다.<br>  하지만, 둘 중 하나를 포기해야 하는 경우도 종종 발생한다.<br> 이때, <u>bias를 좀 가지더라도 제일 작은 variance를 가지는 모델을 만들 수 있지 않을까 생각하게 된다.</u><br>즉 variance가 지나치게 큰 과적합이 발생하지 않는 모델을 만들자는 의미이다.
+
+과적합 즉 overfitting을 해결하는 방법은 크게 두가지 이다.
+- <b>특성(Feature)의 갯수 줄이기</b>
+	- 주요 특징을 직접 선택하고 나머지는 버린다.
+	- Model Selection Algorithm을 사용한다.
+	<br>
+- <b>정규화(Regularization)를 수행한다.</b>
+	- 모든 특성을 사용하되, 파라미터의 값을 줄인다.
+
+그럼 이제 <b>정규화</b>에 관하여 살펴보자.
 
 <br>
 이 개념을 가지고 아래의 예제를 살펴보자.
@@ -65,7 +75,7 @@ comments: true
 따라서, Case 1, 3보다는 <u>Case 2가 가장 최적화된 모델이라는 것을 알 수 있다.</u>
 
 <br>
-그렇다면,  Case 3 모델처럼 모델이 너무 복잡해지거나  너무 간단해지는 것을 막기위해서는 어떻게 해야할까?<br>이를 위한 방법 중 하나가 `정규화(Normalization)` 이다.
+그렇다면,  Case 3 모델처럼 모델이 너무 복잡해지거나  너무 간단해지는 것을 막기위해서는 어떻게 해야할까?<br>이를 위한 방법 중 하나가 `정규화(Regularization)` 이다.
 
 아래의 예시를 살펴보자
 <br>
