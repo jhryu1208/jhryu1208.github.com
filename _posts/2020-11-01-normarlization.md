@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "[Statistics_ML] 정규화"
-subtitle: "[Statistics_ML] 정규화"
+title:  "[Statistics-ML] 정규화"
+subtitle: "[Statistics-ML] 정규화"
 categories: data
 tags: sa
 comments: true
 ---
-#### [Statistics-ML] 정규화
+#### [Statistics ML] 정규화
 -  본 포스팅은 정규화에 관하여 다룹니다.
 - 통계학과 머신러닝에서 언급되는 정규화
 - 최소제곱법(MSE)
