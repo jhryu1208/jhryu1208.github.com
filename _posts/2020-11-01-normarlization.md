@@ -32,10 +32,12 @@ comments: true
 이때, `Expected MSE(MSE의 기댓값)`을 구하게되면  Irreducible Error, Bias, 그리고 Variance의 합이 산출된다. 여기서 Irreducible Error의 경우 우리가 어떻게 해볼 수 있는 값이 아니며, 집중해야할 것은 `Bias`와 `Variance` 이다.
 
 - `Bias`
+	- 정답과 예측값이 서로 가까운지 먼지 알려주는 지표이다.
 	- Bias는 지나치게 단순화된 모델로 인한 error에 해당한다. 따라서, Bias가 클 수록 데이터가 편향되게 출력되는 것을 확인할 수 있다.
 	- <u>Bias가 클수록 예측값과 멀어지게 되며, Bias가 작을수록 예측값과 가까워진다.</u> 
 
 - `Variance`
+	- 예측값들이 서로 얼마나 흩어져 있는가 를 표현
 	- Variance는 지나치게 복잡한 모델(train 데이터에 지나치게 fit하려는 모델)로 인한 error에 해당한다. 따라서, <u>Variance가 지나치게 큰 모델은 일반화시키기 어려운 모델이다. </u>
 	- Variance가 큰 모델을 예를 들어 설명하면 점산도에서 n차원 회귀선이 거의 모든 점을 지나면서 그려지는 모델에 해당한다. 작은 모델의 경우는 점산도에서 단순 2차원의 선형 회귀선이 이에 해당된다.
 
@@ -103,4 +105,5 @@ comments: true
 - https://www.youtube.com/watch?v=pJCcGK5omhE
 - https://bkshin.tistory.com/entry/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-12-%ED%8E%B8%ED%96%A5Bias%EC%99%80-%EB%B6%84%EC%82%B0Variance-Trade-off
 - http://scott.fortmann-roe.com
+- https://opentutorials.org/module/3653/22071
 
