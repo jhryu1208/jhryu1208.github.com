@@ -6,6 +6,11 @@ categories: data
 tags: sa
 comments: true
 ---
+#### [Statistics-ML] 정규화
+-  본 포스팅은 정규화에 관하여 다룹니다.
+- 통계학과 머신러닝에서 언급되는 정규화
+- 최소제곱법(MSE)
+- Bias, Variance
 
 ---
 
