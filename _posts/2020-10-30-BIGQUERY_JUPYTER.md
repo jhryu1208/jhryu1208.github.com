@@ -41,7 +41,7 @@ BigQuery의 데이터를 이용하여 ML을 수행해야하는 일이 있었습�
 
 - 사용 가능한 버전 python 버전 리스트 조회
 ```cmd
-conda serach python
+conda search python
 ```
 
 - 특정 버전의 파이썬 설치 (예시에서는 요구되는 버전인 3.8.0을 기입하였습니다)
