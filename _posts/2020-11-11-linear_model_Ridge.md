@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[ML with Python] 2. 지도 학습 알고리즘 (2) 선형모델 - 릿지회귀"
-subtitle: "[ML with Python] 2. 지도 학습 알고리즘 (2) 선형모델 - 릿지회귀"
+title:  "[ML with Python] 2. 지도 학습 알고리즘 (2) 선형모델 - 라쏘회귀"
+subtitle: "[ML with Python] 2. 지도 학습 알고리즘 (2) 선형모델 - 라쏘회귀"
 categories: data
 tags: ml
 comments: true
@@ -164,5 +164,5 @@ mglearn.plots.plot_ridge_n_samples()
 ### References
 
 - 안드레아스 뮐러, 세라 가이도, 『파이썬 라이브러리를 활용한 머신러닝』, 박해선, 한빛미디어(2017)
-- https://tensorflow.blog/%ed%8c%8c%ec%9d%b4%ec%8d%ac-%eb%a8%b8%ec%8b%a0%eb%9f%ac%eb%8b%9d/2-3-3-%ec%84%a0%ed%98%95-%eb%aa%a8%eb%8d%b8/
+- [https://tensorflow.blog/파이썬-머신러닝/2-3-3-선형-모델/](https://tensorflow.blog/%ed%8c%8c%ec%9d%b4%ec%8d%ac-%eb%a8%b8%ec%8b%a0%eb%9f%ac%eb%8b%9d/2-3-3-%ec%84%a0%ed%98%95-%eb%aa%a8%eb%8d%b8/)
 
