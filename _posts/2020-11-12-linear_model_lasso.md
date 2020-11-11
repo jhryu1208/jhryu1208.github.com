@@ -73,7 +73,6 @@ print("사용한 특성의 수: {}".format(np.sum(lasso.coef_ != 0)))
 앞에서의 경우 default 값으로 alpha = 1이 적용되었다.<br>
 <u>과소적합을 줄이기 위해서 `alpha` 값을 줄여 시행해보자</u><br>(이를 수행하기 위해서는 `max_iter(반복 실행하는 최대 횟수)의 기본값을 늘려야 한다.)
 
-<br>
 
 ```python
 # "max_iter" 기본값을 증가시키지 않으면 max_iter 값을 늘리라는 경고가 발생합니다.
@@ -96,7 +95,6 @@ print("사용한 특성의 수: {}".format(np.sum(lasso001.coef_ != 0)))
 
 그러나 `alpha`값을 너무 낮추면 규제의 효과가 없어져 결국 `과대적합`이 되기에, `LinearRegression`과 결과가 비슷해진다.
 
-
 ```python
 lasso00001 = Lasso(alpha=0.0001, max_iter=100000).fit(X_train, y_train)
 print("훈련 세트 점수: {:.2f}".format(lasso00001.score(X_train, y_train)))
@@ -113,7 +111,6 @@ print("사용한 특성의 수: {}".format(np.sum(lasso00001.coef_ != 0)))
 
 또한, `alpha`값의 크기에 따라 계수는 다음과 같이 변한다.
 
-<br>
 
 ```python
 ridge01 = Ridge(alpha=0.1).fit(X_train, y_train)
