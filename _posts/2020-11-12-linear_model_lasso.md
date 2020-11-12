@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[ML with Python] 2. 지도 학습 알고리즘 (2) 분류용 선형 모델"
-subtitle: "[ML with Python] 2. 지도 학습 알고리즘 (2) 분류용 선형 모델"
+title:  "[ML with Python] 2. 지도 학습 알고리즘 (2) 선형 모델-라쏘 회귀"
+subtitle: "[ML with Python] 2. 지도 학습 알고리즘 (2) 선형 모델-라쏘 회귀"
 categories: data
 tags: ml
 comments: true
@@ -11,6 +11,7 @@ comments: true
 - 라쏘 회귀( `Lasso` )
 
 ___
+
 필요 라이브러리 import
 
 ```python
