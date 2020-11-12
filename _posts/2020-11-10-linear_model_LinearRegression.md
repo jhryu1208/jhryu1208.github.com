@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "[ML with Python] 2. 지도 학습 알고리즘 (2) 선형모델 - 라쏘회귀"
-subtitle: "[ML with Python] 2. 지도 학습 알고리즘 (2) 선형모델 - 라쏘회귀"
+title:  "[ML with Python] 2. 지도 학습 알고리즘 (2) 분류용 선형 모델"
+subtitle: "[ML with Python] 2. 지도 학습 알고리즘 (2) 분류용 선형 모델"
 categories: data
 tags: ml
 comments: true
 ---
 #### [ML with Python] 2. 지도 학습 알고리즘 (2) 선형 모델 - 선형회귀
-
 - 본 포스팅은 지도 학습 알고리즘인 선형 모델에 관한 기본적인 내용에 관하여 다룹니다.
 - 선형회귀( `LinearRegression` ),  최소제곱법( `OLS` )
 
