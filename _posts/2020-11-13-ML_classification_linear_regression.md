@@ -7,7 +7,6 @@ tags: ml
 comments: true
 ---
 #### [ML with Python] 2. 지도 학습 알고리즘 (2) 분류용 선형 모델
-
 - 본 포스팅은 지도 학습 알고리즘인 분류용 선형 모델에 관한 기본적인 내용에 관하여 다룹니다.
 - 로지스틱 회귀(`Logistic Regression`)
 - 선형 서포트 벡터 머신(`Support Vector Machine : SVC`)
