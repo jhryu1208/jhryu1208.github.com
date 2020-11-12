@@ -13,6 +13,8 @@ comments: true
 
 ___
 
+필요 라이브러리 import
+
 ```python
 import mglearn
 import matplotlib.pyplot as plt
@@ -21,6 +23,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import Ridge
 from sklearn.linear_model import Lasso
 from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import LinearSVC
 ```
 
 ---
