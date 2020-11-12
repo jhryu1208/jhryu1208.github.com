@@ -63,8 +63,6 @@ from sklearn.model_selection import train_test_split
 
 이제 forge 데이터셋을 사용하여<br> `LogisticRegression`과 `LinearSVC`를 만들고 이 선형 모델들이 만들어 낸 결정 경계를 살펴보자
 
-<br>
-
 
 ```python
 from sklearn.linear_model import LogisticRegression
@@ -148,7 +146,6 @@ mglearn.plots.plot_linear_svc_regularization()
 
 다음의 `유방암 데이터셋`을 사용해서 `LogisticRegression`에 관하여 살펴보자
 
-<br>
 
 ```python
 from sklearn.datasets import load_breast_cancer
