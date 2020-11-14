@@ -40,7 +40,7 @@ import numpy as np
 
 - `scikit-learn`에 구현된 해당 분류기는 `GaussianNB`, `BernoulliNB`, `MultinomialNB` 이렇게 3 가지이다.
     - `GaussianNB` : 연속적인 어떤 데이터에도 적용가능
-    - `BernoulliNB` : 이진 데이터에 적용가능
+    - `BernoulliNB` : 이진(binary) 데이터에 적용가능
     - `MultinomialNB` : 카운트 데이터(ex 문장에 나타난 단어의 횟수)에 적용가능
 
 <br>
