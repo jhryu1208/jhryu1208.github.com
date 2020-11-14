@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[ML with Python] 2. 지도 학습 알고리즘 (2) 분류용 선형 모델"
-subtitle: "[ML with Python] 2. 지도 학습 알고리즘 (2) 분류용 선형 모델"
+title:  "[ML with Python] 2. 지도 학습 알고리즘 (2) <br> 분류용 선형 모델"
+subtitle: "[ML with Python] 2. 지도 학습 알고리즘 (2) <br> 분류용 선형 모델"
 categories: data
 tags: ml
 comments: true
