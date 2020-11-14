@@ -28,7 +28,7 @@ import numpy as np
 #### <u>나이브 베이즈(naive bayes) 분류기</u>
 
 `나이브 베이즈(naive bayes)` 분류기는 `선형 모델`과 매우 유사하다.<br>
-`LogisticRegression`이나 `LinearSVC` 같은 선형 분류기 보다 훈련 속도가 빠르지만,<br>
+`LogisticRegression`이나 `LinearSVC` 같은 선형 분류기 보다 <u>훈련 속도가 빠르지만</u>,<br>
 <u>일반화 성능이 조금 뒤쳐진다.</u>
 
 <br>
