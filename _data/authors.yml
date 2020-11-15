@@ -15,8 +15,8 @@ jhryu1208:
     src:             /assets/img/photo_user_1.jpg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            /assets/img/photo_user_1.jpg
-      2x:            /assets/img/photo_user_1.jpg
+      1x:            /assets/img/photo_user_2.jpg
+      2x:            /assets/img/photo_user_2.jpg
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
