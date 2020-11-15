@@ -264,7 +264,7 @@ plot_feature_importances_cancer(forest)
     
 <br>
 
-중요 매개변수는 `n_estimators`, `max_features`이고 `max_depth` 같은 `사전 가지치기` 옵션이 있다.<br>
+중요 매개변수는 `n_estimators`, `max_features`이고<br>  `max_depth` 같은 `사전 가지치기` 옵션이 있다.<br>
 
 - `n_estimators`는 클수록 좋다. <br>왜냐하면 <u>더 많은 트리를 평균하면 과대적합을 줄여 더 안정적인 모델을 만들기 때문이다.</u><br>
 하지만 이로 인해 잃는 것도 있는데, <u>더 많은 트리는 더 많은 메모리와 긴 훈련 시간으로 이어진다.</u>
