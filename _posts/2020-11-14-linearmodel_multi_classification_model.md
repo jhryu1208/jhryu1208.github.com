@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[ML with Python] 2. 지도 학습 알고리즘 (2)<br>다중 클래스 분류"
-subtitle: "[ML with Python] 2. 지도 학습 알고리즘 (2)<br> 다중 클래스 분류"
+title:  "[ML with Python] 2. 지도 학습 알고리즘(2-5) 다중 클래스 분류"
+subtitle: "[ML with Python] 2. 지도 학습 알고리즘(2-5) 다중 클래스 분류"
 categories: data
 tags: ml
 comments: true
