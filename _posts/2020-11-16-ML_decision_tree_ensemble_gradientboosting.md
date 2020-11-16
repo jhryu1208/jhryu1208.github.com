@@ -184,16 +184,13 @@ plot_feature_importances_cancer(gbrt)
 - <b>그래디언트 부스팅 트리 모델의 매개변수</b>
     - `n_estimators` : 트리의 개수 지정
     
-    <br>
-    
         - 해당 매개변수가 클수록 `랜덤 포레스트`와 달리<br> `그래디언 부스팅`에서는 `모델이 복잡`해지고 `과대적합`될 가능성이 높아진다.
         
     <br>
     
     - `learning_rate` : 이전 트리의 오차를 보정하는 정도
     
-    <br>
-    
+
         - `n_estimators`와 이 매개변수는 매우 깊게 연관되어있으며 해당 변수를 낮추면 비슷한 복잡도의 모델을 만들기 위해서는 `n_estimators`를 늘려서 더 많은 트리를 추가해야한다.
         - 일반적인 관례는 가용한 시간과 메모리 한도에서 `n_estimators`를 맞추고 나서 적절한 `learning_rate`를 찾는 것이다.
         
@@ -201,8 +198,7 @@ plot_feature_importances_cancer(gbrt)
      
     - `max_depth(or max_leaf_nodes)` : 트리의 복잡도를 지정
     
-    <br>
-    
+
         - 통상 `그래디언트 부스팅`모델에서는 이 매개변수를 매우 작게 설정하며<br>트리의 깊이가 5보다 깊어지지 않게 한다.
     
     
