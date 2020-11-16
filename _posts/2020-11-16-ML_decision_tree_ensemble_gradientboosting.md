@@ -213,5 +213,5 @@ plot_feature_importances_cancer(gbrt)
 ### References
 
 - 안드레아스 뮐러, 세라 가이도, 『파이썬 라이브러리를 활용한 머신러닝』, 박해선, 한빛미디어(2017)
-- https://tensorflow.blog/%ed%8c%8c%ec%9d%b4%ec%8d%ac-%eb%a8%b8%ec%8b%a0%eb%9f%ac%eb%8b%9d/2-3-6-%ea%b2%b0%ec%a0%95-%ed%8a%b8%eb%a6%ac%ec%9d%98-%ec%95%99%ec%83%81%eb%b8%94/
+-   [https://tensorflow.blog/파이썬-머신러닝/2-3-6-결정-트리의-앙상블/](https://tensorflow.blog/%ed%8c%8c%ec%9d%b4%ec%8d%ac-%eb%a8%b8%ec%8b%a0%eb%9f%ac%eb%8b%9d/2-3-6-%ea%b2%b0%ec%a0%95-%ed%8a%b8%eb%a6%ac%ec%9d%98-%ec%95%99%ec%83%81%eb%b8%94/)
 
