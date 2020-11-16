@@ -148,8 +148,7 @@ plot_feature_importances_cancer(gbrt)
     
 
 
-[이전 포스팅](https://jhryu1208.github.io/data/2020/11/16/ML_decision_tree_ensemble_random_forest/)의 `랜덤 포레스트`와 `그레디언트 부스팅`의 특성 중요도가 비슷한 것으로 확인된다.<br>
-다만 `그래디언트 부스팅`은 일부 특성을 완전히 무시한다.
+[이전 포스팅](https://jhryu1208.github.io/data/2020/11/16/ML_decision_tree_ensemble_random_forest/)의 `랜덤 포레스트`와 `그레디언트 부스팅`의 특성 중요도가 비슷한 것으로 확인된다. 다만 `그래디언트 부스팅`은 일부 특성을 완전히 무시한다.
 
 <br>
 
