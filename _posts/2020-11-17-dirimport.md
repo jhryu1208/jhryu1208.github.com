@@ -48,7 +48,7 @@ from [상위폴더에 존재하는 폴더] import want_to_import
 # 혹은 상위폴더에 모듈이 존재할 경우 from . import want_to_import
 ```
 
-여기서`(os.path.dirname(os.path.abspath`는  한단계 상위를 의미한다. <br>따라서 두단계 상위폴더라면 `(os.path.dirname(os.path.abspath(os.path.dirname(os.path.abspath  `와 같이 두번 작성해주어야한다.
+여기서`(os.path.dirname(os.path.abspath`는  한단계 상위를 의미한다. <br>따라서 두단계 상위폴더라면 `(os.path.dirname(os.path.abspath(os.path.dirname(os.path.abspath`<br>와 같이 두번 작성해주어야한다.
 
 <br>
   
