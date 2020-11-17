@@ -44,7 +44,7 @@ from [하위폴더] import want_to_import
 ```python
 import sys
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
-from [상위폴더에 존재하는 폴더] import want_to_import
+from [상위폴더에_존재하는_폴더] import want_to_import
 # 혹은 상위폴더에 모듈이 존재할 경우 from . import want_to_import
 ```
 
