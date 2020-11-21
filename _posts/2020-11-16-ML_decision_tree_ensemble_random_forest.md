@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[ML with Python] 2. 지도 학습 알고리즘(4-4) 앙상블-랜덤 포레스트"
-subtitle: "[ML with Python] 2. 지도 학습 알고리즘(4-4) 앙상블-랜덤 포레스트"
+title:  "[ML with Python] 2. 지도 학습 알고리즘(4-3) 앙상블-랜덤 포레스트"
+subtitle: "[ML with Python] 2. 지도 학습 알고리즘(4-3) 앙상블-랜덤 포레스트"
 categories: data
 tags: ml
 comments: true
