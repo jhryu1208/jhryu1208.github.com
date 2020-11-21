@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[ML with Python] 2. 지도 학습 알고리즘(4-3) 앙상블-그래디언트 부스팅"
-subtitle: "[ML with Python] 2. 지도 학습 알고리즘(4-3) 앙상블-그래디언트 부스팅"
+title:  "[ML with Python] 2. 지도 학습 알고리즘(4-2) 앙상블-그래디언트 부스팅"
+subtitle: "[ML with Python] 2. 지도 학습 알고리즘(4-2) 앙상블-그래디언트 부스팅"
 categories: data
 tags: ml
 comments: true
