@@ -213,4 +213,4 @@ contour_test
 ### References
 - [예제로 배우는 파이썬 프로그래밍](http://pythonstudy.xyz/python/article/406-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%B2%98%EB%A6%AC-Pillow)
 - [ultrakain.gitbooks.io](https://ultrakain.gitbooks.io/python/content/chapter8/image-process.html)
-
+- [이미지 출처](https://m.post.naver.com/viewer/postView.nhn?volumeNo=17116205&memberNo=11567548&vType=VERTICAL)
