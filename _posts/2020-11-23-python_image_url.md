@@ -201,4 +201,5 @@ request_get_img
 
 ### References
 - [https://soyoung-new-challenge.tistory.com/92](https://soyoung-new-challenge.tistory.com/92)
+- [이미지 출처](https://m.post.naver.com/viewer/postView.nhn?volumeNo=17116205&memberNo=11567548&vType=VERTICAL)
 
