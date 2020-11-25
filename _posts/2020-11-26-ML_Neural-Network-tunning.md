@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[ML with Python] 2. 지도 학습 알고리즘 (6-1) 신경망 모델(MLP 신경망 튜닝)"
-subtitle: "[ML with Python] 2. 지도 학습 알고리즘 (6-1) 신경망 모델(MLP 신경망 튜닝)"
+title:  "[ML with Python] 2. 지도 학습 알고리즘 (6-2) 신경망 모델(MLP 신경망 튜닝)"
+subtitle: "[ML with Python] 2. 지도 학습 알고리즘 (6-2) 신경망 모델(MLP 신경망 튜닝)"
 categories: data
 tags: ml
 comments: true
