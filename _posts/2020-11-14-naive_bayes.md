@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[ML with Python] 2. 지도 학습 알고리즘(3-1) 나이브 베이즈 분류"
-subtitle: "[ML with Python] 2. 지도 학습 알고리즘(3-1) 나이브 베이즈 분류"
+title:  "[ML with Python] 2. 지도 학습 알고리즘(3) 나이브 베이즈 분류"
+subtitle: "[ML with Python] 2. 지도 학습 알고리즘(3) 나이브 베이즈 분류"
 categories: data
 tags: ml
 comments: true
