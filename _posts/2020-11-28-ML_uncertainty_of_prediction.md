@@ -107,7 +107,7 @@ print('25개의 테스트 샘플에 대한 결정함수 : \n', gbrt.decision_fun
      -1.86776596]
     
 
-그리고, <u> `결정 함수의 부호`만을 보고 예측 결과를 알 수 있다.</u> <br>
+그리고, `결정 함수의 부호`<u>만을 보고 예측 결과를 알 수 있다.</u> <br>
 이는 아래에서 확인할 수 있다. 첫 번째 print문에서 양수와 음수로 분리되어 나온 반환값을 True(양수), False(음수)로 치환하여 재출력한 것을 확인할 수 있고, 두 번째 print문에서 `predict`메소드를 이용하여 샘플의 예측 클래스 값을 반환하였음을 확인할 수 있다. 그리고 이 둘의 결과 값은 같다는 것은(True = red, False = blue) 또한 확인할 수 있다. 따라서, `결정 함수의 부호`만을 이용하여 예측결과를 무엇인지 확인할 수 있는 것이다.
 
 
@@ -284,7 +284,7 @@ axes[0].legend(["test class 0", "test class 1", "train class 0",
 ![ML_uncertainty_of_prediction_26_1](https://user-images.githubusercontent.com/53929665/100541896-476af680-328a-11eb-9cc1-2b3e7477bb84.png)
 
 
-<u> `predict_proba(우)`로 나타낸 경계는 이전의 `decision_function`보다 훨씬 명확하게 잘 나타나 있는 것</u>을 확인할 수 있다.
+`predict_proba(우)`<u>로 나타낸 경계는 이전의 </u>`decision_function`<u>보다 훨씬 명확하게 잘 나타나 있는 것</u>을 확인할 수 있다.
 
 <br>
 
