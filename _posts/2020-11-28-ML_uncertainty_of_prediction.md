@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "[ML with Python] 2. 지도 학습 알고리즘 (7-1) 분류 예측의 불확실성 추정"
-subtitle: "[ML with Python] 2. 지도 학습 알고리즘 (7-1) 분류 예측의 불확실성 추정"
+title:  "[ML with Python] 2. 지도 학습 알고리즘 (7) 분류 예측의 불확실성 추정"
+subtitle: "[ML with Python] 2. 지도 학습 알고리즘 (7) 분류 예측의 불확실성 추정"
 categories: data
 tags: ml
 comments: true
 ---
-#### [ML with Python] 2. 지도 학습 알고리즘 (7-1) 분류 예측의 불확실성 추정
+#### [ML with Python] 2. 지도 학습 알고리즘 (7) 분류 예측의 불확실성 추정
 - 본 포스팅은 예측의 불확실성 추정에 관한 기본적인 내용에 관하여 다룹니다.
 - 이진 분류 
     - `decision_function`
