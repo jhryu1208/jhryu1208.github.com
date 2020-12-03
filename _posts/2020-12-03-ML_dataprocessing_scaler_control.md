@@ -324,7 +324,7 @@ plt.show()
 
 #### (scikit-learn 0.20.0) <u>PowerTransformer</u>
 
-앞에서 `StandardScaler`와 `QuantileTransform`의  `output_distribution='normal'` 뿐만 아니라, <br>`PowerTransformer`를 이용하여 `정규분포`형태에 가깝도록 변환해줄 수 있다. <br>`PowerTransformer`는  (기본값)`yeo-johnson`와 `box-cox`알고리즘을 적용할 수 있는 `method`매개변수를 가지고 있다.
+앞에서 `StandardScaler`와 `QuantileTransform`의  `output_distribution='normal'` 뿐만 아니라, `PowerTransformer`를 이용하여 `정규분포`형태에 가깝도록 변환해줄 수 있다. <br>`PowerTransformer`는  (기본값)`yeo-johnson`와 `box-cox`알고리즘을 적용할 수 있는 `method`매개변수를 가지고 있다.
 
 <br>
 
