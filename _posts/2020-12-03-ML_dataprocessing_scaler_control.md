@@ -15,7 +15,7 @@ comments: true
 - ` QuantileTransform`
     -  when `output_distribution='normal'`
 - `PowerTransformer`
-    - `yeo-johnson`,  
+    - `yeo-johnson`
     - `box-cox`
 
 ___
