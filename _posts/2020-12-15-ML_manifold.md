@@ -225,5 +225,5 @@ plt.ylabel("t-SNE 특성 1")
 
 - 안드레아스 뮐러, 세라 가이도, 『파이썬 라이브러리를 활용한 머신러닝』, 박해선, 한빛미디어(2017)
 - [네이버 지식백과 SNE](https://terms.naver.com/entry.nhn?docId=5733143&cid=60266&categoryId=60266)
-- [Dosc-tacos님  github 블로그](https://dos-tacos.github.io/paper%20review/TSNE/)
+- [dosc-tacos님의 github 블로그](https://dos-tacos.github.io/paper%20review/TSNE/)
 
