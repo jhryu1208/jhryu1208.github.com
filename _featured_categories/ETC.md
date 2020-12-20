@@ -1,10 +1,10 @@
 ---
 layout: list
-title: ETC
-slug: etc
+title: Repository
+slug: repo
 menu: true
 submenu: true
 order: 7
 description: >
-  기타등등!
+  지식 저장소
 ---
