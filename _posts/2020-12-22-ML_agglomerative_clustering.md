@@ -39,7 +39,7 @@ plt.rc('font', family='Malgun Gothic')
     - `average` : <u>포인트 사이의 평균 거리가 가장 짧은</u> 두 클러스터를 합친다.
     - `complete` : <u>클러스터 포인트 사이의 최대 거리가 가장 짧은</u> 두 클러스터를 합친다.
     - 일반적인 경우에는 `ward`가 대부분의 데이터셋에 알맞지만, 클러스터에 속한 포인트 수가 많이 다를 때는 (ex.클러스터의 크기가 매우 다를 때) `average`나 `complete`가 나을 수 있다. 즉 linkage 옵션은 데이터 타입 별로 적합성이 다를 수 있다.
-    - 이와 관련해서는 해당 [블로그](https://bizzengine.tistory.com/152)에서 시각적으로 잘 정리되어있다.<br>(많은 참고가 되었습니다 감사합니다...!)<br> 
+    - 이와 관련해서는 해당 [블로그](https://bizzengine.tistory.com/152)에서 시각적으로 잘 정리되어있다.<br> 
 
 <br>
 
