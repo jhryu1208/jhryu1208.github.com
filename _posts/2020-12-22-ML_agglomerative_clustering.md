@@ -138,6 +138,167 @@ plt.ylabel("클러스터 거리")
 - `가지의 길이` : 클러스터가 얼마나 멀리 떨어져 있는지 파악 가능
     - 가지가 가장 길다는 것은 꽤 먼 거리의 포인트를 모은다는 의미이다.
     
+
+위의 덴드로그램은 최종적으로 1개의 군집으로 모든 데이타를 군집화 시키는 것을 확인할 수 있다. 따라서, 적정선의 특정 n개의 클러스터까지 군집으로 나눌 필요가 있다. 이떄, `sklearn`의 `fcluster`함수를 이용하면, 특정 클러스터 거리에서(</u>클러스터 갯수가 아니다!!!</u>)에서 클러스터링을 멈출 수 있다. 다음의 코드를 확인해보자.
+
+
+
+
+
+
+
+```python
+def sub(df):
+    return df[0] - 1
+
+import pandas as pd
+from scipy.cluster.hierarchy import fcluster
+predict = pd.DataFrame(fcluster(linkage_array, t = 4, criterion = 'distance'))
+predict = pd.DataFrame(predict.apply(sub, axis = 1))
+predict.columns = ['predict']
+
+df = pd.DataFrame({'X0' : X[:, 0].tolist(),
+                   'X1' : X[:, 1].tolist(),
+                   'real_label': y.tolist()})
+
+df = pd.merge(df, predict, left_index = True, right_index = True, how = 'left')
+df['condition'] = list(df['real_label']==df['predict'])
+df
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>X0</th>
+      <th>X1</th>
+      <th>real_label</th>
+      <th>predict</th>
+      <th>condition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3.549347</td>
+      <td>0.692505</td>
+      <td>1</td>
+      <td>1</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.926358</td>
+      <td>4.152430</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.005875</td>
+      <td>4.387241</td>
+      <td>2</td>
+      <td>0</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.120314</td>
+      <td>5.758061</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1.737308</td>
+      <td>4.425462</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2.368335</td>
+      <td>0.043568</td>
+      <td>1</td>
+      <td>1</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>-0.497722</td>
+      <td>1.551282</td>
+      <td>1</td>
+      <td>2</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>-1.481145</td>
+      <td>2.730698</td>
+      <td>2</td>
+      <td>2</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>0.873051</td>
+      <td>4.714386</td>
+      <td>0</td>
+      <td>0</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>-0.662468</td>
+      <td>2.175717</td>
+      <td>2</td>
+      <td>2</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>0.742851</td>
+      <td>1.463517</td>
+      <td>2</td>
+      <td>2</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2.499131</td>
+      <td>1.231338</td>
+      <td>1</td>
+      <td>1</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+각 데이터 포인트의 예측값을 위에서 확인했을 때, 총 3개의 클러스터가 예측되는 것을 확인할 수 있다. 또한 11개 중에서 2개를 제외하고 전부 휼륭히 예측하였다. 
+
 <br>
 
 하지만, 이렇게 유용해 보이는 `병합군집`은 two_moons와 같은 복잡한 형상은 구분하지 못한다. 그리고 데이터가 많아질수록 다른 클러스터 기법들에 비해 많이 느린편에 해당한다.
@@ -149,6 +310,7 @@ plt.ylabel("클러스터 거리")
 ### References
 
 - 안드레아스 뮐러, 세라 가이도, 『파이썬 라이브러리를 활용한 머신러닝』, 박해선, 한빛미디어(2017)
+- [fcluster 문서](https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.fcluster.html)
 - [ratio's blog](https://ratsgo.github.io/machine%20learning/2017/04/18/HC/)
 - [인문계 공돌이](https://bizzengine.tistory.com/152)
 
