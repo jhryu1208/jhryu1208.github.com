@@ -311,6 +311,7 @@ df
 
 - 안드레아스 뮐러, 세라 가이도, 『파이썬 라이브러리를 활용한 머신러닝』, 박해선, 한빛미디어(2017)
 - [fcluster 문서](https://docs.scipy.org/doc/scipy/reference/generated/scipy.cluster.hierarchy.fcluster.html)
+- [조대협의 블로그](https://bcho.tistory.com/1204)
 - [ratio's blog](https://ratsgo.github.io/machine%20learning/2017/04/18/HC/)
 - [인문계 공돌이](https://bizzengine.tistory.com/152)
 
