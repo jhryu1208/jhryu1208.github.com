@@ -108,7 +108,7 @@ df.head()
 
 ---
 
-#### <u>`pandas.DataFrame.loc`</u>
+#### <u>pandas.DataFrame.loc</u>
 
 
 `loc`는 <u>행과 열의 데이터를 조회할 떄</u> 사용되어지는 메소드이다. 이는 `SQL`의 `WHERE절`과 유사해서 pandas에서 더욱더 유용한 메소드 중 하나이다.
