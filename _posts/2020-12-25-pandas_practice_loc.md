@@ -1147,7 +1147,15 @@ df
 
 <br>
 
-이처럼 `loc`메소드는 데이터프레임에서 행열을 조회하는데 매우 도움이 된다. 또한 multi index인 데이터프레임에서도 `loc`메소드를 이용하여 원하는 데이터프레임을 일부 출력할 수도 있다! ([참고](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html)). 다음에는 `iloc`에 관해서 다뤄보고자 한다.
+이처럼 `loc`메소드는 데이터프레임에서 행열을 조회하는데 매우 도움이 된다. 또한 multi index인 데이터프레임에서도 `loc`메소드를 이용하여 원하는 데이터프레임을 일부 출력할 수도 있다! ([참고](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.loc.html)). 
+
+<br>
+
+`loc`에서는 각 인덱스 혹은 컬럼의 `name`을 사용했지만 , `iloc`를 이용하여 각 인덱스와 컬럼의 `number` 을 이용하여 `loc`와 동일하게 사용할 수 있다.  데이터 사이즈가 작다면 `iloc`가 유용할 수 있지만, 데이터사이즈가 많은 데이터에서는 `iloc`보다는 `loc`가 더 유용하게 사용되어진다. 
+
+<br>
+
+다음에는 `isin`에 관해서  간단히 다뤄보고자 한다.
 
 <br>
 
