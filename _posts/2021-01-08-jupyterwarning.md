@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[jupyter-tip] jupyter 경고 메시지 삭제 라이브러리"
-subtitle: "[jupyter-tip] jupyter 경고 메시지 삭제 라이브러리"
+title:  "[Jupyter-Tip] jupyter 경고 메시지 삭제 라이브러리"
+subtitle: "[Jupyter-Tip] jupyter 경고 메시지 삭제 라이브러리"
 categories: devlang
 tags: python
 comments: true
