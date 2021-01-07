@@ -6,10 +6,6 @@ categories: devlang
 tags: python
 comments: true
 ---
-#### [Jupyter] jupyter 경고 메시지 삭제
-
----
-
 경고 메시지가 너무 걸리적거려서 찾게 된 jupyter notebook 경고 메시지 삭제 방법
 
 #### (1) 경고 메시지를 무시하고 숨기거나 (Ignore warning message)
