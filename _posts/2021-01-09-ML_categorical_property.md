@@ -1348,6 +1348,8 @@ print("테스트 점수 : {:.2f}".format(logreg.score(X_test_trans, y_test)))
 
 (해당 데이터에서는 연속형 변수의 데이터 스케일링이 점수에 크게 영향을 미치지는 못했다ㅠ.ㅠ)
 
+<br>
+
 #### 2-1) <u>make_column_transformer로 간편하게 ColumnTransformer 만들기</u> 
 
 코딩을 하거나 일을 하다보면 순간 멈칫하는 순간이 변수의 이름을 짓는 순간이다. 마찬가지로, `ColumnTransformer` 객체를 정의할 때 이름을 붙였었다. 하지만 클래스 이름을 기반으로 자동으로 각 단계에 이름을 붙여주는 편리한 `make_column_transformer`함수가 있다. 이 함수는 다음과 같이 사용할 수 있다.
