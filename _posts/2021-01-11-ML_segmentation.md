@@ -6,7 +6,7 @@ categories: data
 tags: ml
 comments: true
 ---
-[ML with Python] 4. 구간 분할/이산화 & 상호작용/다항식
+#### [ML with Python] 4. 구간 분할/이산화 & 상호작용/다항식
 - 본 포스팅은 구간 분할/이산화 와 상호작용/다항식에 관한 기본적인 내용에 관하여 다룹니다.
 
 
