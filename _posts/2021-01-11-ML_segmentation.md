@@ -10,7 +10,7 @@ comments: true
 - 본 포스팅은 구간 분할/이산화 와 상호작용/다항식에 관한 기본적인 내용에 관하여 다룹니다.
 
 
-<h1>Table of Contents<span class="tocSkip"></span></h1>
+<h3>Table of Contents<span class="tocSkip"></span></h3>
 <div class="toc"><ul class="toc-item"><li><span><a href="#1)-구간-분할,-이산화-그리고-선형-모델,-트리-모델-(-feat.-KBinsDiscretiezer-클래스-)" data-toc-modified-id="1)-구간-분할,-이산화-그리고-선형-모델,-트리-모델-(-feat.-KBinsDiscretiezer-클래스-)-0">1) 구간 분할, 이산화 그리고 선형 모델, 트리 모델 ( feat. KBinsDiscretiezer 클래스 )</a></span></li><li><span><a href="#2)-상호작용" data-toc-modified-id="2)-상호작용-1">2) 상호작용</a></span></li><li><span><a href="#3)-다항식-(-feat.-PolynomialFeatures-)" data-toc-modified-id="3)-다항식-(-feat.-PolynomialFeatures-)-2">3) 다항식 ( feat. PolynomialFeatures )</a></span></li><li><span><a href="#4)-상호작용/다항식-적용-:-보스턴-주택-가격-데이터셋" data-toc-modified-id="4)-상호작용/다항식-적용-:-보스턴-주택-가격-데이터셋-3">4) 상호작용/다항식 적용 : 보스턴 주택 가격 데이터셋</a></span></li><li><span><a href="#5)-References" data-toc-modified-id="5)-References-4">5) References</a></span></li></ul></div>
 
 ![gaga](https://user-images.githubusercontent.com/53929665/104126544-83709b80-53a0-11eb-8870-684326136826.JPG)
