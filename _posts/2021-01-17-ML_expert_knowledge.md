@@ -251,6 +251,10 @@ eval_on_features(X_hour_week, y, regressor)
 
 <br>
 
+--- 
+
+<br>
+
 `랜덤 포레스트`보다 더 간단한 모델인 `LinearRegression`을 적용해보자.
 
 
