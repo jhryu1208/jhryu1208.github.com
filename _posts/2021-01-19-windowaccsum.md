@@ -22,9 +22,10 @@ WINDOW함수 OVER([PARTITION BY column] [ORDER BY column [ASC|DESC]]
 ```
 ####  ROWS/RANGE
 - `ROWS` : (개인적으로 자주 이용!)<u>물리적인 단위</u>로 행 집합을 지정
-	-  PARTITION BY 첨가 =>동일 수치의 중복값이 있을 때  두 수치에 대한 최종 결과값을 출력한다.
+   - PARTITION BY 첨가 => 동일 수치의 중복값이 있어도 행의 순서에 따라서 결과값을 순차적으로 출력한다.
 - `RANGE` : (이런게 있다 정도로만 이해!)<u>논리적인 단위</u>로 행 집합을 지정
-	-  PARTITION BY 첨가 => 동일 수치의 중복값이 있어도 행의 순서에 따라서 결과값을 순차적으로 출력한다.
+   -  PARTITION BY 첨가 =>동일 수치의 중복값이 있을 때  두 수치에 대한 최종 결과값을 출력한다.
+
 
 <br>
 
