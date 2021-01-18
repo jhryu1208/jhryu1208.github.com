@@ -150,6 +150,7 @@ ORDER BY JOB;
 
 더 나아가 job에 관하여 `PARTITION BY`를 추가하게 될 경우, 각 job 파티션에 관하여 누적값이 파티션별로 산출되는 것을 확인할 수 있다.  해당 결과는 SUM(sal) OVER(PARTITION BY JOB)과 동일하기 때문에 `UNBOUNDED PRECEDING`과 `CURRENT ROW`를 사용했다는 효과를 보기는 힘들다. 오히려 쿼리상 길어지기 때문에  SUM(sal) OVER(PARTITION BY JOB)를 사용하는 것이 더 간단하다.
 
+<br>
 
 ---
 
