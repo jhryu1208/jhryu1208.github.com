@@ -33,8 +33,8 @@ WINDOW함수 OVER([PARTITION BY column] [ORDER BY column [ASC|DESC]]
 
 - `UNBOUNDED PRECEDING` : <u>시작 위치가 첫 번째 로우</u>임을 의미
 - `UNBOUNDED FOLLOWING` : <u>마지막 위치가 마지막 로우</u>임을 의미
-- `[ROW수] PRECEDING` : <u시작 위치가 ROW수 만큼 이전</u>임을 의미
-- `[ROW수] FOLLOWING` : <u시작 위치가 ROW수 만큼 이후</u>임을 의미
+- `[ROW수] PRECEDING` : <u>시작 위치가 ROW수 만큼 이전</u>임을 의미
+- `[ROW수] FOLLOWING` : <u>시작 위치가 ROW수 만큼 이후</u>임을 의미
 - `CURRENT ROW` : <U>현재 ROW</u>를 의미
 
 <br>
