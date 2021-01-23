@@ -7,7 +7,7 @@ tags: (dbms)mysql
 comments: true
 ---
 #### [ MySQL ] WINDOW 함수의 ROW/RANGE
-- 본 포스팅은   WINDOW 함수의 `ROW/RANGE`에 관하여 설명합니다.
+- 본 포스팅은   WINDOW 함수의 `ROW/RANGE`에 관하여 학습합니다
 
 
 ---
@@ -22,10 +22,9 @@ WINDOW함수 OVER([PARTITION BY column] [ORDER BY column [ASC|DESC]]
 ```
 ####  ROWS/RANGE
 - `ROWS` : (개인적으로 자주 이용!)<u>물리적인 단위</u>로 행 집합을 지정
-   - PARTITION BY 첨가 => 동일 수치의 중복값이 있어도 행의 순서에 따라서 결과값을 순차적으로 출력한다.
+	-  PARTITION BY 첨가 =>동일 수치의 중복값이 있을 때  두 수치에 대한 최종 결과값을 출력한다.
 - `RANGE` : (이런게 있다 정도로만 이해!)<u>논리적인 단위</u>로 행 집합을 지정
-   -  PARTITION BY 첨가 =>동일 수치의 중복값이 있을 때  두 수치에 대한 최종 결과값을 출력한다.
-
+	-  PARTITION BY 첨가 => 동일 수치의 중복값이 있어도 행의 순서에 따라서 결과값을 순차적으로 출력한다.
 
 <br>
 
@@ -33,8 +32,8 @@ WINDOW함수 OVER([PARTITION BY column] [ORDER BY column [ASC|DESC]]
 
 - `UNBOUNDED PRECEDING` : <u>시작 위치가 첫 번째 로우</u>임을 의미
 - `UNBOUNDED FOLLOWING` : <u>마지막 위치가 마지막 로우</u>임을 의미
-- `[ROW수] PRECEDING` : <u>시작 위치가 ROW수 만큼 이전</u>임을 의미
-- `[ROW수] FOLLOWING` : <u>시작 위치가 ROW수 만큼 이후</u>임을 의미
+- `[ROW수] PRECEDING` : <u시작 위치가 ROW수 만큼 이전</u>임을 의미
+- `[ROW수] FOLLOWING` : <u시작 위치가 ROW수 만큼 이후</u>임을 의미
 - `CURRENT ROW` : <U>현재 ROW</u>를 의미
 
 <br>
