@@ -22,9 +22,16 @@ from sklearn.datasets import make_blobs
 from sklearn.linear_model import LogisticRegression
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
+
+from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import cross_validate
+
 from sklearn.model_selection import KFold
+from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import LeaveOneOut
+from sklearn.model_selection import ShuffleSplit
+from sklearn.model_selection import RepeatedStratifiedKFold
+
 from collections import Counter
 import numpy as np
 import pandas as pd
