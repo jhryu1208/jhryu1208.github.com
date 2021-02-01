@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Data Format
-slug: data format
+title: Feature Engineering
+slug: feature engineering
 category: data
 menu: false
 order: 1
