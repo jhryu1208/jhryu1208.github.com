@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
 title: Feature Engineering
-slug: feature engineering
+slug: fe
 category: data
 menu: false
 order: 1
