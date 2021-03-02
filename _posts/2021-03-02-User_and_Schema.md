@@ -7,7 +7,6 @@ tags: (dbms)oracle
 mathjax: true
 comments: true
 ---
-## [ 계정과 스키마 ]
 
 ### <U>Schema</U>
 
