@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[ORACLE] 2.SELECT BASIC"
-subtitle: "[ORACLE] 2.SELECT BASIC"
+title:  "[ORACLE] 1.User and Schema"
+subtitle: "[ORACLE] 1.User and Schema"
 categories: devlang
 tags: (dbms)oracle
 mathjax: true
