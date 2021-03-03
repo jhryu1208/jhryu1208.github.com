@@ -1,15 +1,21 @@
 ---
 layout: post
-title:  "[ORACLE] 1.USER and SCHEMA"
-subtitle: "[ORACLE] 1.USER and SCHEMA"
+title:  "[ORACLE] 2.SELECT BASIC"
+subtitle: "[ORACLE] 2.SELECT BASIC"
 categories: devlang
 tags: (dbms)oracle
 mathjax: true
 comments: true
 ---
-## [ 계정과 스키마 ]
+- 계정과 스키마
+- 오라클 데이터베이스 접속 및 SCOTT 계정 설정
+- 사용자 계정
 
-### <U>Schema</U>
+---
+
+### [ 계정과 스키마 ]
+
+#### <U>Schema</U>
 
 - Schema(스키마) : <b>스키마 오브젝트</b>들의 집합
 - Schema Obeject(스키마 오브젝트) : <b> 테이블, 뷰, 인덱스</b>와 같은 구조를 포함하는 논리적인 데이터 저장 구조를 가진 객체
@@ -23,13 +29,13 @@ comments: true
   >  B user의 B schema( SCHOOL테이블 / JOB테이블 )  
   >  -> A schema의 SCHOOL테이블과 JOB테이블 ≠ B schema의 SCHOOL테이블과 JOB테이블
 
-### <U>User</U>
+#### <U>User</U>
 
 - 계정 정보는 '데이터 딕셔너리'에 저장되므로, 일반 데이터를 백업하는 것처럼 백업할 수 없다.
 - 계정을 생성할때 사용했던 DDL문을 백업해두거나 DDL문을 추출해야한다.
 
 ---
-## [ 오라클 데이터베이스 접속 및 SCOTT 계정 설정 ]
+### [ 오라클 데이터베이스 접속 및 SCOTT 계정 설정 ]
 - 참조 : https://docs.oracle.com/cd/B19306_01/server.102/b14200/statements_8003.htm
 
 
@@ -71,7 +77,7 @@ comments: true
     ```
 
 ---
-## [ 사용자 계정 ]
+### [ 사용자 계정 ]
 
 - <b>사용자 생성</b>
     - 생성된 사용자로 로그인하기 위해서는 권한을 부여해야한다.
