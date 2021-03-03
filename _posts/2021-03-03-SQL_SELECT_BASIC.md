@@ -187,29 +187,6 @@ DEPNOT(부서번호)가 같은, 즉 같은 부서에서 근무하고 있는 사�
 결과 : 
 ![5-3(찐)](https://user-images.githubusercontent.com/53929665/92938345-62964900-f487-11ea-9fa7-24f6bb54f9c2.JPG)
 
-### [ 예제 ]
-
-Q1.
-
-
-```python
-SELECT DISTINCT JOB FROM EMP
-```
-
-Q2.
-
-
-```python
-SELECT EMPNO AS EMPLOYEE_NO,
-       ENAME AS EMPLOYEE_NAME,
-       JOB,
-       MGR AS MANAGER,
-       SAL AS SALARY,
-       COMM AS COMMISSION,
-       DEPTNO AS DEPARTMENT_NO
-FROM EMP
-ORDER BY DEPARTMENT_NO DESC, EMPLOYEE_NAME ASC;
-```
 
 <br>
 
