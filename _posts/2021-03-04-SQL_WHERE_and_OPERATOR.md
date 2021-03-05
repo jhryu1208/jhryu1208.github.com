@@ -470,3 +470,10 @@ SELECT EMPNO, ENAME, SAL, DEPTNO
 
 
 
+<br>
+
+---
+
+### References
+
+- 이지훈, 『Do it! 오라클로 배우는 데이터베이스』, 이지스퍼블리싱 (2018)
