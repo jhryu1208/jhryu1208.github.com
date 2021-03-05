@@ -1164,4 +1164,11 @@ SELECT  EMPNO, ENAME, COMM,
 
 ![7-2-2](https://user-images.githubusercontent.com/53929665/93734434-1def7800-fc14-11ea-94f4-d6022a7e4591.JPG)
 
+<br>
+
+---
+
+### References
+
+- 이지훈, 『Do it! 오라클로 배우는 데이터베이스』, 이지스퍼블리싱 (2018)
 
