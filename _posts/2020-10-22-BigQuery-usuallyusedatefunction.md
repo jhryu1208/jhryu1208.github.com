@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[BigQuery] 쿼리필수요소 SELECT & WHERE"
-subtitle: "[BigQuery] 쿼리필수요소 SELECT & WHERE"
+title:  "[BigQuery] 자주 사용하는 자료형 변환 함수 정리"
+subtitle: "[BigQuery] 자주 사용하는 자료형 변환 함수 정리"
 categories: gcp
 tags: bigquery
 comments: true
