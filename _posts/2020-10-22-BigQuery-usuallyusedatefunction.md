@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[BigQuery] 자주 사용하는 자료형 변환 함수 정리"
-subtitle: "[BigQuery] 자주 사용하는 자료형 변환 함수 정리"
+title:  "[BigQuery] 쿼리필수요소 SELECT & WHERE"
+subtitle: "[BigQuery] 쿼리필수요소 SELECT & WHERE"
 categories: gcp
 tags: bigquery
 comments: true
@@ -19,6 +19,12 @@ FORMAT_[DATE/DATETIME/TIMESTAMP]( [format_string], [DATE/DATETIME/TIMESTAMP_expr
 ```
 - 지정된 `format_string`에 따라 타임스탬프의 형식을 지정한다.<br>ex1) 20201021 DATE 자료형 => 2020-10-21` STRING` 자료형<br>ex2) 20201021 00:00:00 DATETIME 자료형 => 2020-10-21 `STRING` 자료형<br>ex3)2020-10-21 00:00:00 UTC TIMESTAMP 자료형 => 2020-10-21 `STRING` 자료형
 - 반환되는 데이터 유형은 ☑`STRING`이다.
+	- FORMAT_(DataType)함수는 데이터의 포맷을 자유롭게 변경할 수 있는 장점을 가지고 있지만, 복잡한 쿼리에서는 날짜데이터에서 STRING으로 변경된 데이터 필드를 다시 날짜데이터로 바꾸는 번거로움을 경험할 수 있다. 
+	- 따라서, 쿼리가 단순하지 않을 것이라 예상되면 다음의 쿼리를 대신 사용할 것을 추천한다.
+	
+	```SQL
+	EXTRACT(DATE FROM 날짜컬럼)
+	```
 
 ---
 ### [ 2. PARSE_(DataType) 함수 ]
