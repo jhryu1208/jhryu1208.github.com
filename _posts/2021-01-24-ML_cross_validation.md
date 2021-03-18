@@ -399,7 +399,7 @@ print()
 # Linear Regression (회귀)
 print("case2 : 회귀 모델 교차 검증 점수 (분할기 사용): \n", cross_val_score(reg, iris.data, iris.target, cv=kfold))
 print()
-# Linear Regression (분류) => 계층별 k-겹 교차 검증 : 데이터 셋을 계층적 방식으로 분류
+# Logistic Regression (분류) => 계층별 k-겹 교차 검증 : 데이터 셋을 계층적 방식으로 분류
 print("case3 : 분류 교차 검증 점수 (정수 사용): \n", cross_val_score(logreg, iris.data, iris.target, cv=5))
 print()
 # Linear Regression (회귀) => 데이터 셋을 나열 순서대로 분류
