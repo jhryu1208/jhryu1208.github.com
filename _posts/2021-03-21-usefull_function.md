@@ -6,8 +6,6 @@ categories: gcp
 tags: bigquery
 comments: true
 ---
-알아두면 좋은 빅쿼리 SQL 함수 숫자형/문자형 함수
-
 - 본 포스팅은 BigQuery사용 중 자주 이용하고 헷갈려하는 숫자형/문자형 함수들에 관하여 정리한 글입니다.
 - 지속적으로 기록될 예정입니다.
 
