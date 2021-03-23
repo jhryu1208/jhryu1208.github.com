@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[BigQuery] 프로젝트에서 실행한 쿼리 중 가장 비용이 높은 쿼리 찾기"
-subtitle: "[BigQuery] 프로젝트에서 실행한 쿼리 중 가장 비용이 높은 쿼리 찾기"
+title:  "[BigQuery] 알아두면 좋은 숫자형/문자형 함수"
+subtitle: "[BigQuery] 알아두면 좋은 숫자형/문자형 함수"
 categories: gcp
 tags: bigquery
 comments: true
