@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[BigQuery] 알아두면 좋은 숫자형/문자형 함수"
-subtitle: "[BigQuery] 알아두면 좋은 숫자형/문자형 함수"
+title:  "[BigQuery] search for top cost value queries in bigquery project"
+subtitle: "[BigQuery] search for top cost value queries in bigquery project"
 categories: gcp
 tags: bigquery
 comments: true
