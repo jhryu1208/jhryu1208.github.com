@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[ORACLE] 8.Multi Row Function"
-subtitle: "[ORACLE] 8.Multi Row Function"
+title:  "[ORACLE] 8.Multi Row Function And Group"
+subtitle: "[ORACLE] 8.Multi Row Function And Group"
 categories: devlang
 tags: (dbms)oracle
 mathjax: true
