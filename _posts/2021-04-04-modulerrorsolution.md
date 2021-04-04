@@ -94,7 +94,7 @@ python -m ipykernel install --user \
 --display-name "jupyter 커널에서 표시할 이름"
 ```
 
-`jupyter kernelspec list`명령어로 다시 확인해보니 제대로 추가된 것을 확인할 수 있습니다! (짝짝짝)
+`jupyter kernelspec list`명령어로 다시 확인해보니 제대로 추가된 것을 확인할 수 있습니다!  :clap:   :clap:  :clap:
 ![7](https://user-images.githubusercontent.com/53929665/113512667-a5914880-95a0-11eb-94f9-252f5d072db5.JPG)
 
 확인한 뒤에 jupyter notebook의 커널을 확인하시면 제가 등록한 conda-python3라는 가상환경이  등록된 것을 확인할 수 있습니다.
