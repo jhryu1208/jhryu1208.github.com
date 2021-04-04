@@ -70,7 +70,7 @@ jupyter notebook에서도 동일 명령어를 실행했을 때, python shell과 
 jupyter kernelspec list
 ```
 
-저는 기존에 로컬로 연결된 디렉토리 한개가 존재하네요. 따라서, python3가 설치되어있는 anaconda 가상환경 커널을 추가해줘야겠네요!
+저는 기존에 로컬로 연결된 디렉토리 한개가 존재하네요. 따라서, 위에서 확인한 python3가 설치되어있는 anaconda 가상환경 커널을 추가해줘야겠네요!
 ![25](https://user-images.githubusercontent.com/53929665/113512269-d4a6ba80-959e-11eb-9416-697a23c17a41.JPG)
 
 <br>
