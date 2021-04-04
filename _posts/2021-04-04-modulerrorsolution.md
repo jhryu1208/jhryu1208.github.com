@@ -98,8 +98,7 @@ python -m ipykernel install --user \
 ![8](https://user-images.githubusercontent.com/53929665/113512737-f86b0000-95a0-11eb-8af1-e57d150f9b17.JPG)
 
 <br>
-해당 커널로 ipynb파일을 생성하고 import에 실패하던 라이브러리가 다시 import되었습니다! 
-
+위의 과정을 진행하고난 뒤에 새로 연결 시킨 커널로 ipynb파일을 생성하고 import에 실패하던 라이브러리를 다시 import해보니 성공적으로 수행되었습니다.
 
 
 <br>
