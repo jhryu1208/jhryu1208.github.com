@@ -7,7 +7,6 @@ tags: python
 comments: true
 ---
 제가 최근까지 mac에서는 자주 경험하지 못했지만, window에서는 아래의 문제를 해결하기 위해서 시간을 많이 투자한적이 빈번하게 있었습니다. ㅠ.ㅠ...  오늘은 해당 오류가 해결되어 이에 관하여 포스팅하고자 합니다.
-
 ```python
 ModuleNotFoundError: No module named 'package name'
 ```
