@@ -6,7 +6,8 @@ categories: devlang
 tags: python
 comments: true
 ---
-jupyter notebook을 사용하는 사람들의 질문들 중에서 자주 듣는 질문이 하나있습니다. 저도 최근까지 mac에서는 자주 경험하지 못했지만, window에서는 아래의 문제를  자주 경험하였습니다.  
+제가 최근까지 mac에서는 자주 경험하지 못했지만, window에서는 아래의 문제를  자주 경험하였습니다. 
+
 ```python
 ModuleNotFoundError: No module named 'package name'
 ```
