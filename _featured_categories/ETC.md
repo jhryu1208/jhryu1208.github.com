@@ -4,7 +4,7 @@ title: Repository
 slug: repo
 menu: true
 submenu: true
-order: 7
+order: 8
 description: >
   지식 저장소
 ---
