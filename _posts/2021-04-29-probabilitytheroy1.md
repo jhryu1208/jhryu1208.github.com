@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Probability and Counting"
-subtitle: "Probability and Counting"
+title:  "[확률론 Basic] Probability and Counting"
+subtitle: "[확률론 Basic] Probability and Counting"
 categories: math
 tags: proba_theory
 comments: true
