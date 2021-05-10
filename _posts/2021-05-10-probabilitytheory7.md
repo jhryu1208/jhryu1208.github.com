@@ -24,6 +24,8 @@ mathjax: true
 
 ![확률론 기초-18](https://user-images.githubusercontent.com/53929665/117578672-5b186400-b12a-11eb-88a3-a763094ebdc2.jpg)
 
+<br>
+
 #### 베르누이 확률분포 와 확률분포 추가 메모
 - 만약 어떤 확률변수 $X$가 베르누이 분포에 의해 발생되었을 때
 	- "확률 변수 $X$가 베르누이 분포를 <br>따른다</br>"
