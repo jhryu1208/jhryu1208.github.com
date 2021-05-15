@@ -4,5 +4,5 @@ title: BigQuery
 slug: bigquery
 category: gcp
 menu: false
-order: 1
+order: 2
 ---
