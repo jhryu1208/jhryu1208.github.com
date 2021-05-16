@@ -18,7 +18,7 @@ mathjax: true
 
 <br>
 
-![확률론 기초-17](https://user-images.githubusercontent.com/53929665/117578671-5a7fcd80-b12a-11eb-8c81-74432ca101cf.jpg)
+![확률론 기초-17](https://user-images.githubusercontent.com/53929665/118400237-c074d380-b69b-11eb-8fa0-a33f4abd5bc1.jpg)
 
 <br>
 
