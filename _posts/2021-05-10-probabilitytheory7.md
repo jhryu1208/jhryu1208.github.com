@@ -12,8 +12,8 @@ mathjax: true
 - Random Variable
 
 ---
-<br>
 
+<br>
 
 ![확률론 기초-17](https://user-images.githubusercontent.com/53929665/118400237-c074d380-b69b-11eb-8fa0-a33f4abd5bc1.jpg)
 
