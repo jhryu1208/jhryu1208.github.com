@@ -14,15 +14,17 @@ mathjax: true
 ---
 <br>
 
-![확률론 기초-16](https://user-images.githubusercontent.com/53929665/117578670-594ea080-b12a-11eb-9ab1-d1e14f02cbf2.jpg)
-
-<br>
 
 ![확률론 기초-17](https://user-images.githubusercontent.com/53929665/118400237-c074d380-b69b-11eb-8fa0-a33f4abd5bc1.jpg)
 
 <br>
 
 ![확률론 기초-18](https://user-images.githubusercontent.com/53929665/117578672-5b186400-b12a-11eb-88a3-a763094ebdc2.jpg)
+
+<br>
+
+![확률론 기초-19](https://user-images.githubusercontent.com/53929665/118400323-1d708980-b69c-11eb-93e4-a4ebed08898b.jpg)
+
 
 - "$n$개의 독립적인 $Bern(p)$동안의 성공 횟수에 관한 분포"
 	- 해당 노트가 애매모호한 것 같기에 아래에 추가 설명을 참조하였다.
