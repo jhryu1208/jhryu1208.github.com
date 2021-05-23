@@ -32,11 +32,11 @@ mathjax: true
 
 <br>
 
-![확률론 기초-26](https://user-images.githubusercontent.com/53929665/118402576-77298180-b6a5-11eb-8433-b6bc6553d14b.jpg)
+![확률론 기초-26 2](https://user-images.githubusercontent.com/53929665/119265225-ddbc1b80-bc20-11eb-8387-4c706bb6afc6.jpg)
 
 <br>
 
-![확률론 기초-27](https://user-images.githubusercontent.com/53929665/118402577-77c21800-b6a5-11eb-9a87-fc244173bc5b.jpg)
+![확률론 기초-27 2](https://user-images.githubusercontent.com/53929665/119265229-df85df00-bc20-11eb-8362-631fb0dce1cc.jpg)
 
 <br>
 
