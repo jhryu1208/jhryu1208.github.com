@@ -106,13 +106,11 @@ DECLARE variable_name[, ...] [variable_type] [DEFAULT expression];
 
 ```sql
 SET name = expression;
-
 ```
 
 ```sql
 SET (variable_name_1, variable_name_2, …, variable_name_n) =
   (expression_1, expression_2, …, expression_n);
-
 ```
 
 <br>
