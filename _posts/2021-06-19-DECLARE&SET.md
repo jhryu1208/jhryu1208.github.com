@@ -48,7 +48,7 @@ DECLARE variable_name[, ...] [variable_type] [DEFAULT expression];
 
 <br>
 
-- 주의점
+- 🔔 주의점
     - 파이썬과 다르게 이전 `DECLARE` 문에서 지정한 `varibale_name` 의 이름을 중복으로 사용할 수 없다.
 
 <br>
