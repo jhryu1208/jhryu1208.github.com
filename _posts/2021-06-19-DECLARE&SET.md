@@ -102,7 +102,7 @@ DECLARE variable_name[, ...] [variable_type] [DEFAULT expression];
 
 <br>
 
-### 기본 형식
+### 기본형식
 
 ```sql
 SET name = expression;
