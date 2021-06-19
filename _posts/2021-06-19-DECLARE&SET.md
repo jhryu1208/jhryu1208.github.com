@@ -7,8 +7,12 @@ tags: bigquery
 comments: true
 ---
 ####  Contents
-- [DECLARE](#DECLARE)
-- [SET](#SET)
+- [DECLARE](#declare)
+	- 기본형식
+	- 예제
+- [SET](#set)
+	- 기본형식
+	- 예제
 
 본 포스팅은 Bigquery 공식문서의  DECLARE과 SET에 관한 내용을 정리한 내용입니다.
 
@@ -110,6 +114,8 @@ SET (variable_name_1, variable_name_2, …, variable_name_n) =
   (expression_1, expression_2, …, expression_n);
 
 ```
+
+<br>
 
 ### 예제
 
