@@ -74,12 +74,12 @@ DECLARE variable_name[, ...] [variable_type] [DEFAULT expression];
 
 #### variable_type을 지정하지 않을 때
 
-`variable_type`을 지정하지 않을 수 있다. 하지만, 이 경우에는 반드시 `DEFAULT`절을 지정해야한다. 이때, 변수 x는 expression에서 지정한 값의 data type으로 강제변환(coerce)된다. 즉, 아래의 예제에서는 변수 x는 DATE type으로 강제변환된 것을 확인할 수 있다.
+`variable_type`을 지정하지 않을 수 있다. 하지만, 이 경우에는 반드시 `DEFAULT`절을 지정해야합니다. 이때, 변수 x는 expression에서 지정한 값의 data type으로 강제변환(coerce)됩니다. 즉, 아래의 예제에서는 변수 x는 DATE type으로 강제변환된 것을 확인할 수 있습니다.
 
 
 ![Untitled 2](https://user-images.githubusercontent.com/53929665/122646161-cc4f2c00-d158-11eb-84f6-3d09d2f29973.png)
 
-따라서, varible_type을 expression의 Data type과 다르게 지정할 경우 아래와 같이 오류메시지를 확인할 수 있다.
+따라서, varible_type을 expression의 Data type과 다르게 지정할 경우 아래와 같이 오류메시지를 확인할 수 있습니다.
 
 ![Untitled 3](https://user-images.githubusercontent.com/53929665/122646162-cc4f2c00-d158-11eb-8bef-3e61382d5596.png)
 
