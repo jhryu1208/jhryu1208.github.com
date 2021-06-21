@@ -12,6 +12,11 @@ comments: true
 	- [기본형식](#기본형식)
 	- [예제](#예제)
 
+본 포스팅은 Bigquery 공식문서의 `EXECUTE IMMEDIATE`에 관한 내용을 정리한 내용입니다.
+
+<br>
+
+---
 
 ## EXECUTE IMMEDIATE
 
