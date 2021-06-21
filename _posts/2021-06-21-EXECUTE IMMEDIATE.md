@@ -22,6 +22,8 @@ comments: true
 
 `EXECUTE IMMEDIATE`절은 **Dynamic SQL**을 수행하기 위해 사용되는 방법 중 하나이다. 여기서 Dynamic SQL이란 간단하게 String 타입의 변수를 Script내에서 사용하는 SQL을 의미한다. 이를 이용하면 BigQuery SQL내에서 `DECLARE`로 선언한 변수 통해 Python이나 C++에서 변수를 사용하듯이 SQL문을 동적으로 활용할 수 있다. 
 
+<br>
+
 ### 기본형식
 
 ```sql
