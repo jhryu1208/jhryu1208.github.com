@@ -176,31 +176,31 @@ USING 1815 as year, "Emma" as name;
 
    - `CONCAT`
 
-    ```sql
-    EXECUTE IMMEDIATE CONCAT(
-    "INSERT INTO Books (title, publish_date)", 
-    "VALUES('Middlemarch', 1871)");
-    ```
+	  ```sql
+	  EXECUTE IMMEDIATE CONCAT(
+	  "INSERT INTO Books (title, publish_date)", 
+	  "VALUES('Middlemarch', 1871)");
+	  ```
 
    - `FORMAT`
 
-    ```sql
-    EXECUTE IMMEDIATE FORMAT(
-    "
-    INSERT INTO TEST_DATASET.Books (title, publish_date) 
-    VALUES('%s', 1871)
-    ", "Middlemarch") ;
-    ```
+	  ```sql
+	  EXECUTE IMMEDIATE FORMAT(
+	  "
+	  INSERT INTO TEST_DATASET.Books (title, publish_date) 
+	  VALUES('%s', 1871)
+	  ", "Middlemarch") ;
+	  ```
 
    - `IF`
 
-    ```sql
-    DECLARE x DEFAULT 1;
-    EXECUTE IMMEDIATE 
-    IF( x = 1, 
-        "INSERT INTO TEST_DATASET.Books (title, publish_date) VALUES('Hamlet', 1599)", 
-        "INSERT INTO TEST_DATASET.Books (title, publish_date) VALUES('Emma', 1815)") ;
-    ```
+	  ```sql
+	  DECLARE x DEFAULT 1;
+	  EXECUTE IMMEDIATE 
+	  IF( x = 1, 
+	      "INSERT INTO TEST_DATASET.Books (title, publish_date) VALUES('Hamlet', 1599)", 
+	      "INSERT INTO TEST_DATASET.Books (title, publish_date) VALUES('Emma', 1815)") ;
+	  ```
 
 <br>
 
