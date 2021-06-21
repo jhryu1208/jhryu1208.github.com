@@ -106,11 +106,11 @@ BigQuery 공식문서의 예제를 확인해보자. 해당 예시의 경우 `EXE
     - book_year는 정수형 타입 1922 값을 저장한다.
     - first_date는 정수형 타입 변수로 선언만 되었다.
 
-```sql
-DECLARE book_name STRING DEFAULT 'Ulysses';
-DECLARE book_year INT64 DEFAULT 1922;
-DECLARE first_date INT64;
-```
+	```sql
+	DECLARE book_name STRING DEFAULT 'Ulysses';
+	DECLARE book_year INT64 DEFAULT 1922;
+	DECLARE first_date INT64;
+	```
 
 <br>
 
