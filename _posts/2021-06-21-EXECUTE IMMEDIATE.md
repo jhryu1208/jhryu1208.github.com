@@ -34,6 +34,9 @@ identifier:
     - 작성한 Query문을 문자열 형태로 만들기 위해서  스크립트 양 끝에 `"` 혹은 `"""`을 추가해야한다. 예를 들자면 다음과 같다.
         - """SELECT * FROM my_table"""
         - "SELECT * FROM my_table"
+
+<br>
+
 - `expression`
     - **함수**, **조건식** 또는 표현식 하위 쿼리가 될 수 있다. 주로 문자열과 관련된 함수(ex. FORMAT, CAST, ... )가 자주 사용되어진다.
     - 좀 더 구체적인 예를 들자면 다음과 같다.
@@ -41,9 +44,13 @@ identifier:
         - FORMAT("query_statement1", ... )
         - IF(조건, "query_statement1", "query_statement2")
 
+<br>
+
 - `INTO`절
     - sql_expression이 수행된 뒤, `INTO`절을 이용하여 쿼리에 대한 결과를 변수 한 개 이상에 저장할 수 있다.
     - INTO절에서 저장하기 위한 변수는 반드시 `DECLARE` 로 지정해줘야만 한다.
+
+<br>
 
 - `USING`절
     - sql_expression이 수행되기 전에, `USING`절을 이용하여 한 개 이상의 identifier을 sql_expression으로 전달할 수 있다. identifier는 변수 혹은 값이 될 수 있다. (참고로 `INTO`절에 사용되어진 변수를 `USING`절에서 사용할 수 있다.)
@@ -51,22 +58,31 @@ identifier:
         - `?` : 식별자의 Index번호를 이용해 sql_expression내의 identifier의 위치를 구분하는 placeholder이다.
         - `@identifier`  :  별칭된 identifier의 name을 이용하여 식별자 위치를 구분하는 placeholder이다. (매개변수와 비슷한 기능을 한다.)
 
+
+<br>
+
 - `INTO`절과 `USING`절은  공식 문서에서 제시한 아래의 예시를 보면 확실하게 이해가 된다.
+	
+	```sql
+   EXECUTE IMMEDIATE "SELECT ? * (? + 2)" INTO y USING 1, 3;
+   ```
 
-    ```sql
-    EXECUTE IMMEDIATE "SELECT ? * (? + 2)" INTO y USING 1, 3;
-    ```
+	<br>
+	
+	 - 첫번째 `?`에는 1이 두번째 `?`에는 3이 전달된다.
+	 - 그리고 쿼리 표현식의 최종 결과값인 5는 y에 저장된다.
 
-    - 첫번째 `?`에는 1이 두번째 `?`에는 3이 전달된다.
-    - 그리고 쿼리 표현식의 최종 결과값인 5는 y에 저장된다.
+	<br>
 
-```sql
-EXECUTE IMMEDIATE "SELECT @a * (@b + 2)" INTO y USING 1 as a, 3 as b;
-```
+	```sql
+	EXECUTE IMMEDIATE "SELECT @a * (@b + 2)" INTO y USING 1 as a, 3 as b;
+	```
 
-- identifier 1과 3에는 각각 a와 b라는 name이 별칭되었다.
-- 각 a와 b에 대하여 쿼리표현식 `@a`와 `@b`에는 각각 1과 3이 전달된다.
-- 그리고 쿼리 표현식의 최종 결과값인 5는 y에 저장된다.
+	- identifier 1과 3에는 각각 a와 b라는 name이 별칭되었다.
+	- 각 a와 b에 대하여 쿼리표현식 `@a`와 `@b`에는 각각 1과 3이 전달된다.
+	- 그리고 쿼리 표현식의 최종 결과값인 5는 y에 저장된다.
+
+<br>
 
 - 🔔 주의점
     - `EXECUTE IMMEDIATE` 내에서  `EXECUTE IMMEDIATE` 를 또 사용할 수 없다. 즉 중첩되게끔 사용할 수 없다.
