@@ -74,8 +74,6 @@ identifier:
    EXECUTE IMMEDIATE "SELECT ? * (? + 2)" INTO y USING 1, 3;
    ```
 
-	<br>
-	
 	 - 첫번째 `?`에는 1이 두번째 `?`에는 3이 전달된다.
 	 - 그리고 쿼리 표현식의 최종 결과값인 5는 y에 저장된다.
 
