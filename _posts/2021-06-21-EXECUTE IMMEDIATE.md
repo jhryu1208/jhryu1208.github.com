@@ -167,7 +167,7 @@ USING 1815 as year, "Emma" as name;
 
 ####  expression("query_statement") 예시
 
-    expression을 어떻게 사용하느냐에 따라 방법이 무궁무진할 것 같다... 특히 `EXECUTE IMMEDIATE FORMAT`의 경우는 이번에 출시된 `PIVOT`과의 조합([참조](https://towardsdatascience.com/how-to-use-dynamic-sql-in-bigquery-8c04dcc0f0de))했을 때 감탄만 나왔다🙊.  (*`EXECUTE IMMEDIATE FORMAT`와 같이 사용했을 때 유용한 함수들에 관하여 알아낼 경우 지속적으로 업데이트할 예정이다.)
+ expression을 어떻게 사용하느냐에 따라 방법이 무궁무진할 것 같다... 특히 `EXECUTE IMMEDIATE FORMAT`의 경우는 이번에 출시된 `PIVOT`과의 조합([참조](https://towardsdatascience.com/how-to-use-dynamic-sql-in-bigquery-8c04dcc0f0de))했을 때 감탄만 나왔다🙊.  (*`EXECUTE IMMEDIATE FORMAT`와 같이 사용했을 때 유용한 함수들에 관하여 알아낼 경우 지속적으로 업데이트할 예정이다.)
 
    - `CONCAT`
 
