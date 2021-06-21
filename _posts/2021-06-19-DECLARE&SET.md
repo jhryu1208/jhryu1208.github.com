@@ -14,7 +14,7 @@ comments: true
 	- 기본형식
 	- 예제
 
-본 포스팅은 Bigquery 공식문서의  DECLARE과 SET에 관한 내용을 정리한 내용입니다.
+본 포스팅은 Bigquery 공식문서의  `DECLARE`과 `SET`에 관한 내용을 정리한 내용입니다.
 
 <br>
 
