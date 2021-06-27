@@ -31,7 +31,7 @@ comments: true
 
 <br>
 
-### 기본형식
+### <span style="color:blue">기본형식</span>
 
 ```sql
 LOOP
@@ -47,7 +47,7 @@ END LOOP;
 
 <br>
 
-### 예제
+### <span style="color:blue">예제</span>
 
 #### `LEAVE` 와 `IF ~ THEN`을 이용한 조건을 갖는 `LOOP`
 
@@ -113,13 +113,13 @@ FROM UNNEST(y) AS result
 
 ---
 
-## WHILE
+## <span style="color:blue">WHILE</span>
 
 `WHILE`은 앞에서 언급했듯이 `LOOP` + `IF`이다. 이를 제외한 `WHILE`에 관한 내용은 `LOOP`와 비슷하다. 그러면 긴 말없이 바로 기본 형식부터 알아보자.🏃‍♂️🏃‍♂️
 
 <br>
 
-### 기본형식
+### <span style="color:blue">기본형식</span>
 
 ```sql
 WHILE boolean_expression DO
@@ -135,7 +135,7 @@ END WHILE;
 
 <br>
 
-### 예제
+### <span style="color:blue">예제</span>
 
 다음 쿼리는 `WHILE`을 이용해서 games_post_wide테이블을 10번 출력하는 쿼리이다. `LOOP`와 비교했을 때 유일하게 다른 점은 역시 boolean_expression이 포함된다는 점이다. 아래에서 boolean_expression은 x < 10이며, 이 조건을 불만족(즉, FALSE)할 때까지 반복 처리한다.
 
