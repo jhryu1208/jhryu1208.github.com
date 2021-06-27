@@ -1,4 +1,15 @@
-﻿####  Contents
+---
+layout: post
+title:  "[BigQuery] LOOP & WHILE"
+subtitle: "[BigQuery] LOOP & WHILE"
+categories: gcp
+tags: bigquery
+comments: true
+---
+
+
+
+####  Contents
 - [LOOP](#LOOP)
 	- 기본형식
 	- 예제
