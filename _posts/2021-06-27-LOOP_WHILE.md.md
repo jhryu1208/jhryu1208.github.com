@@ -10,10 +10,10 @@ comments: true
 
 
 ####  Contents
-- [LOOP](#LOOP)
+- [LOOP](#loop)
 	- 기본형식
 	- 예제
-- [WHILE](#WHILE)
+- [WHILE](#while)
 	- 기본형식
 	- 예제
 
