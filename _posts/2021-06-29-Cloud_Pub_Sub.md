@@ -7,7 +7,7 @@ tags: g-basic
 comments: true
 ---
 #### Contents
-- [Cloud Pub/Sub이란?](#cloud-pubsub이란?)
+- [Cloud Pub/Sub이란?](#cloud-pubsub이란)
 - [Pub/Sub의 구성](#pubsub의-구성)
 - [Pub/Sub 메시지 흐름](#pubsub-메시지-흐름)
 - [Pull(가져오기)/Push(내보내기) 구독 방법](#pullpush-구독-방법)
