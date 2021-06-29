@@ -7,12 +7,12 @@ tags: g-basic
 comments: true
 ---
 #### Contents
-- [Cloud Pub/Sub이란?](#cloud-pub/sub이란?)
-- [Pub/Sub의 구성](#pub/sub의-구성)
-- [Pub/Sub 메시지 흐름](#pub/sub-메시지-흐름)
-- [Pull(가져오기)/Push(내보내기) 구독 방법](#pull/push-구독-방법)
+- [Cloud Pub/Sub이란?](#cloud-pubsub이란?)
+- [Pub/Sub의 구성](#pubsub의-구성)
+- [Pub/Sub 메시지 흐름](#pubsub-메시지-흐름)
+- [Pull(가져오기)/Push(내보내기) 구독 방법](#pullpush-구독-방법)
 - [메시지 서비스의 성능 판단](#메시지-서비스의-성능-판단)
-- [Pub/Sub 통합](#pub/sub-통합)
+- [Pub/Sub 통합](#pubsub-통합)
 
 본 포스팅은 GCP : Pub/Sub에 관하여 정리하였습니다.
 
