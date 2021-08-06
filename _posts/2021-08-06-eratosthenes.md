@@ -88,7 +88,7 @@ def prime_list(n):
         # i가 소수인 경우 / 2(첫 번째 특정 수)부터 먼저 들어온다.
         if sieve[i] == True: 
             # 리스트의 인덱스가 특정 수 i의 배수와 동일할 경우 
-						# 해당 인덱스의 값을 False로 변환한다.
+	    # 해당 인덱스의 값을 False로 변환한다.
             # 2의 경우, sieve[2], sieve[4], ...의 값들을 False로 변환한다.
             for j in range(i+i, n, i): 
                 sieve[j] = False 
