@@ -165,3 +165,7 @@
   <link rel="stylesheet" href="{{ icons_url | absolute_url }}">
 </noscript>
 <!--<![endif]-->
+
+{% if page.mathjax %}
+  {% include mathjax.html %}
+{% endif %}
