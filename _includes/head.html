@@ -28,11 +28,6 @@
 <meta name="theme-color" content="#ffffff">
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"></script>
-
-
 {% for tag_slug in page.tags %}
   {% unless tag.header-img %}
     {% assign tag = site.featured_tags | where: "slug", tag_slug | first %}
