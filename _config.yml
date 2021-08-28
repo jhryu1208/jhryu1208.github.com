@@ -137,11 +137,5 @@ tipue_search:
     files: [search.html, index.html, tags.html]
     categories: []
     tags: []
-
-
-# Math equation
-#markdown: kramdown
-#highlighter: rouge
-#lsi: false
-#excerpt_separator: "\n\n"
-#incremental: false
+    
+    
