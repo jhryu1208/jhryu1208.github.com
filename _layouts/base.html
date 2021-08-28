@@ -27,6 +27,10 @@ layout: compress
 
 <head>
   {% include head.html %}
+  <!--mathjax-->
+  {% if page.mathjax %}
+    {% include mathjax.html %}
+  {% endif %}
 </head>
 
 <body>
