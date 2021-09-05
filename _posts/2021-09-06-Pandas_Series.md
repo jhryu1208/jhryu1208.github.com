@@ -40,7 +40,7 @@ mathjax: true
 
 ```bash
 # Series의 대소문자에 유의하자!
-pandas.Series( [딕셔너리 or 리스트], index = [인덱스 이름 리스트])  
+pandas.Series( [딕셔너리 or 리스트], index = [인덱스 라벨 리스트])  
 ```
 
 <br>
