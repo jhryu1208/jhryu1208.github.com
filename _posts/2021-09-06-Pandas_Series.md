@@ -120,6 +120,8 @@ dtype: int64
 - `values` : 데이터값 배열 선택
 - *`name` : 시리즈에 이름을 지정한다.
 
+<br>
+
 이를 이용하여,  위에서 생성된 dict_to_sr과 list_to_sr의 인덱스와 값에 접근할 경우 다음과 같다.
 
 ```python
