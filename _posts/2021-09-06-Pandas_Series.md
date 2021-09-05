@@ -67,6 +67,8 @@ dtype: int64
 <class 'pandas.core.series.Series'>
 ```
 
+<br>
+
 위와 달리 별도의 index리스트를 함수 내부에서 지정할 경우 다음과 같이 정수형 위치 인덱스가 아닌  `인덱스 라벨(index label)`이 지정된 것을 확인할 수 있다.
 
 ```python
