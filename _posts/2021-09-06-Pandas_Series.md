@@ -134,7 +134,7 @@ print(f'index : {list_sr_index}', '\n',
       f'value : {list_sr_value }', '\n',
       f'type(value) : {type(list_sr_value)}')
 
-print()
+print() # 개행
 
 # 딕셔너리
 dict_sr_index = dict_to_sr.index
@@ -228,6 +228,8 @@ B    2
 dtype: int64
 ```
 
+<br>
+
 ```python
 exam_sr = pd.Series({'A':1, 'B':2, 'C':3})
 
@@ -278,7 +280,7 @@ print(f'n개의 값만 수정 : {exam_sr.values}')
 기본 : [10 20  3]
 한 개의 값만 수정 : [100   2   3]
 n개의 값만 수정 : [10 20  3]
-n개의 값만 수정 : [10 20 30]
+슬라이싱을 이용한 수정 : [10 20 30]
 ```
 
 <br>
