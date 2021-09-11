@@ -112,7 +112,7 @@ dtype: int64
 
 ### <span style="color:navy">2-1) Index와 Values<span>
 
-`Series`객체 다음의 속성들을 통해서 인덱스배열과 데이터 값 배열만을 따로 선택할 수 있다. 
+`Series`객체는 다음의 속성들을 통해서 인덱스배열과 데이터 값 배열만을 따로 선택할 수 있다. 
 
 - `index` : 인덱스 배열 선택
     - Series객체의 인덱스가 정수형 위치 인덱스의 경우,  <br>인덱스 범위인 `RangeIndex` 객체를 반환한다.
