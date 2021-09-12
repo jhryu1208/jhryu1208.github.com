@@ -8,7 +8,7 @@ comments: true
 mathjax: true
 ---
 #### Contents
-- [Index / columns / values 접근](#index-columns-values-접근)
+- [Index / columns / values 접근](#indexcolumnsvalues-접근)
 - [행 인덱스와 열 이름 수정](#행-인덱스와-열-이름-수정)
 - [행](#행)
 	- [행 선택](#선택)
