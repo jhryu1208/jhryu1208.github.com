@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title:  "[Pandas] DataFrame : Create1"
 subtitle: "[Pandas] DataFrame : Create1"
