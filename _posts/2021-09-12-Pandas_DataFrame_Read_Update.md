@@ -1,4 +1,13 @@
-﻿#### Contents
+---
+layout: post
+title:  "[Pandas] DataFrame : Create Part2"
+subtitle: "[Pandas] DataFrame : Create Part2"
+categories: data
+tags: pandas
+comments: true
+mathjax: true
+---
+#### Contents
 - [Index / columns / values 접근](#index-columns-values-접근)
 - [행 인덱스와 열 이름 수정](#행-인덱스와-열-이름-수정)
 - [행](#행)
