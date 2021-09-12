@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Pandas] DataFrame : Create1"
-subtitle: "[Pandas] DataFrame : Create1"
+title:  "[Pandas] DataFrame : Create Part1"
+subtitle: "[Pandas] DataFrame : Create Part1"
 categories: data
 tags: pandas
 comments: true
