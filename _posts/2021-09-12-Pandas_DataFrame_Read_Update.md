@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Pandas] DataFrame : Create Part2"
-subtitle: "[Pandas] DataFrame : Create Part2"
+title:  "[Pandas] DataFrame : Read&Update 행/열part"
+subtitle: "[Pandas] DataFrame : Read&Update 행/열part"
 categories: data
 tags: pandas
 comments: true
