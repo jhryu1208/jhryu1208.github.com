@@ -1,4 +1,13 @@
-﻿#### Contents
+﻿---
+layout: post
+title:  "[Pandas] DataFrame : Create1"
+subtitle: "[Pandas] DataFrame : Create1"
+categories: data
+tags: pandas
+comments: true
+mathjax: true
+---
+ #### Contents
 - [DataFrame](#dataframe)
 - [Series To DataFrame](#series-to-dataframe)
 - [Dict To DataFrame](#dict-to-dataframe)
