@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Pandas] Series"
-subtitle: "[Pandas] Series"
+title:  "[Pandas] Series (CRUD)"
+subtitle: "[Pandas] Series (CRUD)"
 categories: data
 tags: pandas
 comments: true
