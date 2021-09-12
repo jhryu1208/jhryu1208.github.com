@@ -119,7 +119,7 @@ print('\n[ 특정 행 인덱스 수정 ]\n', df_copy3)
 
 df_copy4 = df.copy()
 df_copy4.rename(columns = {'a0':'A', 'a2':'C'}, 
-								index = {'c0':'A', 'c2':'C'}, inplace = True)
+		index = {'c0':'A', 'c2':'C'}, inplace = True)
 print('\n[ 동시 수정 ]\n', df_copy4)
 ```
 
@@ -419,9 +419,8 @@ Name: a0, dtype: int64
 
 ```python
 # 딕셔너리 데이터
-df = pd.DataFrame({ 'a0' : [1, 2, 3, 4], 'a1' : [5, 6, 7, 8], 
-                    'a2' : [9, 10, 11, 12], 'a3' : [13, 14, 15, 16]}, 
-										index = ['c0', 'c1', 'c2', 'c3'])
+df = pd.DataFrame({ 'a0' : [1, 2, 3, 4], 'a1' : [5, 6, 7, 8], 'a2' : [9, 10, 11, 12], 'a3' : [13, 14, 15, 16]}, 
+		    index = ['c0', 'c1', 'c2', 'c3'])
 
 print('[ DataFrame ]\n', df) # 다른 예제와는 다른 4x4데이터프레임
 
