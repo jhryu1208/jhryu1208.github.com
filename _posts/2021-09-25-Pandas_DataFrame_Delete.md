@@ -1,4 +1,13 @@
-﻿#### Contents
+---
+layout: post
+title:  "[Pandas] DataFrame : Delete"
+subtitle: "[Pandas] DataFrame : Delete"
+categories: data
+tags: pandas
+comments: true
+mathjax: true
+---
+#### Contents
 - [행/열 삭제: drop](#행열-삭제-drop)
 
 본 포스팅은 Pandas의 DataFrame : Delete부분 중 데이터프레임의 행/열 삭제에 관하여 정리하였습니다.
