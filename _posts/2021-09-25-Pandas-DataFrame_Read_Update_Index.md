@@ -8,9 +8,9 @@ comments: true
 mathjax: true
 ---
 #### Contents
-- [열↔인덱스 : set_index, reset_index](#열↔인덱스--setindex-resetindex)
-- [인덱스 재배열 : reindex](#인덱스-재배열--reindex)
-- [인덱스 정렬 : sort_index](#인덱스-정렬--sortindex)
+- [열↔인덱스: set_index, reset_index](#열↔인덱스-setindex-reset_index)
+- [인덱스 재배열: reindex](#인덱스-재배열-reindex)
+- [인덱스 정렬: sort_index](#인덱스-정렬-sort_index)
 - [데이터프레임 Transpose](#데이터프레임-Transpose)
 
 본 포스팅은 Pandas의 DataFrame : Read&Update부분 중 데이터프레임의 인덱스 수정 및 정렬과 치환에 관하여 중점적으로 정리하였습니다.
@@ -19,7 +19,7 @@ mathjax: true
 
 ---
 
-##  <span style="color:navy">열 ↔인덱스 : set_index, reset_index<span>
+##  <span style="color:navy">열↔인덱스: set_index, reset_index<span>
 
 `set_index` 메소드를 이용하면 특정 열의 값을 새로운 인덱스 라벨로 지정할 수 있다. 더불어, 해당 메소드는 변경된 새로운 값을 반환하며, `inplace=True` 로 지정할 경우에는 원본 객체를 변경시킨다.
 
@@ -94,7 +94,7 @@ RangeIndex(start=0, stop=3, step=1)
 
 <br>
 
-##  <span style="color:navy">인덱스 재배열 : reindex<span>
+##  <span style="color:navy">인덱스 재배열: reindex<span>
 
 `reindex`메소드를 이용하면, <u>행 인덱스를 새로운 배열로 재배치</u>할 수 있다.  원본 데이터프레임에 없던 새로운 인덱스 행을 추가시킬 경우 해당 행의 데이터 값은 `NaN`으로 기입된다. <br> 이는 `fill_value` 옵션을 추가하여 `NaN`이 아닌 유효한 다른 값으로 대체할 수 있다.  기본 형태는 다음과 같다.
 
@@ -157,7 +157,7 @@ new c3  999  999  999
 
 <br>
 
-##  <span style="color:navy">인덱스 정렬 : sort_index<span>
+##  <span style="color:navy">인덱스 정렬: sort_index<span>
 
 데이터프레임은 `sort_index`메소드를 통해 행 인덱스를 기준으로 데이터프레임의 행을 정렬시킬 수 있다. 해당 메소드는 기본적으로 오름차순 정렬 결과를 반환하며, `asceding`옵션을 `False`로 지정할 경우 내림차순 정렬 결과를 반환한다.  <br>
 
