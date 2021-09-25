@@ -99,7 +99,7 @@ RangeIndex(start=0, stop=3, step=1)
 `reindex`메소드를 이용하면, <u>행 인덱스를 새로운 배열로 재배치</u>할 수 있다.  원본 데이터프레임에 없던 새로운 인덱스 행을 추가시킬 경우 해당 행의 데이터 값은 `NaN`으로 기입된다. <br> 이는 `fill_value` 옵션을 추가하여 `NaN`이 아닌 유효한 다른 값으로 대체할 수 있다.  기본 형태는 다음과 같다.
 
 ```python
-DataFrame.reindex(새로운 인덱스 리스트, fill_value = ...)
+DataFrame.reindex(새로운 인덱스 배열, fill_value = ...)
 ```
 
 ```python
