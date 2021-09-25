@@ -19,7 +19,7 @@ mathjax: true
 
 ---
 
-##  <span style="color:navy"> 열 ↔인덱스 : set_index, reset_index<span>
+##  <span style="color:navy">열 ↔인덱스 : set_index, reset_index<span>
 
 `set_index` 메소드를 이용하면 특정 열의 값을 새로운 인덱스 라벨로 지정할 수 있다. 더불어, 해당 메소드는 변경된 새로운 값을 반환하며, `inplace=True` 로 지정할 경우에는 원본 객체를 변경시킨다.
 
@@ -94,7 +94,7 @@ RangeIndex(start=0, stop=3, step=1)
 
 <br>
 
-##  <span style="color:navy"> 인덱스 재배열 : reindex<span>
+##  <span style="color:navy">인덱스 재배열 : reindex<span>
 
 `reindex`메소드를 이용하면, <u>행 인덱스를 새로운 배열로 재배치</u>할 수 있다.  원본 데이터프레임에 없던 새로운 인덱스 행을 추가시킬 경우 해당 행의 데이터 값은 `NaN`으로 기입된다. <br> 이는 `fill_value` 옵션을 추가하여 `NaN`이 아닌 유효한 다른 값으로 대체할 수 있다.  기본 형태는 다음과 같다.
 
@@ -104,8 +104,8 @@ DataFrame.reindex(새로운 인덱스 리스트, fill_value = ...)
 
 ```python
 df = pd.DataFrame({'a0':[1, 2, 3], 
-				   'a1':[4, 5, 6], 
-				   'a2':[7, 8, 9]}, index = ['c0', 'c1', 'c2'])
+		   'a1':[4, 5, 6], 
+		   'a2':[7, 8, 9]}, index = ['c0', 'c1', 'c2'])
 print('[ 재배치 이전 ]\n', df)
 
 df1 = df.copy().reindex(['c2', 'c2', 'c0'])
@@ -157,7 +157,7 @@ new c3  999  999  999
 
 <br>
 
-##  <span style="color:navy"> 인덱스 정렬 : sort_index<span>
+##  <span style="color:navy">인덱스 정렬 : sort_index<span>
 
 데이터프레임은 `sort_index`메소드를 통해 행 인덱스를 기준으로 데이터프레임의 행을 정렬시킬 수 있다. 해당 메소드는 기본적으로 오름차순 정렬 결과를 반환하며, `asceding`옵션을 `False`로 지정할 경우 내림차순 정렬 결과를 반환한다.  <br>
 
@@ -168,8 +168,9 @@ DataFrame.sort_index(ascending = ...)
 ```
 
 ```python
-df = pd.DataFrame({'a0':[1, 2, 3], 'a1':[4, 5, 6], 'a2':[7, 8, 9]}, 
-									 index = ['c0', 'c1', 'c2'])
+df = pd.DataFrame({'a0':[1, 2, 3], 
+		   'a1':[4, 5, 6], 
+	           'a2':[7, 8, 9]}, index = ['c0', 'c1', 'c2'])
 
 df = df.iloc[::-1]
 print('[ 정렬 이전 ]\n', df)
@@ -203,7 +204,7 @@ c0   1   4   7
 
 <br>
 
-##  <span style="color:navy">  데이터프레임 Transpose<span>
+##  <span style="color:navy">데이터프레임 Transpose<span>
 
 pandas의 데이터프레임 객체의 행과 열은 `transpose` 메소드를 이용해서 간단하게 치환시킬 수 있다.  해당 메소드와 동일하게 `T` 클래스 속성을 이용해서도 데이터프레임을 치환시킬 수 있다.
 
@@ -217,8 +218,9 @@ DataFrame.T
 아래의 예제에서는 총 연속 치환시켰기 때문에 기존 데이터프레임과 동일한 데이터프레임을 반환하는 것을 확인할 수 있다.  더불어, 치환 메소드의 경우 원본의 값을 수정할 수 없기 때문에 새로운 변수를 선언해줘서 값을 넣어주어야한다.
 
 ```python
-df = pd.DataFrame({'col0':[1, 2, 3], 'col1':[4, 5, 6], 'col2':[7, 8, 9]}, 
-									 index = ['index0', 'index1', 'index2'])
+df = pd.DataFrame({'col0':[1, 2, 3], 
+		   'col1':[4, 5, 6], 
+	           'col2':[7, 8, 9]}, index = ['index0', 'index1', 'index2'])
 print('[ 치환 전 ]\n', df)
 
 first_trans = df.transpose()
