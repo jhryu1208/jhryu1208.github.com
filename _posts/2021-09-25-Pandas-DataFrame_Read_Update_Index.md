@@ -170,7 +170,7 @@ DataFrame.sort_index(ascending = ...)
 ```python
 df = pd.DataFrame({'a0':[1, 2, 3], 
 		   'a1':[4, 5, 6], 
-	           'a2':[7, 8, 9]}, index = ['c0', 'c1', 'c2'])
+	          'a2':[7, 8, 9]}, index = ['c0', 'c1', 'c2'])
 
 df = df.iloc[::-1]
 print('[ 정렬 이전 ]\n', df)
@@ -220,7 +220,7 @@ DataFrame.T
 ```python
 df = pd.DataFrame({'col0':[1, 2, 3], 
 		   'col1':[4, 5, 6], 
-	           'col2':[7, 8, 9]}, index = ['index0', 'index1', 'index2'])
+	          'col2':[7, 8, 9]}, index = ['index0', 'index1', 'index2'])
 print('[ 치환 전 ]\n', df)
 
 first_trans = df.transpose()
