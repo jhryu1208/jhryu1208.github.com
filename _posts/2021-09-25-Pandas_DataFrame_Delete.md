@@ -29,11 +29,11 @@ mathjax: true
 ```python
 # 행을 지울 경우
 DataFrame.drop( 단일 행 인덱스 이름 or [행이름1, 행이름2, ...], 
-				axis = 0, inplace = ... )
+		axis = 0, inplace = ... )
 				
 # 열을 지울 경우
 DataFrame.drop( 단일 열 이름 or [열이름1, 열이름2, ...], 
-				axis = 1, inplace = ... )
+		axis = 1, inplace = ... )
 ```
 
 ```python
