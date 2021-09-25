@@ -8,7 +8,7 @@ comments: true
 mathjax: true
 ---
 #### Contents
-- [열↔인덱스: set_index, reset_index](#열↔인덱스-set_index-reset_index)
+- [열↔인덱스: set_index, reset_index](#열인덱스-set_index-reset_index)
 - [인덱스 재배열: reindex](#인덱스-재배열-reindex)
 - [인덱스 정렬: sort_index](#인덱스-정렬-sort_index)
 - [데이터프레임 Transpose](#데이터프레임-Transpose)
