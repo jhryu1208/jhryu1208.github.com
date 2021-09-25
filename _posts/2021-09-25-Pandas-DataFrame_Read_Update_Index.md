@@ -1,4 +1,13 @@
-﻿#### Contents
+---
+layout: post
+title:  "[Pandas] DataFrame : Read&Update 인덱스/치환part"
+subtitle: "[Pandas] DataFrame : Read&Update 인덱스/치환part"
+categories: data
+tags: pandas
+comments: true
+mathjax: true
+---
+#### Contents
 - [열 ↔인덱스 : set_index, reset_index](#열-인덱스-setindex-resetindex)
 - [인덱스 재배열 : reindex](#인덱스-재배열-reindex)
 - [인덱스 정렬 : sort_index](#인덱스-정렬-sortindex)
