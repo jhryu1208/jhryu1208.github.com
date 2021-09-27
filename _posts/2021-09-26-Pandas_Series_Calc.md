@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title:  "[Pandas] Series 연산"
 subtitle: "[Pandas] Series 연산"
