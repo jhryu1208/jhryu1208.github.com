@@ -11,7 +11,7 @@ mathjax: true
 - [누락 데이터 확인](#누락-데이터-확인)
 	- [1-1) info 메소드](#1-1-info-메소드)
 	- [1-2) value_counts 메소드](#1-2-value_counts-메소드)
-	- [1-3) isnull, notnull 메소드](#isnull-notnull-메소드)
+	- [1-3) isnull, notnull 메소드](#1-3-isnull-notnull-메소드)
 - [누락 데이터 처리](#누락-데이터-처리)
 	- [2-1) 제거 : dropna](#2-1-제거--dropna)
 	- [2-2) 치환 : fillna](#2-2-치환--fillna)
