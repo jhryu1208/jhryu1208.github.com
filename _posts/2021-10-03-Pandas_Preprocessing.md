@@ -386,3 +386,4 @@ print('\n[ ⇦ : method=\'bfill\' & axis=0 ]\n', df_fillna4)
 
 - [pandas fillna docs](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.fillna.html)
 - [pandas dropna docs](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dropna.html)
+- 오승환, 『파이썬 머신러닝 판다스 데이터 분석』, 정보문화사 (2019)
