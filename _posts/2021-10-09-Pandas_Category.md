@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Pandas] 데이터전처리 :중복 데이터 처리"
-subtitle: "[Pandas] 데이터전처리 : 중복 데이터 처리"
+title:  "[Pandas] 데이터전처리 : 범주형 데이터 처리"
+subtitle: "[Pandas] 데이터전처리 : 범주형 데이터 처리"
 categories: data
 tags: pandas
 comments: true
@@ -11,7 +11,7 @@ mathjax: true
 - [구간 분할 : histogram](#구간-분할--histogram)
 - [구간 별로 카테고리 지정 : cut](#구간-별로-카테고리-지정--cut)
 
-본 포스팅은 카테고리 데이터의 처리에 관하여 정리하였습니다.
+본 포스팅은 `pandas`의 `cut`메소드를 이용한 데이터 카테고리화에 관하여 정리하였습니다.
 
 <br>
 
