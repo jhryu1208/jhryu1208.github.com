@@ -88,7 +88,10 @@ pandas.cut(	x = ..., bins = ..., labels = ...,
 - `labels`
     - 각 구간에 대해 구체적인 라벨 명의 리스트를 입력받는다. (필수 입력 옵션)
     - `bins`옵션과 반드시 동일한 길이의 값을 받아야 한다.
-- `include_lowest` : 첫번째 구간의 반개구간을 폐구간으로 변경시킨다.<br>( 첫번째 구간 : `(x, y]` → `[x, y]` )
+- `include_lowest` 
+    - `True`일 경우, 첫번째 구간의 반개구간을 폐구간으로 변경시킨다.
+    - 첫번째 구간 : `(x, y]` → `[x, y]`
+    - `False`는 default이다.
 - `right`
     - `True` : `(x, y]`,  default 옵션이다.
     - `False` :  `[x, y)`
