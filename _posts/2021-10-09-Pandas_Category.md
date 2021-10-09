@@ -78,9 +78,9 @@ print(f'구간 범위 : {bnd_list}')
 (아래에 제시된 옵션외에도 다른 옵션들이 있으며, 참조링크를 통해 확인할 수 있다. 하지만, 아래에 제시된 옵션외에는 자주 사용될 것 같지는 않다.)
 
 ```python
-pandas.cut( x = ..., bins = ..., labels = ..., 
-					  include_lowest = True|False , 
-					  right = True|False )
+pandas.cut(	x = ..., bins = ..., labels = ..., 
+		include_lowest = True|False , 
+		right = True|False )
 ```
 
 - `x` : 구간 분할을 수행하고자하는 데이터 배열 대상을 입력받는다. (필수 입력 옵션)
