@@ -153,9 +153,9 @@ d3   3   5  False
 다음은 `drop_duplicates`메소드의 기본 형식이다.
 
 ```python
-DataFrame.drop_duplicates(  keep = 'first'|'last'|False,
-							subset = ..., 
-							inplace= True|False )
+DataFrame.drop_duplicates(  	keep = 'first'|'last'|False,
+				subset = ..., 
+				inplace= True|False )
 ```
 
 - `keep` : `duplicated`메소드의 `keep`옵션과 동일한다.
@@ -253,9 +253,9 @@ d3    c  3.0  5.0           False
 다음은 언급한 옵션을 모두 사용했을 때의 예제이다.
 
 ```python
-df.drop_duplicates( subset = ['c2', 'c3'], 
-					keep = False, 
-					inplace = True)
+df.drop_duplicates(	subset = ['c2', 'c3'], 
+			keep = False, 
+			inplace = True	)
 
 print('\n[ 특정 열 기준 (2개 이상) &  keep=\'last\' ]\n', df)
 ```
