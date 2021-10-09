@@ -90,7 +90,7 @@ pandas.cut(	x = ..., bins = ..., labels = ...,
     - `bins`옵션과 반드시 동일한 길이의 값을 받아야 한다.
 - `include_lowest` 
     - `True`일 경우, 첫번째 구간의 반개구간을 폐구간으로 변경시킨다.
-    - 첫번째 구간 : `(x, y]` → `[x, y]`
+    - 첫번째 구간 : `(x, y]` → `[x, y]`, left-inclusive
     - `False`는 default이다.
 - `right`
     - `True` : `(x, y]`,  default 옵션이다.
