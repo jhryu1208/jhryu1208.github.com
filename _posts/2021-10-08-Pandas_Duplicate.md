@@ -164,7 +164,7 @@ DataFrame.drop_duplicates(  	keep = 'first'|'last'|False,
 
 <br>
 
-다음은 `drop_duplicates`메소드의 `keep`옵션에 관한 예제이다.  `duplicated`메소드와 옵션의 사용법이 동일하기 때문에 `duplicated`메소드의 반환결과가 `True`인 값들이 `drop_duplicated`를 통해 제거되어 NaN으로 표시되는 것을 확인할 수 있다. 더불어, keep=False로 지정할 경우 중복된 레코드 중 하나를 제거하는 것이 아닌 모두 제거하는 것을 확인할 수 있다.
+다음은 `drop_duplicates`메소드의 `keep`옵션에 관한 예제이다.  `duplicated`메소드와 옵션의 사용법이 동일하기 때문에 `duplicated`메소드의 반환결과가 `True`인 값들이 `drop_duplicated`를 통해 제거되어 NaN으로 표시되는 것을 확인할 수 있다.<br>더불어, keep=False로 지정할 경우 중복된 레코드 중 하나를 제거하는 것이 아닌 모두 제거하는 것을 확인할 수 있다.
 
 ```python
 ## 중복 데이터 제거 first (전체 컬럼 기준)
