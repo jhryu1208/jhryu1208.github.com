@@ -8,8 +8,8 @@ comments: true
 mathjax: true
 ---
 #### Contents
-- [중복 데이터 확인](#중복-데이터-확인)
-- [중복 데이터 처리](#중복-데이터-처리)
+- [중복 데이터 확인 : duplicated](#중복-데이터-확인--duplicated)
+- [중복 데이터 처리 : drop_duplicates](#중복-데이터-처리--drop_duplicates)
 
 본 포스팅은 중복 데이터의 전처리에 관하여 정리하였습니다.
 
@@ -17,7 +17,7 @@ mathjax: true
 
 ---
 
-## <span style="color:navy">중복 데이터 확인<span>
+## <span style="color:navy">중복 데이터 확인 : duplicated<span>
 
 중복 데이터의 경우 `duplicated`메소드를 이용하여 확인할 수 있다. 하지만 해당 메소드를 이용해서 데이터프레임의 중복을 처리할 수는 없다. `duplicated`메소드는 <u>boolean Series를 반환</u>하며, <u>중복되는 행의 경우 </u>`True`, <u>중복되지 않는 행에 대해서는 </u>`False`를 반환한다. <br>
 
@@ -146,7 +146,7 @@ d3   3   5  False
 
 <br>
 
-## <span style="color:navy">중복 데이터 처리<span>
+## <span style="color:navy">중복 데이터 처리 : drop_duplicates<span>
 
 중복 데이터의 경우 `duplicated`메소드를 이용하여 해당 반환값이 False인 값만 필터링해도 괜찮지만, `drop_duplicates`메소드를 이용하면 두 과정을 한꺼번에 처리할 수 있다.  <br>
 
