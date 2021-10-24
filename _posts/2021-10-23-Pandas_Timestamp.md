@@ -65,11 +65,11 @@ None
 
 ```python
 pd.to_datetime(
-								arg,
-								format=..., infer_datetime_format=True|False, utc=True|False,
-								errors= 'raise'|'coerce'|'ignore', 
-								dayfirst=True|False, yearfirst=True|False
-							)
+		arg,
+		format=..., infer_datetime_format=True|False, utc=True|False,
+		errors= 'raise'|'coerce'|'ignore', 
+		dayfirst=True|False, yearfirst=True|False
+		)
 ```
 
 - `arg` :  `datetime64`형식으로 변환시키려는 `object`형식의 대상
@@ -123,7 +123,7 @@ print('변형 후 타입 :', df_ex2['ex2'].dtypes)
 ```
 
 ```
-							origin_date1 origin_date2                 ex1        ex2
+		origin_date1 origin_date2                 ex1        ex2
 0  2015-10-02 21:12:01 UTC   02/10/2015 2015-10-02 21:12:01 2015-10-02
 1  2014-10-26 15:12:00 UTC   26/10/2014 2014-10-26 15:12:00 2014-10-26
 2  2014-10-26 15:12:00 UTC   26/10/2014 2014-10-26 15:12:00 2014-10-26
@@ -160,7 +160,7 @@ print('변형 후 타입 :', df_ex3['ex2'].dtypes)
 ```
 
 ```
-							origin_date1 origin_date2                       ex1        ex2
+		origin_date1 origin_date2                       ex1        ex2
 0  2015-10-02 21:12:01 UTC   02/10/2015 2015-10-02 21:12:01+00:00 2015-02-10
 1  2014-10-26 15:12:00 UTC   26/10/2014 2014-10-26 15:12:00+00:00 2014-10-26
 2  2014-10-26 15:12:00 UTC   26/10/2014 2014-10-26 15:12:00+00:00 2014-10-26
@@ -340,7 +340,7 @@ print('변형 후 타입 (naive to kst) :', df_ex4['ex2'].dtypes)
 ```
 
 ```
-									ex1                       ex2
+		ex1                       ex2
 0 2015-10-02 21:12:01 2015-10-02 21:12:01+09:00
 1 2014-10-26 15:12:00 2014-10-26 15:12:00+09:00
 2 2014-10-26 15:12:00 2014-10-26 15:12:00+09:00
@@ -403,10 +403,10 @@ print('변형 후 타입 (kst to None) :', df_ex4['ex5'].dtypes) # KST -> None
 
 ```
 pd.data_range(
-								start=..., end=...,
-								freq=..., periods=...,
-								tz=...
-						 )
+		start=..., end=...,
+		freq=..., periods=...,
+		tz=...
+	)
 ```
 
 - `start` : timestamp배열의 시작 점을 지정한다.
