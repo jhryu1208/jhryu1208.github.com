@@ -19,7 +19,7 @@ mathjax: true
 
 ## <span style="color:navy">Timestamp To Period : to_period함수<span>
 
-`to_period` 함수를 이용하여 timestamp객체를 일정한 기간을 나타내는 `period`객체로 변환시킬 수 있다. 이를 통해 시간 단위로 로깅되는 데이터를 연 단위 혹은 주 단위 등 특정 기간 별로 집계 혹은 연산하는데 유용하게 사용할 수 있다.  <br>
+`to_period` 함수를 이용하여 timestamp객체를 일정한 기간을 나타내는 `period`객체로 변환시킬 수 있다. 이를 통해 시간 단위로 로깅되는 데이터를 연 단위 혹은 주 단위 등 특정 기간 별로 집계 혹은 연산하는데 유용다.  <br>
 
 `DatetimeArray`혹은 `DatetimeIndex`에 사용 가능하며, 함수로 `DatetimeArray`와 `DatetimeIndex`를 변환시킬 경우 각각 `PeriodArray`와 `PeriodIndex`를 반환한다.  <br>
 
