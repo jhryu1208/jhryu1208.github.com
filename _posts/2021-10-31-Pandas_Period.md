@@ -1,6 +1,4 @@
-﻿
-
----
+\---
 layout: post
 title:  "[Pandas] 시계열 데이터 : Period"
 subtitle: "[Pandas] 시계열 데이터 : Period"
@@ -41,14 +39,14 @@ import pandas as pd
 df = pd.read_csv('./datetime_ex.csv')
 # origin_date1필드를 timestmap객체로 변환
 df['origin_date1']=pd.to_datetime(df['origin_date1'],
-								  infer_datetime_format=True,
-								  utc=True) 
+				  infer_datetime_format=True,
+				  utc=True) 
 
 df.head(5)
 ```
 
 ```
-			   origin_date1 origin_date2 origin_date3
+	   	origin_date1 origin_date2 origin_date3
 0 2015-10-02 21:12:01+00:00   02/10/2015     02/10/15
 1 2014-10-26 15:12:00+00:00   26/10/2014     26/10/14
 2 2014-10-26 15:12:00+00:00   26/10/2014     26/10/14
