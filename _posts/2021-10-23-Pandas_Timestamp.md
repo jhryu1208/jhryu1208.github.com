@@ -410,7 +410,7 @@ pd.data_range(
 ```
 
 - `start` : timestamp배열의 시작 점을 지정한다.
-- `end` : timestamp배열의 마지막 점을 지정한다.
+- `end` : timestamp배열의 끝 점을 지정한다.
 - `freq` : timestamp배열의 생성 주기를 지정한다. (offset aliases 참조 [링크](https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#timeseries-offset-aliases))
 - `periods` : `freq`에서 지정한 주기 별로 총 몇 개의 timestamp를 만들지 지정한다.
 - `tz` : 생성된 timestamp의 timezone을 지정한다.
