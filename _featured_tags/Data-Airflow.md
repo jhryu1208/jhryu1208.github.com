@@ -2,7 +2,7 @@
 layout: tag-blog
 title: Airflow
 slug: Airflow
-category: oss
+category: data
 menu: false
-order: 1
+order: 6
 ---

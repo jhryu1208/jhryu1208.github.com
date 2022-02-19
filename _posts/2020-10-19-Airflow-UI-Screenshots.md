@@ -2,7 +2,7 @@
 layout: post
 title:  "[Airflow] Airflow UI/Screenshots"
 subtitle: "[Airflow] Airflow UI/Screenshots"
-categories: oss
+categories: data
 tags: Airflow
 comments: true
 ---
