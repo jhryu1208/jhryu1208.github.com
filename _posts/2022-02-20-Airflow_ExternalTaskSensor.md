@@ -257,6 +257,8 @@ master dag의 모든 task들은 정상적으로 수행된 것을 확인할 수 �
 
 해당 task만 실패한 이유는 위에서 언급했듯이  `execution_date_fn`혹은 `execution_delta`를 잘못 지정하였기 때문이다. 왜냐하면, 해당 task의 경우 timedelta(minutes = -2)로 지정하였기 때문에 slave dag2의 `schedule_interval = ‘5 17 * * *’`을 기준으로 **2022-02-18T17:03:00+00.00**에 실행되는 task를 1분 간격으로 확인하며 waiting하게 된다. 하지만, 도식에서도 볼 수 있듯이 그런 task는 존재하지 않는다.
 
+<br>
+
 ![Untitled 2](https://user-images.githubusercontent.com/53929665/154834361-5f29ebd3-44be-4cb9-9d95-ca53b3c13c5d.png)
 
 따라서, 해당 task는 위의 사진처럼 완료 상태의 master_task2를 무한정으로 waiting하게 된다. 이러한 무한정 waiting을 방지하기 위해서 `ExternalTaskSensor`내에 `timeout`파라미터를 지정할 수 있긴 하지만, 이런 상황을 발생하지 않도록 `execution_date_fn`혹은 `execution_delta`를 제대로 지정해주는 것이 중요한 것 같다.
