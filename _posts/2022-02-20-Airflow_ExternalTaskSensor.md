@@ -22,7 +22,7 @@ mathjax: true
 
 ## <span style="color:navy">Introduction<span>
 
-최근 Firebase의 Bigquery 데이터 조회 비용을 감소시키기 위해서  s3로 적재시키고 AWS Glue를 통해서 주기적으로 관측하는 데이터 지표를 생성하고 있으며, 이를 Airflow를 통해서 관리하고 있다. 하지만, Firebase의 데이터로부터 빈번하게 조회하는 이벤트 데이터를 추출하여 Bigquery에서 Table로 관리하여 데이터 조회 비용을 더 감축시키고자 한다.  이 과정에서 위에서 언급한 AIrflow의 Dag내 특정 Task를 Trigger로써 사용할 수 있는 방법에 대해 살펴보다가 `ExternalTaskSensor`와  `TriggerDagRunOperator`를 확인하게 되었다.  이 중에서 먼저 `ExternalTaskSensor`에 대해서 먼저 알아보고자 한다.
+최근 Firebase의 Bigquery 데이터 조회 비용을 감소시키기 위해서  s3로 적재시키고 AWS Glue를 통해서 주기적으로 관측하는 데이터 지표를 생성하고 있으며, 이를 Airflow를 통해서 관리하고 있다. 하지만, Firebase의 데이터로부터 빈번하게 조회하는 이벤트 데이터를 추출하여 Bigquery에서 Table로 관리하여 데이터 조회 비용을 더 감축시키고자 한다.  이 과정에서 위에서 언급한 AIrflow의 Dag내 특정 Task를 Trigger로써 혹은 해당 Dag와 종속성을 가질 수 있도록하는 방법에 대해 살펴보다가 `ExternalTaskSensor`와  `TriggerDagRunOperator`를 확인하게 되었다.  이 중에서 먼저 `ExternalTaskSensor`에 대해서 먼저 알아보고자 한다.
 
 
 <br>
