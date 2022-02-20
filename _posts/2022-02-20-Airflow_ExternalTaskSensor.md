@@ -90,6 +90,8 @@ task = ExternalTaskSensor('task_name_example',
     - 만약 존재하지 않을 경우에는 즉각적으로 master task혹은 dag의 waiting을 중단한다.
     - 기본값은 False이다.
 
+<br>
+
 ---
 
 ## <span style="color:navy">execution_delta와 execution_date_fn의 중요성<span>
