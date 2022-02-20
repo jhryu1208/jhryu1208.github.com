@@ -100,6 +100,7 @@ task = ExternalTaskSensor('task_name_example',
 
 특정 slave dag내 task의 worker slot독점으로 인해 master dag의 task 수행이 멈추는 케이스를  방지하기 위해서 `mode`파라미터를 `reschedule`로 지정하였다.
 
+###### </> master_dag
 ```python
 from datetime import datetime
 
@@ -139,6 +140,9 @@ m_task3 >> m_task4
 m_task3 >> m_task5
 ```
 
+<br>
+
+###### </> slave_dag1
 ```python
 from datetime import datetime, timedelta
 
@@ -182,6 +186,10 @@ s_task2 = ExternalTaskSensor(task_id = 'slave_task2_sensor',
                              dag = dag)
 ```
 
+<br>
+
+
+###### </> slave_dag2
 ```python
 from datetime import datetime, timedelta
 
