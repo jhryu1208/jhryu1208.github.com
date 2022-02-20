@@ -223,6 +223,8 @@ s_task2 = ExternalTaskSensor(task_id = 'slave_task2_sensor',
                              dag = dag)
 ```
 
+<br>
+
 그리고 이를 도식화하면 다음과 같다. 
 
 (편의상 글을 쓸 때는 TEST_Master_Dag를 master dag, TEST_Sensor_Slave_Dag1과 2를 slave dag1, slave dag2라고 지칭하겠다.)
