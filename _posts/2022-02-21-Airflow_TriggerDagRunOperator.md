@@ -21,7 +21,7 @@ mathjax: true
 
 ## <span style="color:navy">Introudction<span>
 
-[지난 포스팅](https://jhryu1208.github.io/data/2022/02/20/Airflow_ExternalTaskSensor/)에 이어서 `TriggerDagRunOperator`에 대해 알아보고자 한다. (바로 레고레고 🏃💨💨)
+[지난 포스팅](https://jhryu1208.github.io/data/2022/02/20/Airflow_ExternalTaskSensor/)에 이어서 `TriggerDagRunOperator`에 대해 알아보고자 한다. <br> (바로 레고레고 🏃💨💨)
 
 <br>
 
