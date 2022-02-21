@@ -180,6 +180,8 @@ s_task1 >> s_task2 >> s_task3
 
 master dag의 trigger_slave가 수행되면서 코드에서 지정한 slave dag가 수행 상태에 진입한 것을 확인하였다. 이때, tirgger_slave의 시작 시간, 종료시간, 그리고 slave dag의 시작 시간을 비교해보면 tirgger_slave가 수행이 끝난 뒤에 slave_dag가 tirgger되는 것이 아니라, trigger_slave가 시작되면서 slave_dag가 수행되는 것임을 확인할 수 있다. 
 
+<br>
+
 ##### </> trigger_master_dag.py의 trigger_func 함수
 
 ```python
