@@ -12,14 +12,7 @@ mathjax: true
 - [applymap](#applymap)
 - [pipe](#pipe)
 
-본 포스팅은 `pandas`의 `applymap`과 `pipe`메소드에 관한 내용을 정리하였습니다.
-
-<br>
-
----
-
-
-[이전 포스팅](https://jhryu1208.github.io/data/2022/02/27/Pandas_Apply1/)에 이어서 dataframe의 `applymap`과 `pipe`메소드에 대해서 정리할 것이다.
+[이전 포스팅](https://jhryu1208.github.io/data/2022/02/27/Pandas_Apply1/)에 이어서 dataframe의 `applymap`과 `pipe`메소드에 대해서 정리하였습니다.
 
 <br>
 
