@@ -11,10 +11,10 @@ mathjax: true
 #### Contents
 - [map 메소드](#map-메소드)
 - [apply 메소드](#apply-메소드)
-  - [2-1) apply 메소드 in Series](#2-1-apply-메소드-in-series)
-  - [2-2) apply 메소드 in DataFrame](#2-1-apply-메소드-in-dataframe)
-    - [2-2-1) When axis=0](#2-2-1-when-axis=0)
-    - [2-2-2) When axis=1](#2-2-2-when-axis=1)
+  - [2-1) apply 메소드 in Series](#2-1--apply-메소드-in-series)
+  - [2-2) apply 메소드 in DataFrame](#2-1--apply-메소드-in-dataframe)
+    - [2-2-1) when axis=0](#2-2-1--when-axis=0)
+    - [2-2-2) when axis=1](#2-2-2--when-axis=1)
 
 본 포스팅은 `pandas`의 `map`과 `apply`메소드에 관한 내용을 정리하였습니다.
 
