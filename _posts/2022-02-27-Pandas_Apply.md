@@ -277,8 +277,8 @@ def _add_mul(x, arg1, arg2):
     return (x[arg1]+x[arg2], x[arg1]*x[arg2])
 
 test_df[['sum', 'mul']] = test_df.apply(_add_mul, 
-                                        axis = 1, args=('col1', 'col2'), 
-                                        result_type='expand')
+                                    axis = 1, args=('col1', 'col2'), 
+                                    result_type='expand')
 
 print(test_df)
 ```
@@ -303,8 +303,7 @@ test_df = pd.DataFrame([[1, 2],
 
 print('[ 원본 ]\n', test_df)
 print()
-print('[ broadcast apply 결과 ]\n', test_df.apply(np.sum, axis = 1, 
-                                                  result_type = 'broadcast'))
+print('[ broadcast apply 결과 ]\n', test_df.apply(np.sum, axis = 1, result_type = 'broadcast'))
 ```
 
 ```
@@ -320,6 +319,7 @@ row1     3     3
 row2     9     9
 row3    15    15
 ```
+
 
 <br>
 
