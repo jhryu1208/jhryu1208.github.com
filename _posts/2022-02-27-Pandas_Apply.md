@@ -248,7 +248,7 @@ def _add_mul(x, arg1, arg2):
 result_df = test_df.apply(_add_mul, axis = 1, args=('col1', 'col2'))
 # 반환된 Series를 DataFrame으로 변환
 result_df = pd.DataFrame([[a, b] for a, b in result_df.values], 
-													columns = ['add', 'mul'], index = result_df.index)
+                        columns = ['add', 'mul'], index = result_df.index)
 # 변환시킨 DataFrame을 기존 DataFrame에 추가
 result_df = pd.concat([test_df, result_df], axis = 1)
 
@@ -256,7 +256,7 @@ print(result_df)
 ```
 
 ```
-			col1  col2  add  mul
+      col1  col2  add  mul
 row1     1     2    3    2
 row2     4     5    9   20
 row3     7     8   15   56
@@ -277,14 +277,14 @@ def _add_mul(x, arg1, arg2):
     return (x[arg1]+x[arg2], x[arg1]*x[arg2])
 
 test_df[['sum', 'mul']] = test_df.apply(_add_mul, 
-																				axis = 1, args=('col1', 'col2'), 
-																				result_type='expand')
+                                        axis = 1, args=('col1', 'col2'), 
+                                        result_type='expand')
 
 print(test_df)
 ```
 
 ```
-			col1  col2  sum  mul
+      col1  col2  sum  mul
 row1     1     2    3    2
 row2     4     5    9   20
 row3     7     8   15   56
@@ -304,7 +304,7 @@ test_df = pd.DataFrame([[1, 2],
 print('[ 원본 ]\n', test_df)
 print()
 print('[ broadcast apply 결과 ]\n', test_df.apply(np.sum, axis = 1, 
-																									result_type = 'broadcast'))
+                                                  result_type = 'broadcast'))
 ```
 
 ```
