@@ -287,7 +287,7 @@ row3     7     8   15   56
 
 <br>
 
-다음은 `result_type`이 `broadcast`로 지정된 경우이다. 해당 옵션을 지정했을 경우에는 매핑함수를 통해서 반드시 단일 결과로 이루어진 Series객체가 반환되어야한다. 그리고, 이렇게 반환된 Series는 원본 DataFrame의 열 형식대로 아래와 같이 확장된다.
+다음은 `result_type`이 `'broadcast'`로 지정된 경우이다. 해당 옵션을 지정했을 경우에는 매핑함수를 통해서 반드시 단일 결과로 이루어진 Series객체가 반환되어야한다. 그리고, 이렇게 반환된 Series는 원본 DataFrame의 열 형식대로 아래와 같이 확장된다.
 
 ```python
 test_df = pd.DataFrame([[1, 2],
