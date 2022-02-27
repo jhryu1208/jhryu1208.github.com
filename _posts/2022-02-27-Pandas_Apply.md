@@ -22,7 +22,7 @@ mathjax: true
 
 ---
 
-파이썬의 내장 함수에는 list와 같은 iterable객체의 각 원소를 매핑 함수에 대입하여 각 원소에 대하여 결과값을 출력하는 `map`함수가 존재한다. 이와 동일하게 pandas의 Series와  DataFrame객체에도 `map`, `apply`, `applymap`, 그리고 `pipe`와 같이 매핑을 위한 메소드들이 존재한다. 오늘은 이에 대해 정리해보고자 한다. (+오랜만의 pandas 정리 포스팅이다 ㅠ.ㅠ)
+파이썬의 내장 함수에는 list와 같은 iterable객체의 각 원소를 매핑 함수에 대입하여 각 원소에 대하여 결과값을 출력하는 `map`함수가 존재한다. 이와 동일하게 pandas의 Series와  DataFrame객체에도 `map`, `apply`, `applymap`, 그리고 `pipe`와 같이 매핑을 위한 메소드들이 존재한다. 오늘은 이중 `map`과 `apply` 대해 정리해 보고자 한다. (+오랜만의 pandas 정리 포스팅이다 ㅠ.ㅠ)
 
 <br>
 
