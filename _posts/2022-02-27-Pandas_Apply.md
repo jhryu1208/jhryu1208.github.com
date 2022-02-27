@@ -69,9 +69,6 @@ pd.DataFrame({'origin': sr, 'after_map': mapped_sr}) # 비교
 
 <br>
 
-Series객체에서의 apply메소드 부터 살펴보도록 하자.
-
-<br>
 
 ### <span style="color:navy">2-1) apply 메소드 in Series<span>
 
@@ -81,10 +78,8 @@ Series객체에서의 apply메소드 부터 살펴보도록 하자.
 [Series 객체].apply(mapping_func, args=(), **kwargs)
 ```
 
-- `mapping_func`: 매핑 함수
-- `args=(), **kwargs`
-    
-    함수에 전달할 인자, 인자 전달 방식은 기본 함수와 동일하다. 따라서 unpackage, package, 그리고 key: value 방식 등 편한 방법으로 이용이 가능하다.
+- `mapping_func` : 매핑 함수
+- `args=(), **kwargs` : 함수에 전달할 인자, 인자 전달 방식은 기본 함수와 동일하다. 따라서 unpackage, package, 그리고 key: value 방식 등 편한 방법으로 이용이 가능하다.
     
 <br>
 
