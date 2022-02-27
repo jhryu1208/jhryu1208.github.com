@@ -12,7 +12,7 @@ mathjax: true
 - [applymap](#applymap)
 - [pipe](#pipe)
 
-[이전 포스팅](https://jhryu1208.github.io/data/2022/02/27/Pandas_Apply1/)에 이어서 dataframe의 `applymap`과 `pipe`메소드에 대해서 정리하였습니다.
+이전 포스팅에 이어서 dataframe의 `applymap`과 `pipe`메소드에 대해서 정리하였습니다.
 
 <br>
 
@@ -20,7 +20,7 @@ mathjax: true
 
 ## <span style="color:navy">applymap<span>
 
-`applymap`은 `apply`와 비슷한 기능을 수행하는 함수이다. 하지만, `applymap`은 `apply`와 달리 dataframe의 요소 별로  매핑 함수를 적용할 수 있다는 장점이 있다.  (Apply a function to a Dataframe elementwise)
+`applymap`은 `apply`와 비슷한 기능을 수행하는 함수이다. 하지만, `applymap`은 `apply`와 달리 <u>dataframe의 요소 별로  매핑 함수를 적용할 수 있다는 장점</u>이 있다.  (Apply a function to a Dataframe elementwise)
 
 <br>
 
@@ -31,8 +31,8 @@ mathjax: true
 ```
 
 - `mapping_func`
-    - 하나의 값으로 부터 하나의 결과 값을 리턴하는 함수
-    - 따라서,  `applymap`메소드는 `apply`메소드와 달리 집계 함수를 사용할 수 없다.
+    - <u>하나의 값으로 부터 하나의 결과 값을 리턴하는 함수</u>
+    - 따라서,  `applymap`메소드는 `apply`메소드와 달리 <u>집계 함수를 사용할 수 없다</u>.
     (물론, 기입은 할 수 있고 에러도 발생하지 않지만, 집계값이 반환되지 않는다.)
 
 <br>
@@ -82,9 +82,9 @@ row3   3.0   4.0   1.0
 
 <br>
 
-`applymap`은 `apply`와 달리 DataFrame의 집계에 사용하기 적합하지 않으며  주로 위의 예제에서 확인할 수 있듯이 DataFrame의 요소를 변환(Transformation)하는데 적합하다.
+`applymap`은 `apply`와 달리 DataFrame의 집계에 사용하기 적합하지 않으며  주로 위의 예제에서 확인할 수 있듯이 <u>DataFrame의 요소를 변환(Transformation)하는데 적합</u>하다.
 
-그리고, 아래의 예제에서 볼 수 있듯이  두 메소드 모두 하나의 값을 반환하는 함수를 입력받을 경우에는 동일한 결과를 출력하는 것을 확인할 수 있다. 이때, 주로 performance가 더 좋은 것은 `applymap`이지만, 데이터의 상황에 따라 다르므로 두 메소드를 모두 적용해보고 더 나은 메소드를 고르는 것을 추천한다. 
+그리고, 아래의 예제에서 볼 수 있듯이  <u>두 메소드 모두 하나의 값을 반환하는 함수를 입력받을 경우에는 동일한 결과를 출력하는 것을 확인</u>할 수 있다. 이때, 주로 performance가 더 좋은 것은 `applymap`이지만, 데이터의 상황에 따라 다르므로 두 메소드를 모두 적용해보고 더 나은 메소드를 고르는 것을 추천한다. 
 
 ```python
 df = pd.DataFrame([[1, 2, 3], [5, 3, 2], [3, 4, 1]],
@@ -119,7 +119,7 @@ row3    13    14    11
 
 ## <span style="color:navy">pipe<span>
 
-`pipe`메소드는 사용하는 함수가 반환하는 리턴 값에 따라서 반환하는 객체의 종류가 결정된다. DataFrame을 반환할 수 있고, Series를 반환할 수 있으며, 그리고 하나의 값을 반환할 수도 있다는 의미이다.
+`pipe`메소드는 사용하는 <u>함수가 반환하는 리턴 값에 따라서 반환하는 객체의 종류가 결정</u>된다. DataFrame을 반환할 수 있고, Series를 반환할 수 있으며, 그리고 하나의 값을 반환할 수도 있다는 의미이다.
 
 이렇게 범용적인 `pipe`메소드는 pandas의 `chainable function`이다. 즉, 해당 메소드를 이용하여 객체에 연속적으로 함수를 적용할 수 있다는 의미이다. 
 
