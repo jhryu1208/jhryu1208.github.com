@@ -160,10 +160,10 @@ DataFrame에 `apply`메소드의 `axis=0`일 때는 위에서 언급했듯이 co
 
 ```python
 test_df = pd.DataFrame([[1, 2, 3],
-                        [4, 5, 6],
-                        [7, 8, 9]],
-                       columns=['col1', 'col2', 'col3'],
-                       index=['row1', 'row2', 'row3'])
+                    [4, 5, 6],
+                    [7, 8, 9]],
+                   columns=['col1', 'col2', 'col3'],
+                   index=['row1', 'row2', 'row3'])
 
 axis0_df0 = test_df.apply(lambda x: x.isnull(), axis = 0)
 
@@ -209,10 +209,10 @@ DataFrame의 `apply`메소드의 `axis=1`일 때는 row단위로 매핑함수가
 
 ```python
 test_df = pd.DataFrame([[1, 2, 3],
-                        [4, 5, 6],
-                        [7, 8, 9]],
-                       columns=['col1', 'col2', 'col3'],
-                       index=['row1', 'row2', 'row3'])
+                    [4, 5, 6],
+                    [7, 8, 9]],
+                   columns=['col1', 'col2', 'col3'],
+                   index=['row1', 'row2', 'row3'])
 
 axis1_df0 = test_df.apply(np.sum, axis = 1)
 
@@ -236,10 +236,10 @@ dtype: int64
 
 ```python
 test_df = pd.DataFrame([[1, 2],
-                        [4, 5],
-                        [7, 8]],
-                       columns=['col1', 'col2'],
-                       index=['row1', 'row2', 'row3'])
+                    [4, 5],
+                    [7, 8]],
+                   columns=['col1', 'col2'],
+                   index=['row1', 'row2', 'row3'])
 
 def _add_mul(x, arg1, arg2):
     return (x[arg1]+x[arg2], x[arg1]*x[arg2])
@@ -268,10 +268,10 @@ row3     7     8   15   56
 
 ```python
 test_df = pd.DataFrame([[1, 2],
-                        [4, 5],
-                        [7, 8]],
-                       columns=['col1', 'col2'],
-                       index=['row1', 'row2', 'row3'])
+                    [4, 5],
+                    [7, 8]],
+                   columns=['col1', 'col2'],
+                   index=['row1', 'row2', 'row3'])
 
 def _add_mul(x, arg1, arg2):
     return (x[arg1]+x[arg2], x[arg1]*x[arg2])
@@ -296,10 +296,10 @@ row3     7     8   15   56
 
 ```python
 test_df = pd.DataFrame([[1, 2],
-                        [4, 5],
-                        [7, 8]],
-                       columns=['col1', 'col2'],
-                       index=['row1', 'row2', 'row3'])
+                    [4, 5],
+                    [7, 8]],
+                   columns=['col1', 'col2'],
+                   index=['row1', 'row2', 'row3'])
 
 print('[ 원본 ]\n', test_df)
 print()
