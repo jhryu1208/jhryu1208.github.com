@@ -9,7 +9,6 @@ mathjax: true
 ---
 
 #### Contents
-- [Introduction](#introudction)
 - [map 메소드](#map-메소드)
 - [apply 메소드](#apply-메소드)
   - [2-1) apply 메소드 in Series](#2-1-apply-메소드-in-series)
@@ -23,7 +22,7 @@ mathjax: true
 
 ---
 
-## <span style="color:navy">Introudction<span>
+
 
 파이썬의 내장 함수에는 list와 같은 iterable객체의 각 원소를 매핑 함수에 대입하여 각 원소에 대하여 결과값을 출력하는 `map`함수가 존재한다. 이와 동일하게 pandas의 Series와  DataFrame객체에도 `map`, `apply`, `applymap`, 그리고 `pipe`와 같이 매핑을 위한 메소드들이 존재한다. 오늘은 이중 `map`과 `apply` 대해 정리해 보고자 한다.
 
@@ -330,3 +329,4 @@ row3    15    15
 - [pandas doc : pandas.Series.map](https://pandas.pydata.org/docs/reference/api/pandas.Series.map.html)
 - [pandas doc : pandas.Series.apply](https://pandas.pydata.org/docs/reference/api/pandas.Series.apply.html?highlight=apply#pandas.Series.apply)
 - [pandas doc : pandas.DataFrame.apply](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html?highlight=apply#pandas.DataFrame.apply)
+- 오승환, 『파이썬 머신러닝 판다스 데이터 분석』, 정보문화사 (2019)
