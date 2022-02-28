@@ -9,9 +9,8 @@ mathjax: true
 ---
 
 #### Contents
-
-- [applymap](#applymap)
-- [pipe](#pipe)
+- [applymap 메소드](#applymap-메소드)
+- [pipe 메소드](#pipe-메소드)
 
 이전 포스팅에 이어서 dataframe의 `applymap`과 `pipe`메소드에 대해서 정리하였습니다.
 
@@ -19,7 +18,7 @@ mathjax: true
 
 ---
 
-## <span style="color:navy">applymap<span>
+## <span style="color:navy">applymap 메소드<span>
 
 `applymap`은 `apply`와 비슷한 기능을 수행하는 함수이다. 하지만, `applymap`은 `apply`와 달리 <u>dataframe의 요소 별로  매핑 함수를 적용할 수 있다는 장점</u>이 있다.  (Apply a function to a Dataframe elementwise)
 
@@ -118,7 +117,7 @@ row3    13    14    11
 
 ---
 
-## <span style="color:navy">pipe<span>
+## <span style="color:navy">pipe 메소드<span>
 
 `pipe`메소드는 사용하는 <u>함수가 반환하는 리턴 값에 따라서 반환하는 객체의 종류가 결정</u>된다. DataFrame을 반환할 수 있고, Series를 반환할 수 있으며, 그리고 하나의 값을 반환할 수도 있다는 의미이다.
 
