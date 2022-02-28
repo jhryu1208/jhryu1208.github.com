@@ -9,6 +9,7 @@ mathjax: true
 ---
 
 #### Contents
+
 - [applymap](#applymap)
 - [pipe](#pipe)
 
@@ -179,7 +180,7 @@ print(x, y)
 
 ---
 
-## References
+## <span style="color:navy">References<span>
 
 - [pandas doc : pandas.DataFrame.applymap](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.applymap.html?highlight=applymap)
 - [pandas doc : pandas.DataFrame.pipe](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.pipe.html?highlight=pipe)
