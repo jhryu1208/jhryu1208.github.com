@@ -172,7 +172,7 @@ print(result)
 ```
 
 ```
-		col1  col3  col2  0
+    col1  col3  col2  0
 r1     1     2     3  1
 r2     4     5     6  2
 r3     7     8     9  3
