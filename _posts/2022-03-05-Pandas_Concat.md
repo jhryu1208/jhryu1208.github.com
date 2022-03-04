@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Pandas] 함수매핑2 : applymap, pipe"
-subtitle: "[Pandas] 함수매핑2 : applymap, pipe"
+title:  "[Pandas] 데이터 병합/연결 : concat"
+subtitle: "[Pandas] 데이터 병합/연결 : concat"
 categories: data
 tags: pandas
 comments: true
