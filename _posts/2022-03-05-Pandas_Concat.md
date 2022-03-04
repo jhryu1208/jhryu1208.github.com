@@ -35,9 +35,7 @@ pandas의 `concat`함수에 대해서 정리하였습니다.
 
 ```python
 pandas.concat(objs, axis=0, join='outer', 
-              ignore_index=False, 
-              keys=None, levels=None, names=None, 
-              verify_integrity=False, sort=False, copy=True)
+              ignore_index=False, verify_integrity=False)
 ```
 
 - `obj` *(**sequence, mapping**)*
