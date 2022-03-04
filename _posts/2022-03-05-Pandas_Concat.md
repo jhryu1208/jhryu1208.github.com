@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Pandas] 데이터 병합/연결 : concat"
-subtitle: "[Pandas] 데이터 병합/연결 : concat"
+title:  "[Pandas] 데이터 병합/연결1 : concat"
+subtitle: "[Pandas] 데이터 병합/연결1 : concat"
 categories: data
 tags: pandas
 comments: true
