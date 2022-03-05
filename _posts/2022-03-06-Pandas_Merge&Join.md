@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "[Pandas] 데이터 병합/연결 : merge, join"
-subtitle: "[Pandas] 데이터 병합/연결 : merge, join"
+title:  "[Pandas] 데이터 병합/연결2 : merge, join"
+subtitle: "[Pandas] 데이터 병합/연결2 : merge, join"
 categories: data
 tags: pandas
 comments: true
