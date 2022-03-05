@@ -7,7 +7,6 @@ tags: pandas
 comments: true
 mathjax: true
 ---
-
 #### Contents
 - [concat 함수](#concat-함수)
   - [1) axis](#1-axis)
@@ -20,8 +19,6 @@ pandas의 `concat`함수에 대해서 정리하였습니다.
 <br>
 
 ---
-
-<br>
 
 관계형 테이블과 같이 서로 종속성을 가지고 있는 데이터, 거래성 테이블 중 카테고리 별로 분류되어있는 데이터, 혹은  파티셔닝된 데이터를 다루는 경우에 하나로 합치거나 데이터를 연결해야하는 경우가 많다. 대표적으로 SQL에는 `JOIN`과 `UNION`이 존재한다. 그리고, pandas에서도 이와 동일한 기능을 제공하는 `concat()`, `merge()`, `join()`함수가 존재한다. 그 중 해당 포스팅에서는 `concat()`함수에 대해서 먼저  소개하고자 한다.
 
