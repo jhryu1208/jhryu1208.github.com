@@ -251,5 +251,4 @@ deptno
 
 - [pandas doc : pandas.DataFrame.merge](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html)
 - [pandas.doc : pandas.DataFrame.join](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.join.html)
-
-• 오승환, 『파이썬 머신러닝 판다스 데이터 분석』, 정보문화사 (2019)
+- 오승환, 『파이썬 머신러닝 판다스 데이터 분석』, 정보문화사 (2019)
