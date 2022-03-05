@@ -11,7 +11,7 @@ mathjax: true
 - [merge 메소드](#merge-메소드)
 - [join 메소드](#join-메소드)
 
-지난 포스팅에 이어서 `merge`와 `join`에 대해서 정리하였습니다.
+지난 포스팅에 이어서 pandas의 `merge`와 `join`에 대해서 정리하였습니다.
 
 <br>
 
