@@ -210,18 +210,18 @@ join파라미터는 SQL에서 사용하는 join과 유사하며 그 중 `inner`�
 
 ```python
 df1 = pd.DataFrame([[1, 2, 3], [4, 5, 6], [7, 8, 9]], 
-										index = ['r1', 'r2', 'r3'], 
-										columns=['col1', 'col3', 'col5'])
+                    index = ['r1', 'r2', 'r3'], 
+                    columns=['col1', 'col3', 'col5'])
 df2 = pd.DataFrame([[2, 20, 30], [5, 50, 60], [8, 80, 90]], 
-										index = ['r4', 'r2', 'r5'], 
-										columns=['col3', 'col4', 'col6'])
+                    index = ['r4', 'r2', 'r5'], 
+                    columns=['col3', 'col4', 'col6'])
 
 print(df1); print(df2)
 ```
 
 ```
 # df1
-		col1  col3  col5
+    col1  col3  col5
 r1     1     2     3
 r2     4     5     6
 r3     7     8     9
