@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Pandas] 데이터 병합/연결2 : merge, join"
+title: "[Pandas] 데이터 병합/연결2 : merge, join"
 subtitle: "[Pandas] 데이터 병합/연결2 : merge, join"
 categories: data
 tags: pandas
@@ -38,9 +38,9 @@ pd.merge(DataFrame1, DataFrame2, how='innter',
 """
 ```
 
-- `DataFrame1` (**_**DataFrame or named Series**_**)
+- `DataFrame1` (_**DataFrame or named Series**_)
   - merge의 대상에 해당하는 객체로, merge로 인해 출력된 결과의 좌측에 위치한다.
-- `DataFrame2` (**_**DataFrame or named Series**_**)
+- `DataFrame2` (_**DataFrame or named Series**_)
   - merge의 대상에 해당하는 객체로, merge로 인해 출력된 결과의 우측에 위치한다.
 - `how` (_**{‘left’, ‘right’, ‘outer’, ‘inner’, ‘cross’}, default ‘inner’**_)
     - 두 객체를 어떤 방식으로 조인시킬 것인지 결정한다.
