@@ -84,13 +84,13 @@ pd.merge(DataFrame1, DataFrame2, how='innter',
 
 ```python
 df1 = pd.DataFrame([['A', 1], ['B', 2], ['C', 3]],
-                   index = ['row1', 'row2', 'row3'],
-                   columns=['name', 'deptno'])
+                    index = ['row1', 'row2', 'row3'],
+                    columns=['name', 'deptno'])
 
 df2 = pd.DataFrame([[1, 'RESEARCH'], [2, 'MARKETER'], 
                     [3, 'DEVELOPER'], [4, 'CEO']],
-                   index = ['row1', 'row2', 'row3', 'row4'],
-                   columns=['id', 'dname'])
+                    index = ['row1', 'row2', 'row3', 'row4'],
+                    columns=['id', 'dname'])
 
 print('[ df1, 직원 테이블 ]\n', df1)
 print()
