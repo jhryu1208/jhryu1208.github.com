@@ -80,7 +80,7 @@ pd.merge(DataFrame1, DataFrame2, how='innter',
 
 조인 방식에 대한 차이점을 보다는 조인의 Key를 지정하는 방식에 초점을 맞추어 보도록하자. 
 
-다음은 예제에 사용될 DataFrame이다. df1의 경우 직원의 이름과 직원의 부서 ID(**≈** foreign key)를 담고있는 DataFrame이며, df2의 경우 부서 ID(**≈** primary key)와 해당 부서 이름을 담고 있는 DataFrame이다.
+다음은 예제에 사용될 DataFrame이다. df1의 경우 직원의 이름과 직원의 부서 ID(≈ foreign key)를 담고있는 DataFrame이며, df2의 경우 부서 ID(≈ primary key)와 해당 부서 이름을 담고 있는 DataFrame이다.
 
 ```python
 df1 = pd.DataFrame([['A', 1], ['B', 2], ['C', 3]],
