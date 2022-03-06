@@ -38,9 +38,11 @@ pd.merge(DataFrame1, DataFrame2, how='innter',
 """
 ```
 
-- `DataFrame1` : merge의 대상에 해당하는 객체로, merge로 인해 출력된 결과의 좌측에 위치한다.
-- `DataFrame2` : merge의 대상에 해당하는 객체로, merge로 인해 출력된 결과의 우측에 위치한다.
-- `how`
+- `DataFrame1` (**_**DataFrame or named Series**_**)
+  - merge의 대상에 해당하는 객체로, merge로 인해 출력된 결과의 좌측에 위치한다.
+- `DataFrame2` (**_**DataFrame or named Series**_**)
+  - merge의 대상에 해당하는 객체로, merge로 인해 출력된 결과의 우측에 위치한다.
+- `how` (_**{‘left’, ‘right’, ‘outer’, ‘inner’, ‘cross’}, default ‘inner’**_)
     - 두 객체를 어떤 방식으로 조인시킬 것인지 결정한다.
     - `left`, `right`, `outer`, `inner`, `cross` 조인을 지정할 수 있으며, 
     `inner` 조인이 default에 해당한다.
@@ -48,10 +50,10 @@ pd.merge(DataFrame1, DataFrame2, how='innter',
 <br>
 
 - 조인의 기준이되는 Key를 지정하는 파라미터는 아래와 같다.
-    - `on`
+    - `on` (_**label or list**_)
         - Column을 조인 Key로 지정할 때 사용한다.
         - 주로 각 객체의 조인 Key가 동일한 이름일 경우에 사용한다.
-    - `left_on`, `right_on`
+    - `left_on`, `right_on` (_**label or list, or array-like**_)
         - Column을 조인 Key로 지정할 때 사용한다.
             
             주로 각 객체의 조인 Key가 동일한 이름이 아닐 경우에 사용한다. 
@@ -61,7 +63,7 @@ pd.merge(DataFrame1, DataFrame2, how='innter',
             `right_on`에는 DataFrame2의 조인 Key 지정한다.
             
         - 물론  `on`대신 사용할 수 있다.
-    - `left_index`, `right_index`
+    - `left_index`, `right_index` (_**bool, default False**_)
         - Index를 조인 Key로 지정할 때 주로 사용한다.
         - 이때 `left_index`에는 DataFrame1의 조인 Key를 지정하며,
             
@@ -71,7 +73,7 @@ pd.merge(DataFrame1, DataFrame2, how='innter',
 
 <br>
         
-- `suffixes`
+- `suffixes` (_**list-like, default is (“_x”, “_y”)**_)
     - `merge`되는 두 객체가 동일한 Column의 이름을 가지고 있을 경우, `merge`로 인해 출력된 결과에서 동일한 이름의 Column에 지정한 접미사를 붙여 구분할 때 사용한다.
 
 <br>
