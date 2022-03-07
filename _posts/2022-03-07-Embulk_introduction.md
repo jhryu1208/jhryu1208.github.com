@@ -63,7 +63,7 @@ embulk는 **데이터 소스간의 대용량 데이터 전송을 지원하는 �
 
 공개된 이미지를 이용하여 아래의 명령어로 간단하게 설치를 완료할 수 있다.<br> (docker가 역시.. 👍)
 
-```powershell
+```bash
 > docker pull ietty/embulk # 이미지 다운로드
 > docker run -t -d --name embulk ietty/embulk # 컨테이너 생성 및 실행
 > docker exec -it embulk bash
