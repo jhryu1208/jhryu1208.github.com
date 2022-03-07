@@ -29,6 +29,9 @@ mathjax: true
 
 ## <span style="color:navy">Embulk란?<span>
 
+![Untitled](https://user-images.githubusercontent.com/53929665/157066504-ce4adaaa-ba1f-4cfc-8928-5de1f0688078.png)
+
+
 embulk는 **데이터 소스간의 대용량 데이터 전송을 지원하는 오픈소스 솔루션**이다. 그리고, 우리가 알법한 혹은 들어봤을 법한 **데이터 소스, 스토리지, 파일 포맷, 그리고 클라우드 서비스 대부분을 플러그인 형태로 지원**하며 **yml파일을 통해서 쉽게 설정**이 가능하다. 예를 들자면, MySQL, PostgresSQL, Redshift, mongo DB, 그리고 Bigquery가 있으며, 이러한 소스들의 플러그인을 ruby gem을 이용해서 간단히 설치할 수 있다. 
 
 <br>
@@ -44,8 +47,6 @@ embulk는 **데이터 소스간의 대용량 데이터 전송을 지원하는 �
 <br>
 
 마지막으로, embulk는 스키마 전달을 별도로 해주지 않아도 입력 데이터 소스의 테이블 혹은 파일을  통해서 **자동으로 스키마 구조를 예측**한다. 그리고, **간단한 데이터 변환**도 가능하다. 특히, MySQL, PostgressSQL 등이 input 소스로 지정될 경우 쿼리를 통해서 손쉽게 변환하여 output 소스에 전달해 줄 수 있다. 
-
-![Untitled](https://user-images.githubusercontent.com/53929665/157066504-ce4adaaa-ba1f-4cfc-8928-5de1f0688078.png)
 
 <br>
 
