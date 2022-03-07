@@ -21,7 +21,8 @@ mathjax: true
 
 오늘은 데이터 엔지니어링 솔루션 중에서 처음으로 마주한 embulk에 관해서 소개하고자 한다. embulk가 무엇이고 어떤 장점을 가졌는지 간단하게 소개하고, Docker에서의 설치 방법, 그리고 간단한 사용 예제에 대해서 설명하고자 한다. 
 
-![embulk](https://user-images.githubusercontent.com/53929665/157066486-71aba843-0069-48dd-a841-71790ed38599.png)
+
+<img width="400" alt="context" src="https://user-images.githubusercontent.com/53929665/157066486-71aba843-0069-48dd-a841-71790ed38599.png">
 
 <br>
 
