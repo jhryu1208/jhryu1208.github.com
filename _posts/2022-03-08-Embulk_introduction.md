@@ -197,6 +197,8 @@ out:
 embulk run sample.yml
 ```
 
+<br>
+
 그 결과 지정한 MySQL DB에서 전송된 테이블을 확인할 수 있다.
 
 ![Untitled 4](https://user-images.githubusercontent.com/53929665/157066502-12b49d03-9961-4e73-843c-d932cfc2b447.png)
