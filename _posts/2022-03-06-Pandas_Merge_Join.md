@@ -105,7 +105,7 @@ row2    B       2
 row3    C       3
 
 [ df2, 부서 테이블 ]
-       id      dname
+      id      dname
 row1   1   RESEARCH
 row2   2   MARKETER
 row3   3  DEVELOPER
