@@ -151,7 +151,7 @@ grouped_kia = group_df.get_group('KIA')
 print(grouped_kia.head(5))
 ```
 
-```python
+```
               name team  pos  home_runs
 0     Won Jun Choi  KIA  외야수        4
 13     Sun Bin Kim  KIA  2루수         5
