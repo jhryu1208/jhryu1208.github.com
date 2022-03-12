@@ -117,13 +117,13 @@ for key, group in group_df:
 <class 'pandas.core.groupby.generic.DataFrameGroupBy'>
 Group Key : KIA
 DataFrame Row : 31
-              name team  pos  home_runs
+            name team    pos  home_runs
 0   Won Jun Choi  KIA  외야수          4
 13   Sun Bin Kim  KIA  2루수          5
 
 Group Key : LG
 DataFrame Row : 30
-               name team  pos  home_runs
+             name team    pos  home_runs
 9   Chang Ki Hong   LG  외야수          4
 12   Hyun Soo Kim   LG  외야수         17
 
@@ -131,13 +131,13 @@ DataFrame Row : 30
 
 Group Key : 키움
 DataFrame Row : 31
-                  name team  pos  home_runs
+             name  team     pos  home_runs
 2   Hye Seong Kim   키움  유격수          3
 23   Jung Hoo Lee   키움  외야수          7
 
 Group Key : 한화
 DataFrame Row : 36
-                name team  pos  home_runs
+            name  team     pos  home_runs
 8      Ju Suk Ha   한화  유격수         10
 14  Eun Won Jung   한화  2루수          6
 ```
@@ -265,7 +265,7 @@ print(result)
 ```
 
 ```
-          unique_cnt_by_dict  unique_cnt_by_sr
+          unique_cnt_by_dict    unique_cnt_by_sr
 hometown
 광주                    31                31
 대구                    29                29
@@ -304,7 +304,7 @@ print(x.count())
 ```
 
 ```
-        name  pos  home_runs
+        name  pos   home_runs
 team                      
 KIA       31   31         31
 LG        30   30         30
@@ -329,7 +329,7 @@ print(x.describe())
 
 ```
 home_runs                                               
-         count      mean       std  min  25%  50%   75%   max
+         count      mean     std  min  25%  50%   75%   max
 team                                                         
 KIA       31.0  2.129032  3.432608  0.0  0.0  1.0  3.00  13.0
 LG        30.0  3.666667  4.887234  0.0  0.0  1.5  7.25  17.0
@@ -385,18 +385,18 @@ print(group_df)
 
 ```
             home_runs
-team pos           
+team   pos           
 KIA   1루수         17
-      2루수          5
-      3루수          1
+      2루수         5
+      3루수         1
 LG    1루수         27
-      2루수          5
+      2루수         5
       3루수         17
 
 ... 생략 ...
 
-키움  1루수         20
-      2루수          4
+키움  1루수          20
+      2루수         4
       3루수         21
 한화   1루수         15
       2루수         11
