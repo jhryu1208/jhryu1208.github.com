@@ -31,11 +31,11 @@ project_path = os.getcwd()
 full_file_path = project_path + '\data_example\kbo-player-stats-Batters.csv'
 df = pd.read_csv(full_file_path, encoding = 'utf-8')
 df = df.rename(columns = {'Player': 'name', 'Team': 'team', 
-                          'Pos': 'pos', 'HR': 'home_runs'})
+                        'Pos': 'pos', 'HR': 'home_runs'})
 df = df[['name', 'team', 'pos', 'home_runs']]
 
 def team_eng_to_kor(team_ab):
-		...
+    ...
 def pos_eng_to_kor(pos_ab):
     ...
 
