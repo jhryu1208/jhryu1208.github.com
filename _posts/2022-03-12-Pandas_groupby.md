@@ -11,7 +11,7 @@ mathjax: true
 - [groupby 함수](#groupby-함수)
   - [1) 1개 열을 기준으로 그룹화](#1-1개-열을-기준으로-그룹화)
   - [2) 여러 열을 기준으로 그룹화](#2-여러-열을-기준으로-그룹화)
-  - [3) by에 function/dict(혹은 Series)가 전달되는 경우](#3-by에-functiondict혹은-Series가-전달되는-경우)
+  - [3) by에 function/dict(혹은 Series)가 전달되는 경우](#3-by에-functiondict혹은-series가-전달되는-경우)
   - [4) 그룹 연산 메소드](#4-그룹-연산-메소드)
   - [5) as_index](#5-as_index)
   - [6) level](#6-level)
