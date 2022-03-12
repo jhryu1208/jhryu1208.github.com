@@ -16,7 +16,7 @@ mathjax: true
   - [5) as_index](#5-as_index)
   - [6) level](#6-level)
 
-지난 포스팅에 이어서 pandas의 `merge`와 `join`에 대해서 정리하였습니다.
+해당 포스티에서는 pandas의 `groupby`에 대해서 정리하였습니다.
 
 <br>
 
