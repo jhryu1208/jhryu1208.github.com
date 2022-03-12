@@ -47,15 +47,12 @@ print(df.info())
 ```
 
 ```bash
-+----+---------------+--------+--------+-------------+
-|    | name          | team   | pos    |   home_runs |
-|----+---------------+--------+--------+-------------|
-|  0 | Won Jun Choi  | KIA    | 외야수 |           4 |
-|  1 | Sung Bum Na   | NC     | 외야수 |          33 |
-|  2 | Hye Seong Kim | 키움   | 유격수 |           3 |
-|  3 | Jose Pirela   | 삼성   | 외야수 |          29 |
-|  4 | Jun Woo Jeon  | 롯데   | 외야수 |           7 |
-+----+---------------+--------+--------+-------------+
+            name  team    pos  home_runs
+0   Won Jun Choi   KIA  외야수          4
+1    Sung Bum Na    NC  외야수         33
+2  Hye Seong Kim   키움  유격수         3
+3    Jose Pirela   삼성  외야수        29
+4   Jun Woo Jeon   롯데  외야수         7
 
 RangeIndex: 305 entries, 0 to 304
 Data columns (total 4 columns):
