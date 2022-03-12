@@ -117,13 +117,13 @@ for key, group in group_df:
 <class 'pandas.core.groupby.generic.DataFrameGroupBy'>
 Group Key : KIA
 DataFrame Row : 31
-            name team    pos  home_runs
+         name team    pos  home_runs
 0   Won Jun Choi  KIA  외야수          4
 13   Sun Bin Kim  KIA  2루수          5
 
 Group Key : LG
 DataFrame Row : 30
-             name team    pos  home_runs
+           name team    pos  home_runs
 9   Chang Ki Hong   LG  외야수          4
 12   Hyun Soo Kim   LG  외야수         17
 
@@ -131,13 +131,13 @@ DataFrame Row : 30
 
 Group Key : 키움
 DataFrame Row : 31
-             name  team     pos  home_runs
+             name   team pos     home_runs
 2   Hye Seong Kim   키움  유격수          3
 23   Jung Hoo Lee   키움  외야수          7
 
 Group Key : 한화
 DataFrame Row : 36
-            name  team     pos  home_runs
+            name   team pos     home_runs
 8      Ju Suk Ha   한화  유격수         10
 14  Eun Won Jung   한화  2루수          6
 ```
@@ -206,8 +206,8 @@ print(grouped_lg_ss)
 ```
               name team  pos     home_runs
 24      Ji Hwan Oh   LG  유격수          8
-121  Young Bin Lee   LG  유격수          2
-203   Bon Hyeok Gu   LG  유격수          0
+121   Young Bin Lee   LG  유격수          2
+203    Bon Hyeok Gu   LG  유격수          0
 ```
 
 <br>
