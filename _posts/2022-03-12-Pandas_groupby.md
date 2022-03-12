@@ -16,15 +16,14 @@ mathjax: true
   - [5) as_index](#5-as_index)
   - [6) level](#6-level)
 
-해당 포스티에서는 pandas의 `groupby`에 대해서 정리하였습니다.
+해당 포스팅에서는 pandas의 `groupby`에 대해서 정리하였습니다.
 
 <br>
 
 ---
 
-해당 포스팅에서는 다음의 DataFrame을 통해서 예제를 구성한다.
 
-이 예시 데이터는 스포츠 뉴스를 다루는 rotowire에서 기록한 2021 KBO의 타자별 데이터를 전처리한 데이터이다. 해당 DataFrame은 총 305명 선수의 소속 팀(team)과  수비할 때의 선수 포지션(pos), 그리고 시리즈 동안의 홈런 수(home_runs)를 담고 있으며, Null값은 존재하지 않는다.
+이후에 소개될 예제들은 해당 데이터를 이용한다. 이 데이터는 스포츠 뉴스를 다루는 rotowire에서 기록한 2021 KBO의 타자별 데이터를 전처리한 데이터이다. 총 305명 선수의 소속 팀(team)과  수비할 때의 선수 포지션(pos), 그리고 시리즈 동안의 홈런 수(home_runs)를 담고 있으며, Null값은 존재하지 않는다. 
 
 ```python
 project_path = os.getcwd()
