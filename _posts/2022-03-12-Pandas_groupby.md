@@ -139,7 +139,7 @@ Group Key : 한화
 DataFrame Row : 36
             name   team pos     home_runs
 8      Ju Suk Ha   한화  유격수         10
-14  Eun Won Jung   한화  2루수          6
+14   Eun Won Jung   한화  2루수          6
 ```
 
 <br>
