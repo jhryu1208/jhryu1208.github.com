@@ -283,14 +283,14 @@ hometown
 
 위에서 생성한 `DataFrameGroupBy`에는 각 그룹별로 다양한 집계치 연산을 수행할 수 있다. 기본적으로 pandas의 `DataFrameGroupBy`객체에는 다음과 같은 기본 메소드가 내장되어 있다.
 
-| method  | description     | method | description |
-|---------|-----------------|---------|-----------------|
-| max()   | 최대              | size()     | row 수 |
-| min()   | 최소              | var()      | 분산 |
-| sum()   | 합계              | std()      | 표준 편차 |
-| count() | 열별 카운팅(NaN제외)   | mean()     | 평균 |
-| first() | 첫 번째 행          | describe() | 통계 요약 |
-| last()  | 마지막 행           |            |  |
+| method  | description     | method     | description  |
+|---------|-----------------|------------|--------------|
+| max()   | 최대              | size()     | row 수        |
+| min()   | 최소              | var()      | 분산           |
+| sum()   | 합계              | std()      | 표준 편차        |
+| count() | 열별 카운팅(NaN제외)   | mean()     | 평균           |
+| first() | 첫 번째 행          | describe() | 통계 요약        |
+| last()  | 마지막 행           | nunique()  | Distinct 카운팅 |
 
 <br>
 
