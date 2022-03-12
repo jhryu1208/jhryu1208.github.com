@@ -8,7 +8,7 @@ comments: true
 mathjax: true
 ---
 #### Contents
-- [groupby 함수](#groupby-함수)
+- [groupby 메소드](#groupby-메소드)
   - [1) 1개 열을 기준으로 그룹화](#1-1개-열을-기준으로-그룹화)
   - [2) 여러 열을 기준으로 그룹화](#2-여러-열을-기준으로-그룹화)
   - [3) by에 function/dict(혹은 Series)가 전달되는 경우](#3-by에-functiondict혹은-series가-전달되는-경우)
