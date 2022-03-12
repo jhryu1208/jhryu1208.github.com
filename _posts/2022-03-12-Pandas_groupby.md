@@ -98,6 +98,8 @@ DataFrame.groupby(by=None, as_index=True, level=None,	dropna=True)
     - `False` : group의 key의 value가 NaN인 경우를 포함한다.
     - 대부분의 경우 default로 지정하여 사용한다.
 
+<br>
+
 ### <span style="color:navy">1) 1개 열을 기준으로 그룹화<span>
 
 다음의 예제는 예시 DataFrame에 오직 team열만을 기준으로 `groupby`메소드를 적용한 결과이다. `DataFrameGroupBy`라는 클래스 개체가 반환된 것을 확인할 수 있다.
@@ -406,7 +408,7 @@ LG    1루수         27
 
 <br>
 
-`level=0`인 경우, **첫 번째 인덱스를 기준으로 집계함수를 적용**하며, `level=1`인 경우, **두 번째 인덱스를 기준으로 집계함수를 적용**하는 것을 확인할 수 있다.
+`level=0`인 경우, **첫 번째 인덱스를 기준으로 집계함수를 적용**하며, <br>`level=1`인 경우, **두 번째 인덱스를 기준으로 집계함수를 적용**하는 것을 확인할 수 있다.
 
 ```python
 level0_df = group_df.groupby(level=0).mean()
