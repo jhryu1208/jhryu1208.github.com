@@ -266,7 +266,7 @@ print(result)
 ```
 
 ```
-        unique_cnt_by_dict  unique_cnt_by_sr
+          unique_cnt_by_dict  unique_cnt_by_sr
 hometown
 광주                    31                31
 대구                    29                29
@@ -445,3 +445,4 @@ pos
 
 - [rotowire KBO Player CSV](https://www.rotowire.com/)
 - [pandas doc: pandas.DataFrame.groupby](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html)
+- 오승환, 『파이썬 머신러닝 판다스 데이터 분석』, 정보문화사 (2019)
