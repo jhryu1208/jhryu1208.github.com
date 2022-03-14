@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[Pandas] 데이터 그룹 집계1 : agg, transform, filter"
-subtitle: "[Pandas] 데이터 그룹 집계1 : agg, transform, filter"
+title: "[Pandas] 데이터 그룹 집계2 : agg, transform, filter"
+subtitle: "[Pandas] 데이터 그룹 집계2 : agg, transform, filter"
 categories: data
 tags: pandas
 comments: true
