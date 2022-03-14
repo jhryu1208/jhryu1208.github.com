@@ -257,16 +257,3 @@ Name: at_bat, dtype: int64
 - [pandas doc : pandas.core.groupby.DataFrameGroupBy.filter](https://pandas.pydata.org/docs/reference/api/pandas.core.groupby.DataFrameGroupBy.filter.html?highlight=filter#pandas.core.groupby.DataFrameGroupBy.filter)
 - 오승환, 『파이썬 머신러닝 판다스 데이터 분석』, 정보문화사 (2019)
 
-
-```markdown
-|     | name             | team    |   at_bat |   total_at_bat |   ratio_at_bat |
-|----:|:-----------------|:--------|---------:|---------------:|---------------:|
-|   7 | Jose Fernandez   | DOOSAN  |      540 |           4900 |    0.110204    |
-|  16 | Suk Hwan Yang    | DOOSAN  |      488 |           4900 |    0.0995918   |
-|  19 | Jae Hwan Kim     | DOOSAN  |      475 |           4900 |    0.0969388   |
-|  20 | Kyoung Min Heo   | DOOSAN  |      468 |           4900 |    0.0955102   |
-|  28 | Kun Woo Park     | DOOSAN  |      458 |           4900 |    0.0934694   |
-|  57 | In Tae Kim       | DOOSAN  |      344 |           4900 |    0.0702041   |
-|  59 | Gye Beom Park    | DOOSAN  |      322 |           4900 |    0.0657143   |
-
-```
