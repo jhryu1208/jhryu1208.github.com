@@ -199,7 +199,7 @@ return_df['at_bat'].div(return_df['total_at_bat'],fill_value=np.nan)
 print(return_df.sort_values(by=['team', 'ratio_at_bat'], ascending=[True, False]))
 ```
 
-```text
+```markdown
               name    team  at_bat  total_at_bat  ratio_at_bat
 7     Jose Fernandez  DOOSAN     540          4900      0.110204
 16     Suk Hwan Yang  DOOSAN     488          4900      0.099592
