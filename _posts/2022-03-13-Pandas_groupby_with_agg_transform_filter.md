@@ -131,11 +131,11 @@ print(multi_func_df)
 
 ```python
 df = pd.DataFrame([[1, 2, 3],[4, 5, 6],[7, 8, 9]],
-                  columns = ['c1', 'c2', 'c3'],
-                  index = ['r1', 'r2', 'r3'])
+                columns = ['c1', 'c2', 'c3'],
+                index = ['r1', 'r2', 'r3'])
 
 def power(sr, x, y, z):
-		print(f"type:{type(sr)}")
+    print(f"type:{type(sr)}")
     sr.r1**=x
     sr.r2**=y
     sr.r3**=z
