@@ -26,7 +26,7 @@ mathjax: true
 
 `agg`는 [예전 포스팅](https://jhryu1208.github.io/data/2022/02/27/Pandas_Apply1/)에서 소개한 `apply`메소드와 비슷한 작업을 수행하며, 사용자 정의 함수(UDF)도 메소드에 넘겨 사용할 수 있다. 더불어, 둘 다 DataFrameGroupBy객체에서도 사용할 수 있다. 
 
-하지만, `agg`메소드는 `appyly`메소드와 달리 <u>**다수의 함수를 동시에 적용할 수 있다는 점**</u>에서 차이를 보인다.  즉, `apply`메소드를 여러번 사용하지 않아도 `agg`메소드 하나로 간결하게 끝낼 수 있다.
+하지만, `agg`메소드는 `appyly`메소드와 달리 <U>**다수의 함수를 동시에 적용할 수 있다는 점**</U>에서 차이를 보인다.  즉, `apply`메소드를 여러번 사용하지 않아도 `agg`메소드 하나로 간결하게 끝낼 수 있다.
 
 다음은 `agg`메소드의 기본 format이다.
 
@@ -57,7 +57,7 @@ print(mean_df)
 ```
 
 ```
-         at_bat      hits       home_runs  runs     
+       at_bat      hits       home_runs  runs     
 team                                                
 DOOSAN   175.000000  46.928571  3.928571   26.357143
 HANWHA   130.750000  30.944444  2.222222   16.666667
@@ -85,8 +85,8 @@ print(multi_func_df)
 ```
 
 ```
-         at_bat            hits             home_runs      runs           
-         mean        sum   mean       sum   mean      sum  mean       sum 
+       at_bat            hits             home_runs      runs           
+       mean        sum   mean       sum   mean      sum  mean       sum 
 team                                                                     
 DOOSAN   175.000000  4900  46.928571  1314  3.928571  110  26.357143  738
 HANWHA   130.750000  4707  30.944444  1114  2.222222   80  16.666667  600
@@ -116,7 +116,7 @@ print(multi_func_df)
 ```
 
 ```
-         at_bat  hits       home_runs
+       at_bat  hits       home_runs
 team                                 
 DOOSAN   4900    46.928571  11       
 HANWHA   4707    30.944444  10       
@@ -162,7 +162,7 @@ type:<class 'pandas.core.series.Series'>
       c1    c2    c3
 r1     1     4     9
 r2    64   125   216
-r3  2401  4096  6561
+r3   2401  4096  6561
 ```
 
 <br>
@@ -201,7 +201,7 @@ print(return_df.sort_values(by=['team', 'ratio_at_bat'], ascending=[True, False]
 
 ```
 
-                name    team  at_bat  total_at_bat  ratio_at_bat
+              name    team  at_bat  total_at_bat  ratio_at_bat
 7     Jose Fernandez  DOOSAN     540          4900      0.110204
 16     Suk Hwan Yang  DOOSAN     488          4900      0.099592
 19      Jae Hwan Kim  DOOSAN     475          4900      0.096939
