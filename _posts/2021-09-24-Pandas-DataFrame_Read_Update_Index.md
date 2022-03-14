@@ -11,7 +11,7 @@ mathjax: true
 - [열↔인덱스: set_index, reset_index](#열인덱스-set_index-reset_index)
 - [인덱스 재배열: reindex](#인덱스-재배열-reindex)
 - [인덱스 정렬: sort_index](#인덱스-정렬-sort_index)
-- [데이터프레임 Transpose](#데이터프레임-Transpose)
+- [데이터프레임 Transpose](#데이터프레임-transpose)
 
 본 포스팅은 Pandas의 DataFrame : Read&Update부분 중 데이터프레임의 인덱스 수정 및 정렬과 치환에 관하여 중점적으로 정리하였습니다.
 
