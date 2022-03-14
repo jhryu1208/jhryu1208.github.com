@@ -22,7 +22,6 @@ mathjax: true
 
 ---
 
-
 ## <span style="color:navy">agg 메소드<span>
 
 `agg`는 [예전 포스팅](https://jhryu1208.github.io/data/2022/02/27/Pandas_Apply1/)에서 소개한 `apply`메소드와 비슷한 작업을 수행하며, 사용자 정의 함수(UDF)도 메소드에 넘겨 사용할 수 있다. 더불어, 둘 다 DataFrameGroupBy객체에서도 사용할 수 있다. 
