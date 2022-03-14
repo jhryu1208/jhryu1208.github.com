@@ -259,16 +259,14 @@ Name: at_bat, dtype: int64
 
 
 ```
-                 name     team  at_bat  total_at_bat  ratio_at_bat
-7      Jose Fernandez   DOOSAN     540          4900      0.110204
-16      Suk Hwan Yang   DOOSAN     488          4900      0.099592
-19       Jae Hwan Kim   DOOSAN     475          4900      0.096939
-20     Kyoung Min Heo   DOOSAN     468          4900      0.095510
-28       Kun Woo Park   DOOSAN     458          4900      0.093469
-57         In Tae Kim   DOOSAN     344          4900      0.070204
-59      Gye Beom Park   DOOSAN     322          4900      0.065714
-61       Soo Bin Jung   DOOSAN     313          4900      0.063878
-62      Seung Ho Kang   DOOSAN     301          4900      0.061429
-82      Sei Hyok Park   DOOSAN     237          4900      0.048367
-95         Jae Ho Kim   DOOSAN     211          4900      0.043061
+|     | name             | team    |   at_bat |   total_at_bat |   ratio_at_bat |
+|----:|:-----------------|:--------|---------:|---------------:|---------------:|
+|   7 | Jose Fernandez   | DOOSAN  |      540 |           4900 |    0.110204    |
+|  16 | Suk Hwan Yang    | DOOSAN  |      488 |           4900 |    0.0995918   |
+|  19 | Jae Hwan Kim     | DOOSAN  |      475 |           4900 |    0.0969388   |
+|  20 | Kyoung Min Heo   | DOOSAN  |      468 |           4900 |    0.0955102   |
+|  28 | Kun Woo Park     | DOOSAN  |      458 |           4900 |    0.0934694   |
+|  57 | In Tae Kim       | DOOSAN  |      344 |           4900 |    0.0702041   |
+|  59 | Gye Beom Park    | DOOSAN  |      322 |           4900 |    0.0657143   |
+
 ```
