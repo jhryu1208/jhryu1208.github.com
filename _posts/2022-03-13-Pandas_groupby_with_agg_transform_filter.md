@@ -197,20 +197,19 @@ return_df['at_bat'].div(return_df['total_at_bat'],fill_value=np.nan)
 print(return_df.sort_values(by=['team', 'ratio_at_bat'], ascending=[True, False]))
 ```
 
-```markdown
-              name    team  at_bat  total_at_bat  ratio_at_bat
-7     Jose Fernandez  DOOSAN     540          4900      0.110204
-16     Suk Hwan Yang  DOOSAN     488          4900      0.099592
-19      Jae Hwan Kim  DOOSAN     475          4900      0.096939
-20    Kyoung Min Heo  DOOSAN     468          4900      0.095510
-28      Kun Woo Park  DOOSAN     458          4900      0.093469
-..               ...     ...     ...           ...           ...
-212  Geon Hyoung Kim      kt      33          4810      0.006861
-237      Jun Tae Kim      kt      17          4810      0.003534
-257   Hyeon Bin Hong      kt      11          4810      0.002287
-273  Seung Wook Park      kt       6          4810      0.001247
-294  Myeong Seong Go      kt       1          4810      0.000208
-```
+|     | name           | team   | at_bat | total_at_bat | ratio_at_bat |
+|----:|:---------------|:-------|-------:|-------------:|-------------:|
+|   7 | Jose Fernandez | DOOSAN |    540 |         4900 |     0.110204 |
+|  16 | Suk Hwan Yang  | DOOSAN |    488 |         4900 |    0.0995918 |
+|  19 | Jae Hwan Kim   | DOOSAN |    475 |         4900 |    0.0969388 |
+|  20 | Kyoung Min Heo | DOOSAN |    468 |         4900 |    0.0955102 |
+|  28 | Kun Woo Park   | DOOSAN |    458 |         4900 |    0.0934694 |
+| ... | ...            | ...    |    ... |          ... |          ... |
+| 178 | Hong Ku Lee    | kt     |     55 |         4810 |    0.0114345 |
+| 182 | Byung Hee Kim  | kt     |     52 |         4810 |    0.0108108 |
+| 185 | Min Sub Song   | kt     |     48 |         4810 |   0.00997921 |
+| 192 | Min Gook Kang  | kt     |     45 |         4810 |   0.00935551 |
+| 194 | Seong Ho Cheon | kt     |     42 |         4810 |   0.00873181 |
 
 <br>
 
