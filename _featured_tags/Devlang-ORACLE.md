@@ -1,6 +1,6 @@
 ---
 layout: tag-blog
-title: (DBMS)ORACLE
+title: ORACLE
 slug: (dbms)oracle
 category: devlang
 menu: false

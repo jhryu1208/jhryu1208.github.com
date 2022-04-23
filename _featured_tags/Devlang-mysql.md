@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: (OS)Ubuntu
-slug: (os)ubuntu
+title: MySQL
+slug: (dbms)mysql
 category: devlang
 menu: false
-order: 4
+order: 3
 ---
