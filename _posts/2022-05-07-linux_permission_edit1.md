@@ -129,7 +129,7 @@ $ chmod a=rwx hello_permission.py
 
 <br>
 
-다음 포스팅에서는 `umask`에 관해서 알아보고자 한다.
+다음 포스팅에서는 `chmod`와 다른 퍼미션 편집 명령어인 `umask`에 관해서 알아보고자 한다.
 
 <br>
 
