@@ -20,7 +20,7 @@ mathjax: true
 
 ---
 
-## <span style="color:navy"> 리눅스 퍼미션 <span>
+## <span style="color:navy">리눅스 퍼미션<span>
 
 종종 리눅스 환경에서 특정 json키와 같은 인증키를 통해서 DB에 연결하고자 할 때, 혹은 다른 사람이 생성한 파일 혹은 디렉토리에 편집/접근하려고 할 때,
 퍼미션 관련 문제로 인해 인증키 파일을 참조하지 못하거나 디렉토리에 접근하지 못하는 경험을 대부분의 유저가 가지고 있다. 
@@ -31,7 +31,7 @@ mathjax: true
 
 <br>
 
-## <span style="color:navy"> 퍼미션 심볼 <span>
+## <span style="color:navy">퍼미션 심볼<span>
 
 문자열을 처음 마주하였을 때 r, w, x, l, d 등 문자가 나열된 것을 확인할 수 있다. 
 이 문자열은 단순히 이어서 읽는 것이 아니라 다음과 같이 끊어 읽어야 한다. 
@@ -42,7 +42,7 @@ mathjax: true
 
 <br>
 
-### <span style="color:navy"> 1-1) 파일 타입 <span>
+### <span style="color:navy">1-1) 파일 타입<span>
 
 
 아래와 같이 특정 디렉토리안에 `일반파일`, `디렉토리`, 그리고 `심볼릭 파일`을 생성하고,
@@ -65,7 +65,7 @@ mathjax: true
 
 <br>
 
-### <span style="color:navy"> 1-2) 읽기/쓰기/실행 권한 <span>
+### <span style="color:navy">1-2) 읽기/쓰기/실행 권한<span>
 
 파일 타입을 의미하는 단일 문자 다음에 위치한 문자들의 경우 파일에 대한 권한을 의미한다.
 `r`("R"ead), `w`("W"rite), 그리고 `x`(e"X"ecute)가 존재하며, 파일 형식이 파일인지 디렉토리인지에 따라서 조금의 차이가 있다.
@@ -94,7 +94,7 @@ mathjax: true
 
 <br>
 
-### <span style="color:navy"> 1-3) 사용자/그룹/그 외 사용자 <span>
+### <span style="color:navy">1-3) 사용자/그룹/그 외 사용자<span>
 
 권한 문자열의 각 단락의 의미를 파악하기 앞서 리눅스의 사용자에 대해서 먼저 짚고 간다.
 사용자는 크게 **소유자(혹은 유저)**(`u: user`), **그룹**(`g : group`), **소유자 이외의 다른 사람**(`o, other`), 그리고 **전체**(`a, all`)로 나뉘어진다.
