@@ -27,7 +27,7 @@ mathjax: true
 이처럼, **멀티 유저 운영체제인 리눅스에서는 무분별한 파일의 접근을 막고자 파일과 디렉토리에 접근 권한을 설정**할 수 있다. 
 각 디렉토리 혹은 파일의 퍼미션은 터미널에서 `ls -l`명령어로 다음과 같이 가장 왼쪽에 위치한 열(가장 좌측에 위치한 단일 문자 제외)에서 쉽게 확인할 수 있다.
 
-![img_1.png](../assets/img/2022-05-07_linux_permission/figure_1.png)
+![img_1.png](/assets/img/2022-05-07_linux_permission/figure_1.png)
 
 <br>
 
@@ -38,7 +38,7 @@ mathjax: true
 그리고, 각 단락은 특정 파일의 타입과 권한을 설명한다.
 지금부터 각 단락이 무엇을 의미하는지 알아보도록 하자.
 
-![img_5.png](../assets/img/2022-05-07_linux_permission/figure_2.png)
+![img_5.png](/assets/img/2022-05-07_linux_permission/figure_2.png)
 
 <br>
 
