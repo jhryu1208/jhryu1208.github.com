@@ -65,7 +65,7 @@ $ chmod u+x hello_permission.py
 <br>
 
 그리고, 이 상태에서 기타유저(`o`)들이 파일을 읽지(`r`) 못하도록 하고 싶으며, 
-<i>hello_group</i>그룹(`g`)에 속한 유저들이 파일을 편집하지 못하고 읽고(`r`)/실행(`x`)할 수 있도록만 하고 싶을 경우에는
+<i>hello_group</i>그룹(`g`)에 속한 유저들이 파일을 편집하지 못하고 읽고(`r`)/실행(`x`)할 수 있도록 하고 싶을 경우에는
 다음과 같이 명령어를 작성한다.
 ```shell
 $ chmod o-r, g=rx hello_permission.py
