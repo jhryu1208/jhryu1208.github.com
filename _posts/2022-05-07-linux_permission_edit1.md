@@ -28,7 +28,7 @@ mathjax: true
 
 <br>
 
-chmod의 기본 형태는 다음과 같다.
+`chmod`의 기본 형태는 다음과 같다.
 ```shell
 $ chmod [option] [mode] [file_name]
 ```
