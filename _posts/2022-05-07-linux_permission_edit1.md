@@ -129,6 +129,10 @@ $ chmod a=rwx hello_permission.py
 
 <br>
 
+다음 포스팅에서는 `umask`에 관해서 알아보고자 한다.
+
+<br>
+
 ---
 
 ## <span style="color:navy">References<span>
