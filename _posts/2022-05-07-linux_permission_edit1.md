@@ -53,12 +53,16 @@ $ chmod g+rwx
 
 ![img.png](/assets/img/2022-05-07_linux_permission_edit1/img.png)
 
+<br>
+
 이 상태에서 <i>jhryu1208</i>유저(`u`)에게 실행(`x`) 권한을 추가하고 싶을 경우에는 다음의 명령어를 작성한다.
 그 결과 해당 유저는 `x`권한까지 부여 받은 것을 확인할 수 있다.
 ```shell
 $ chmod u+x hello_permission.py
 ```
 ![img_1.png](/assets/img/2022-05-07_linux_permission_edit1/img_1.png)
+
+<br>
 
 그리고, 이 상태에서 기타유저(`o`)들이 파일을 읽지(`r`) 못하도록 하고 싶으며, 
 <i>hello_group</i>그룹(`g`)에 속한 유저들이 파일을 편집하지 못하고 읽고(`r`)/실행(`x`)할 수 있도록만 하고 싶을 경우에는
@@ -67,6 +71,8 @@ $ chmod u+x hello_permission.py
 $ chmod o-r, g=rx hello_permission.py
 ```
 ![img_3.png](/assets/img/2022-05-07_linux_permission_edit1/img_3.png)
+
+<br>
 
 여기서, 전체유저(`a`)들에게 전체 권한을 부여하고 싶을 경우 다음과 같이 작성한다.
 ```shell
