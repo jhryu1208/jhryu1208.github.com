@@ -48,7 +48,7 @@ mathjax: true
 아래와 같이 특정 디렉토리안에 `일반파일`, `디렉토리`, 그리고 `심볼릭 파일`을 생성하고,
 각 파일의 문자열의 가장 좌측에 위치한 단일 문자가 모두 다른 것을 확인할 수 있다. 
 이때, 이 단일 문자는 파일의 권한을 의미하는 것이 아닌 **파일의 타입**을 의미한다.
-![img_4.png](../assets/img/2022-05-07_linux_permission/figure_8.png)
+![img_4.png](/assets/img/2022-05-07_linux_permission/figure_8.png)
 
 위의 `d`, `l`, 그리고 `-`은 다음의 파일 타입을 의미하며, 이 뿐만 아니라 `s`, `c`와 같은 파일 타입들도 존재한다. <br>
 (가장 일반적으로 확인할 수 있는 파일 타입이 `d`, `l`, 그리고 `-`이다. )
@@ -61,7 +61,7 @@ mathjax: true
 따라서, 위의 이미지에서 empty_dir은 디렉토리(`d`), empty_file은 일반 파일(`-`), 그리고 symbolic_file은 심볼릭 링크(`l`)임을 
 파일 상세 정보에서 표시되는 문자열을 통해서 파악할 수 있다. 
 
-![img_6.png](../assets/img/2022-05-07_linux_permission/figure_3.png)
+![img_6.png](/assets/img/2022-05-07_linux_permission/figure_3.png)
 
 <br>
 
@@ -84,7 +84,7 @@ mathjax: true
 
 <br>
 
-![img_7.png](../assets/img/2022-05-07_linux_permission/figure_4.png)
+![img_7.png](/assets/img/2022-05-07_linux_permission/figure_4.png)
 
 <br>
 
@@ -104,14 +104,14 @@ mathjax: true
 모든 유저(`u`)들은 최소한 하나의 그룹(`g`)에 기본적으로 속해 있으며, 소유자(`u`)는 다수의 그룹(`g`)에 속해 있을 수 있다.
 서버내 유저들이 속한 그룹을 확인하기 위해서는 다음과 같이 `/etc/group`을 통해서도 확인할 수 있으며,
 
-![img_8.png](../assets/img/2022-05-07_linux_permission/figure_5.png)
+![img_8.png](/assets/img/2022-05-07_linux_permission/figure_5.png)
 
 <br>
 
 `groups` 명령어(=`id -Gn` 명렁어)를 통해서 현재 **로그인된 계정이 속한 모든 그룹들을 확인**할 수 있으며, 
 `groups`명령어에 다른 유저 아이디를 추가하여 해당 유저가 어떤 그룹들에 속해있는지 확인할 수 있다.
 
-![img_9.png](../assets/img/2022-05-07_linux_permission/figure_6.png)
+![img_9.png](/assets/img/2022-05-07_linux_permission/figure_6.png)
 
 <br>
 
@@ -119,7 +119,7 @@ mathjax: true
 각 단락의 <u>순서대로</u> 
 **소유자(혹은 유저)**(`u: user`)**에 대한 권한**, **그룹**(`g : group`)**에 대한 권한**, **소유자 이외의 다른 사람**(`o, other`)**에 대한 권한**을 의미한다.
 
-![img_11.png](../assets/img/2022-05-07_linux_permission/figure_7.png)
+![img_11.png](/assets/img/2022-05-07_linux_permission/figure_7.png)
 
 <br>
 
