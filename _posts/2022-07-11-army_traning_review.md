@@ -7,15 +7,12 @@ comments: true
 mathjax: true
 ---
 
-<br>
-
-![ho-gug-yo-ram](https://user-images.githubusercontent.com/53929665/178284416-f6ccce0d-d871-4828-8e09-b180202e4630.jpg)
-
-<br>
-
 올해 6월 16일부터 7월 7일까지 논산 육군 훈련소를 다녀오고 인상 깊었던 점이 많아서
 들어가기 전에 챙겼던 준비물, 안 챙겨서 아쉬웠던 것들, 받았던 훈련들은 어땠는지, 본대에서의 생활, 격리 부대에서의 생활, 그리고 기대했던 것과 달랐던 점 등등을 의식적 흐름대로 글로 남겨보고자 합니다.
 들어가기에 앞서 저는 29연대에서 5일간 격리 생활을 보냈고, 격리가 끝난 후 27연대에서 훈련을 받았습니다.
+
+
+![ho-gug-yo-ram](https://user-images.githubusercontent.com/53929665/178284416-f6ccce0d-d871-4828-8e09-b180202e4630.jpg)
 
 <br>
 
