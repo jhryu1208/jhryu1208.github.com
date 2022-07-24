@@ -6,5 +6,5 @@ menu: true
 submenu: true
 order: 6
 description: >
-  지식 저장소
+  일상 저장소
 ---
