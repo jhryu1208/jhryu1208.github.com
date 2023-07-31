@@ -9,5 +9,7 @@ layout: base
 {% include related.html post=page %}
 
 
-
+{ % if page.use_math % }
+  { % include mathjax % }
+{ % endif % }
 

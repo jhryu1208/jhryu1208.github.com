@@ -64,6 +64,15 @@ $O(n)$
 
 <br>
 
+
+
+<br>
+
+
+<span>$</span>
+
+
+
 ### <span style="color:navy">(1) 원소 덧붙이기: `.append()`, 값을 반환하지 않는 메소드<span>
 
 ```python
