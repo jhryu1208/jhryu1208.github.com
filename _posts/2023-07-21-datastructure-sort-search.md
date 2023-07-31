@@ -8,14 +8,16 @@ comments: true
 ---
 #### Contents
 
-- [정렬(Sort) 이란?](#정렬Sort-이란)
+- [정렬(Sort) 이란?](#정렬sort-이란)
   - [(1) 내장함수: sorted()](#1-내장함수-sorted)
   - [(2) 메서드: .sort()](#2-메서드-sort)
-- [수치(Number)가 아닌 데이터형의 정렬?](#수치Number가-아닌-데이터형의-정렬)
-- [탐색(Search) 이란?](#탐색Search-이란)
-  - [(1) 선형 탐색 (Linear Search)](#1-선형-탐색-Linear-Search)
-  - [(2) 이진 탐색 (Binary Search)](#2-이진-탐색-Binary-Search)
+- [수치(Number)가 아닌 데이터형의 정렬?](#수치number가-아닌-데이터형의-정렬)
+- [탐색(Search) 이란?](#탐색search-이란)
+  - [(1) 선형 탐색 (Linear Search)](#1-선형-탐색-linear-search)
+  - [(2) 이진 탐색 (Binary Search)](#2-이진-탐색-binary-search)
 
+
+<br>
 <br>
 
 ---
