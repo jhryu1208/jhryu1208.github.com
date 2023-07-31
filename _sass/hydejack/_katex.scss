@@ -1,5 +1,5 @@
 article {
-  .katex-display, div.MathJax_Preview {
+  div.MathJax_Preview {
     /* Prevent code linebreaks and allow side-scrolling (much better readability on mobile) */
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
