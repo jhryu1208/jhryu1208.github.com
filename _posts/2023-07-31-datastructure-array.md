@@ -40,6 +40,7 @@ comments: true
 
 `Big-O Notation`으로 \\(O(1)\\)이라고 표시한다.
 
+<br>
 
 ### <span style="color:navy">(1) 원소 덧붙이기: `.append()`<span>
 
