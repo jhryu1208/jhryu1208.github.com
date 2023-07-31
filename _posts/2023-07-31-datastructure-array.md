@@ -44,8 +44,11 @@ comments: true
 
 <br>
 
-\(O(n)\)
-
+$
+\begin{aligned}
+O(n)
+\end{align}
+$
 
 <br>
 
