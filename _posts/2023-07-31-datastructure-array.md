@@ -39,7 +39,7 @@ mathjax: true
 
 즉, 리스트의 길이와 무관하게 상수시간내에서 해낼 수 있는 일을 
 
-`Big-O Notation`으로 $`O(1)`$이라고 표시한다.
+`Big-O Notation`으로 \\(O(1)\\)이라고 표시한다.
 
 <br>
 
