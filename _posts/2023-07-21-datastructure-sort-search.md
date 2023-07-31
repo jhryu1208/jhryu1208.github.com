@@ -16,7 +16,7 @@ comments: true
   - [(1) 선형 탐색 (Linear Search)](#1-선형-탐색-linear-search)
   - [(2) 이진 탐색 (Binary Search)](#2-이진-탐색-binary-search)
 
-해당 포스팅에서는 자료구조의 정렬과 탐색에 관하 정리하였습니다.
+해당 포스팅에서는 자료구조의 정렬과 탐색에 관하여 정리하였습니다.
 
 <br>
 
