@@ -43,6 +43,13 @@ mathjax: true
 
 \\(O(n)\\)
 
+<br>
+
+\(O(n)\)
+
+
+<br>
+
 $O(n)$
 
 ### <span style="color:navy">(1) 원소 덧붙이기: `.append()`<span>
