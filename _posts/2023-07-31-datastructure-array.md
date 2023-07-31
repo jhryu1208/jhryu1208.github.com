@@ -6,6 +6,7 @@ categories: data
 tags: datastructure
 comments: true
 mathjax: true
+kartex: true
 ---
 #### Contents
 - [선형 배열](#선형-배열)
@@ -43,9 +44,19 @@ mathjax: true
 
 \\(O(n)\\)
 
+<br>
+
 ++O(n)++
 
+<br>
+
+
 $$O(n)$$
+
+<br>
+
+
+$O(n)$
 
 
 <br>
