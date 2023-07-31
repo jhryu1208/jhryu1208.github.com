@@ -147,11 +147,11 @@ print(x) # [20, 37, 72, 91]
 
 - 탐색하는 리스트에 색인하고자 하는 원소가 존재하지 않을 경우 `ValueError`를 반환함
 
-```python
-L = ['Bob', 'Cat', 'Spam', 'Programmers']
-
-L.index('Spam') # 2
-```
+  ```python
+  L = ['Bob', 'Cat', 'Spam', 'Programmers']
+  
+  L.index('Spam') # 2
+  ```
 
 <br>
 
