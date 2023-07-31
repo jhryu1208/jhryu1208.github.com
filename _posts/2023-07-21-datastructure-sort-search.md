@@ -173,25 +173,23 @@ comments: true
         
 - 다음은 [1, 3, 7, 8, 12, 15]라는 정렬된 리스트에서 원소 8을 탐색을 적용하는 예시이다.
 
-<br>
+  1. *먼저 Min Index와 Max Index를 찾는다.
+          - Min Index = 0, Max Index = 5
+  2. 발견된 Min Index와 Max Index 사이의 Mid Index를 집계한다.
+      - (Max Index + Low Index)/2 = Mid Index
+      - 이때, 소숫점 이하를 버렸을 때, Mid index=2이다.
+  3. Mid index에 위치한 원소와 찾고자하는 원소 8을 비교한다.
+      - index=2에 위치한 원소는 7이며, 8보다 작다.
+      - 따라서, 7의 좌측에 위치한 모든 원소는 정렬되어있기에 8보다 작을 것이고 탐색의 과정에서 배제된다.
+  4. *배제된 상태의 리스트에서 Min Index와 Max Index를 재탐색한다.
+      - Min Index = 3, Max Index = 5
 
-1. *먼저 Min Index와 Max Index를 찾는다.
-    - Min Index = 0, Max Index = 5
-2. 발견된 Min Index와 Max Index 사이의 Mid Index를 집계한다.
-    - (Max Index + Low Index)/2 = Mid Index
-    - 이때, 소숫점 이하를 버렸을 때, Mid index=2이다.
-3. Mid index에 위치한 원소와 찾고자하는 원소 8을 비교한다.
-    - index=2에 위치한 원소는 7이며, 8보다 작다.
-    - 따라서, 7의 좌측에 위치한 모든 원소는 정렬되어있기에 8보다 작을 것이고 탐색의 과정에서 배제된다.
-4. *배제된 상태의 리스트에서 Min Index와 Max Index를 재탐색한다.
-    - Min Index = 3, Max Index = 5
+  1. 2~3의 과정을 재수행한다.
+      - 재수행 결과, Mid Index에 위치한 원소 12와 찾고자하는 원소 8을 비교했을 때,  원소 12가 원소 8보다 크다. 따라서, 12의 우측에 위치한 모든 원소는 정렬되어있기에 8보다 클 것이고 탐색의 과정에서 배제된다.
 
-1. 2~3의 과정을 재수행한다.
-    - 재수행 결과, Mid Index에 위치한 원소 12와 찾고자하는 원소 8을 비교했을 때,  원소 12가 원소 8보다 크다. 따라서, 12의 우측에 위치한 모든 원소는 정렬되어있기에 8보다 클 것이고 탐색의 과정에서 배제된다.
-
-1. *배제된 상태의 리스트에서 Min Index와 Max Index를 재탐색한다.
-    - Min Index = Max Index = 3
-    - 재수행 결과, Mid Index에 위치한 원소는 찾고자하는 원소 8이 있음을 확인할 수 있다.
+  1. *배제된 상태의 리스트에서 Min Index와 Max Index를 재탐색한다.
+      - Min Index = Max Index = 3
+      - 재수행 결과, Mid Index에 위치한 원소는 찾고자하는 원소 8이 있음을 확인할 수 있다.
 
 <br>
 
