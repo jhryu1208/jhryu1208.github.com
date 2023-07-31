@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[자료구조] 1.선형배열"
-subtitle: "[자료구조] 1.선형배열"
+title: "[자료구조] 1.선형 배열(Linear Arrays)"
+subtitle: "[자료구조] 1.선형 배열(Linear Arrays)"
 categories: data
 tags: datastructure
 comments: true
