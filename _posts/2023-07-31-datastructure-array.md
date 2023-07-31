@@ -6,7 +6,6 @@ categories: data
 tags: datastructure
 comments: true
 mathjax: true
-kartex: true
 ---
 #### Contents
 - [선형 배열](#선형-배열)
@@ -43,6 +42,10 @@ kartex: true
 `Big-O Notation`으로 ++O(1)++이라고 표시한다.
 
 \\(O(n)\\)
+
+<br>
+
+\\[O(n)\\]
 
 <br>
 
