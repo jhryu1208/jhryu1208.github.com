@@ -41,6 +41,13 @@ mathjax: true
 
 `Big-O Notation`으로 ++O(1)++이라고 표시한다.
 
+\\(O(n)\\)
+
+++O(n)++
+
+$$O(n)$$
+
+
 <br>
 
 ### <span style="color:navy">(1) 원소 덧붙이기: `.append()`, 값을 반환하지 않는 메소드<span>
