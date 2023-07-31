@@ -2,7 +2,7 @@
 layout: post
 title: "[자료구조] 선형배열"
 subtitle: "[자료구조] 선형배열"
-categories: devlang
+categories: data
 tags: datastructure
 comments: true
 mathjax: true
