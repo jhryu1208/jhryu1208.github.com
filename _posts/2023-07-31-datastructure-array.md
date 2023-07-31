@@ -5,7 +5,6 @@ subtitle: "[자료구조] 선형배열"
 categories: data
 tags: datastructure
 comments: true
-mathjax: true
 ---
 #### Contents
 - [선형 배열](#선형-배열)
