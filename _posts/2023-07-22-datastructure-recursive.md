@@ -158,7 +158,7 @@ if __name__ == "__main__":
     
     우측 서브트리에 위치한 노드(*N2*)에는 *R*노드 내에 위치한 수 보다 큰 값이 위치한다. 
 
-    ~~~ mermaid
+    ``` mermaid
     flowchart TD
     
     node([ R])
@@ -167,7 +167,7 @@ if __name__ == "__main__":
     
     node --> |왼쪽 서브트리: R <= N1|n1
     node --> |오른쪽 서브트리: R > N2|n2
-    ~~~
+    ```
     
 <br>
 
