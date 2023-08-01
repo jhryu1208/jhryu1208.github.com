@@ -176,26 +176,26 @@ if __name__ == "__main__":
     다음은 트리 구조를 통해 **리스트 [5, 9, 10, 12, 15, 17, 23]에서 재귀적으로 원소 10을 찾는 예시**이다.
 
     <div class="mermaid" markdown="0" >
-    flowchart TD
-    classDef green fill:green, stroke:black, stroke-width:2px, color:white
-    
-    node([12]):::green
-    n1([9])
-    n2([17])
-    n3([5])
-    n4([10 발견!])
-    n5([15])
-    n6([23])
-    
-    node --> |Step1: 10<=12|n1:::green
-    node --> |X|n2
-    n1 --> |X|n3
-    n1 --> |Step2:10>9|n4:::green
-    n2 --> n5
-    n2 --> n6
-    
-    linkStyle 0 stroke:green
-    linkStyle 3 stroke:green
+      flowchart TD
+      classDef green fill:green, stroke:black, stroke-width:2px, color:white
+      
+      node([12]):::green
+      n1([9])
+      n2([17])
+      n3([5])
+      n4([10 발견!])
+      n5([15])
+      n6([23])
+      
+      node --> |Step1: 10<=12|n1:::green
+      node --> |X|n2
+      n1 --> |X|n3
+      n1 --> |Step2:10>9|n4:::green
+      n2 --> n5
+      n2 --> n6
+      
+      linkStyle 0 stroke:green
+      linkStyle 3 stroke:green
     </div>
 
 <br>
