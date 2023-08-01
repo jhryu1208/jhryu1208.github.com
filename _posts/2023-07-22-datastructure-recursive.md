@@ -173,7 +173,7 @@ if __name__ == "__main__":
     
     다음은 트리 구조를 통해 **리스트 [5, 9, 10, 12, 15, 17, 23]에서 재귀적으로 원소 10을 찾는 예시**이다.
 
-    <div class="mermaid" markdown="0" >
+    <div class="mermaid">
       flowchart TD
       classDef green fill:green, stroke:black, stroke-width:2px, color:white
       
