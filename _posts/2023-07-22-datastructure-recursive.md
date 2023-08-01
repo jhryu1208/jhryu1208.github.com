@@ -19,9 +19,7 @@ comments: true
 ## 재귀함수(Recursive Functions) 란?
 
 - 하나의 함수 혹은 알고리즘을 반복적으로 호출하여 작업을 수행하는 성질을 의미한다.
-- 재귀 알고리즘(Recursive Algorithm)이라고 불리는 것들이 있으나,
-    
-    `재귀(Recursive)` 자체는 알고리즘이 아니라 `성질`에 해당한다.
+- 재귀 알고리즘(Recursive Algorithm)이라고 불리는 것들이 있으나,<br>`재귀(Recursive)` 자체는 알고리즘이 아니라 `성질`에 해당한다.
     
 - 해당 성질을 이용해서 생각보다 많은 종류의 문제를 재귀적(Recursively)으로 해결할 수 있다.
 - 더불어, 정상적으로 해결하기 위해서는 `종결 조건(Trivial Case)`에 대해서 반드시 명시해줄 필요하며,  해당 조건까지를 아울러 `재귀 알고리즘(Recursive Algorithm)`이라한다.
