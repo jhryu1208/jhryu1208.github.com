@@ -150,51 +150,16 @@ if __name__ == "__main__":
 다음은 `이진 탐색(Binary Serach)`에서 재귀함수를 적용한 경우에 대한 설명이다.
 
 - 각 노드내에 정수형 숫자를 지니고 있으며 다음의 규칙을 요구하는 자료구조가 있다고 정의하자.
-- Root노드(*R*)를 기준으로
-    
-    왼쪽 서브트리에 위치한 노드(*N1*)에는 *R*노드 내에 위치한 수 보다 작거나 같은 값이 위치하며, 
-    
-    우측 서브트리에 위치한 노드(*N2*)에는 *R*노드 내에 위치한 수 보다 큰 값이 위치한다. 
-
-    ```mermaid!
-    flowchart TD
-    
-    node([ R])
-    n1([N1])
-    n2([N2])
-    
-    node --> |왼쪽 서브트리: R <= N1|n1
-    node --> |오른쪽 서브트리: R > N2|n2
-    ```
-    
+  - Root노드(*R*)를 기준으로<br>
+    왼쪽 서브트리에 위치한 노드(*N1*)에는 *R*노드 내에 위치한 수 보다 작거나 같은 값이 위치하며, <br>우측 서브트리에 위치한 노드(*N2*)에는 *R*노드 내에 위치한 수 보다 큰 값이 위치한다. 
+  
+    [![](https://mermaid.ink/img/eyJjb2RlIjoiICAgIGZsb3djaGFydCBURFxuICAgIFxuICAgIG5vZGUoWyBSXSlcbiAgICBuMShbTjFdKVxuICAgIG4yKFtOMl0pXG4gICAgXG4gICAgbm9kZSAtLT4gfOyZvOyqvSDshJzruIztirjrpqw6IFIgPD0gTjF8bjFcbiAgICBub2RlIC0tPiB87Jik66W47Kq9IOyEnOu4jO2KuOumrDogUiA-IE4yfG4yXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)](https://mermaid-js.github.io/docs/mermaid-live-editor-beta/#/edit/eyJjb2RlIjoiICAgIGZsb3djaGFydCBURFxuICAgIFxuICAgIG5vZGUoWyBSXSlcbiAgICBuMShbTjFdKVxuICAgIG4yKFtOMl0pXG4gICAgXG4gICAgbm9kZSAtLT4gfOyZvOyqvSDshJzruIztirjrpqw6IFIgPD0gTjF8bjFcbiAgICBub2RlIC0tPiB87Jik66W47Kq9IOyEnOu4jO2KuOumrDogUiA-IE4yfG4yXG4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)
+ 
 <br>
 
-- 위의 트리 구조를 모든 노드에 대해서 재귀적으로 적용하면, 이진 트리 구조를 만들어볼 수 있다.
-    
-    다음은 트리 구조를 통해 **리스트 [5, 9, 10, 12, 15, 17, 23]에서 재귀적으로 원소 10을 찾는 예시**이다.
+- 위의 트리 구조를 모든 노드에 대해서 재귀적으로 적용하면, 이진 트리 구조를 만들어볼 수 있다. <br>다음은 트리 구조를 통해 **리스트 [5, 9, 10, 12, 15, 17, 23]에서 재귀적으로 원소 10을 찾는 예시**이다.
 
-    <div class="mermaid">
-      flowchart TD
-      classDef green fill:green, stroke:black, stroke-width:2px, color:white
-      
-      node([12]):::green
-      n1([9])
-      n2([17])
-      n3([5])
-      n4([10 발견!])
-      n5([15])
-      n6([23])
-      
-      node --> |Step1: 10<=12|n1:::green
-      node --> |X|n2
-      n1 --> |X|n3
-      n1 --> |Step2:10>9|n4:::green
-      n2 --> n5
-      n2 --> n6
-      
-      linkStyle 0 stroke:green
-      linkStyle 3 stroke:green
-    </div>
+    [![](https://mermaid.ink/img/eyJjb2RlIjoiICAgICAgZmxvd2NoYXJ0IFREXG4gICAgICBjbGFzc0RlZiBncmVlbiBmaWxsOmdyZWVuLCBzdHJva2U6YmxhY2ssIHN0cm9rZS13aWR0aDoycHgsIGNvbG9yOndoaXRlXG4gICAgICBcbiAgICAgIG5vZGUoWzEyXSk6OjpncmVlblxuICAgICAgbjEoWzldKVxuICAgICAgbjIoWzE3XSlcbiAgICAgIG4zKFs1XSlcbiAgICAgIG40KFsxMCDrsJzqsqwhXSlcbiAgICAgIG41KFsxNV0pXG4gICAgICBuNihbMjNdKVxuICAgICAgXG4gICAgICBub2RlIC0tPiB8U3RlcDE6IDEwPD0xMnxuMTo6OmdyZWVuXG4gICAgICBub2RlIC0tPiB8WHxuMlxuICAgICAgbjEgLS0-IHxYfG4zXG4gICAgICBuMSAtLT4gfFN0ZXAyOjEwPjl8bjQ6OjpncmVlblxuICAgICAgbjIgLS0-IG41XG4gICAgICBuMiAtLT4gbjZcbiAgICAgIFxuICAgICAgbGlua1N0eWxlIDAgc3Ryb2tlOmdyZWVuXG4gICAgICBsaW5rU3R5bGUgMyBzdHJva2U6Z3JlZW4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)](https://mermaid-js.github.io/docs/mermaid-live-editor-beta/#/edit/eyJjb2RlIjoiICAgICAgZmxvd2NoYXJ0IFREXG4gICAgICBjbGFzc0RlZiBncmVlbiBmaWxsOmdyZWVuLCBzdHJva2U6YmxhY2ssIHN0cm9rZS13aWR0aDoycHgsIGNvbG9yOndoaXRlXG4gICAgICBcbiAgICAgIG5vZGUoWzEyXSk6OjpncmVlblxuICAgICAgbjEoWzldKVxuICAgICAgbjIoWzE3XSlcbiAgICAgIG4zKFs1XSlcbiAgICAgIG40KFsxMCDrsJzqsqwhXSlcbiAgICAgIG41KFsxNV0pXG4gICAgICBuNihbMjNdKVxuICAgICAgXG4gICAgICBub2RlIC0tPiB8U3RlcDE6IDEwPD0xMnxuMTo6OmdyZWVuXG4gICAgICBub2RlIC0tPiB8WHxuMlxuICAgICAgbjEgLS0-IHxYfG4zXG4gICAgICBuMSAtLT4gfFN0ZXAyOjEwPjl8bjQ6OjpncmVlblxuICAgICAgbjIgLS0-IG41XG4gICAgICBuMiAtLT4gbjZcbiAgICAgIFxuICAgICAgbGlua1N0eWxlIDAgc3Ryb2tlOmdyZWVuXG4gICAgICBsaW5rU3R5bGUgMyBzdHJva2U6Z3JlZW4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)
 
 <br>
     
