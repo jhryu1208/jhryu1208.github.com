@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "[자료구조] 3.재귀 알고리즘 (Recursive Algorithms)"
-subtitle: "[자료구조] 3.재귀 알고리즘 (Recursive Algorithms)"
+title: "[자료구조] 4.알고리즘의 복잡도(Complexity of Algorithms)"
+subtitle: "[자료구조] 4.알고리즘의 복잡도(Complexity of Algorithms)"
 categories: data
 tags: datastructure
 comments: true
 ---
 #### Contents
-- [재귀함수(Recursive Functions) 란?](#재귀함수-recursive-functions-란)
-  - [(1) 예시: 등차수열](#1-예시-등차수열)
-  - [(2) 예시: 피보나치(Fibonacci)](#2-예시-피보나치fibonacci)
-  - [(3) 예시: 이진 탐색(Binary Search)](#3-예시-이진-탐색binary-search)
+- [알고리즘의 복잡도](#알고리즘의-복잡도)
+- [시간 복잡도](#시간-복잡도)
+- [빅오 표기법(Big-O Notation)](#빅오-표기법bigo-notation)
+  - [(1) 빅오 표기법 성능](#1-빅오-표기법-성능)
+  - [(2) 빅오 표기법 예시](#2-빅오-표기법-예시)
 
 <br>
 
