@@ -174,8 +174,8 @@ if __name__ == "__main__":
 - 위의 트리 구조를 모든 노드에 대해서 재귀적으로 적용하면, 이진 트리 구조를 만들어볼 수 있다.
     
     다음은 트리 구조를 통해 **리스트 [5, 9, 10, 12, 15, 17, 23]에서 재귀적으로 원소 10을 찾는 예시**이다.
-    
-    ~~~ mermaid
+
+    <div class="mermaid" markdown="0" >
     flowchart TD
     classDef green fill:green, stroke:black, stroke-width:2px, color:white
     
@@ -196,8 +196,7 @@ if __name__ == "__main__":
     
     linkStyle 0 stroke:green
     linkStyle 3 stroke:green
-    
-    ~~~
+    </div>
 
 <br>
     
