@@ -40,7 +40,9 @@ comments: true
 
 - 하지만, 원소를 탐색하는데 있어서, 인덱스 번호만 특정해주면 되는 선형 배열 \\(O(1)\\) 과 달리, <br>원소를 탐색하기 위해서는 <u>첫번째 Node의 데이터 원소부터 선형 탐색</u> \\(O(n)\\) 을 수행할 필요가 있다는 **단점**이 있다.
 
-- 연결리스트 클래스를 다음과 같이 정의하여 해당 포스팅을 진행하겠다.
+<br>
+
+- 연결리스트 클래스를 다음과 같이 정의하여 해당 포스팅을 진행한다.
     
     ```python
     class LinkedList:
@@ -63,6 +65,7 @@ comments: true
   
   [![](https://mermaid.ink/img/eyJjb2RlIjoiICAgICUle2luaXQ6IHtcImZsb3djaGFydFwiOiB7XCJodG1sTGFiZWxzXCI6IGZhbHNlfX0gfSUlXG4gICAgZmxvd2NoYXJ0IExSXG4gICAgICAgIEhlYWRbXCLjhaQgSGVhZCBOb2RlMVxuICAgIFx0XHQ9PT09PT09PT09PT09XG4gICAgXHRcdERhdGExIHx8IFBvaW50ZXIxXCJdXG4gICAgICAgIE5vZGUyW1wi44Wk44WkICBOb2RlMlxuICAgIFx0XHQ9PT09PT09PT09PT09XG4gICAgXHRcdERhdGEyIHx8IFBvaW50ZXIyXCJdXG4gICAgICAgIFRhaWxbXCLjhaRUYWlsIE5vZGUzXG4gICAgXHRcdD09PT09PT09PT09XG4gICAgXHRcdERhdGEzIHx8ICpOb25lXCJdICAgIFxuICAgIFxuICAgIFx0XHRIZWFkIC0tPiBOb2RlMi0tPiBUYWlsXG4gICAgIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)](https://mermaid-js.github.io/docs/mermaid-live-editor-beta/#/edit/eyJjb2RlIjoiICAgICUle2luaXQ6IHtcImZsb3djaGFydFwiOiB7XCJodG1sTGFiZWxzXCI6IGZhbHNlfX0gfSUlXG4gICAgZmxvd2NoYXJ0IExSXG4gICAgICAgIEhlYWRbXCLjhaQgSGVhZCBOb2RlMVxuICAgIFx0XHQ9PT09PT09PT09PT09XG4gICAgXHRcdERhdGExIHx8IFBvaW50ZXIxXCJdXG4gICAgICAgIE5vZGUyW1wi44Wk44WkICBOb2RlMlxuICAgIFx0XHQ9PT09PT09PT09PT09XG4gICAgXHRcdERhdGEyIHx8IFBvaW50ZXIyXCJdXG4gICAgICAgIFRhaWxbXCLjhaRUYWlsIE5vZGUzXG4gICAgXHRcdD09PT09PT09PT09XG4gICAgXHRcdERhdGEzIHx8ICpOb25lXCJdICAgIFxuICAgIFxuICAgIFx0XHRIZWFkIC0tPiBOb2RlMi0tPiBUYWlsXG4gICAgIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)
     
+<br>
 
 - 노드 클래스는 다음과 같이 구현한다.
     
@@ -157,6 +160,7 @@ comments: true
   2. ***prev***가 ***new***를 가리키도록 포인터를 조정한다.
   3. ***nodeCount***(# of Node)를 1 증가 킨다.
 
+<br>
 
 - 위의 과정을 클래스 내 함수(`insertAt`)로 정의하면 다음과 같다.
     
@@ -174,7 +178,9 @@ comments: true
          # (3) nodeCount를 1증가시킨다.
          self.nodeCount += 1
      ```
-    
+
+<br>
+
 - 이때, 연결 리스트의 <u>원소 삽입 위치에 따라서 복잡도가 상이</u>하다.
     - **중간**
         - 위에서 제시된 과정을 따르면 된다.
@@ -187,7 +193,9 @@ comments: true
         - Tail의 조정만 요구된다.
         - 즉, 기존 tail노드의 포인터에 new노드의 주소를 할당해야한다.
         - 이때 복잡도는 끝 부분만 고려하면 되기에 `상수시간` \\(O(1)\\)에 해당한다.
-    
+
+<br>
+
 - 마지막으로, 전체적인 원소 삽입 과정을 함수(`insertAt`)로 표현하면 다음과 같을 것이다.
     
     ```python
@@ -258,6 +266,8 @@ comments: true
   1. ***prev***(*pos-1*번째 Node)가 포인터가 가리키던 주소를 ***del***(삭제할 Node)의 포인터에 저장한다.
   2. ***nodeCount***(# of Node)를 1 감소시킨다.
 
+<br>
+
 - 이때, 연결 리스트의 원소 삭제되는 위치에 따라서 복잡도가 상이하다.
     - **중간**
         - 위에 제시된 과정을 따르면 된다.
@@ -270,6 +280,7 @@ comments: true
         - 하지만, <u>기존 Tail노드를 삭제하기위해 Tail노드를 탐색할 뿐만 아니라 prev노드 탐색도 필요</u>하다. 왜냐하면, 원소의 “추가”와 달리 prev노드의 포인터에 None을 할당하여 Tail노드로 전환할 필요가 있기 떄문이다. 이때, <u>선형탐색은 Tail에서 Head방향으로 탐색이 불가</u>하기 때문에 <u>Head방향에서 시작하여 Tail노드로 전환할 prev노드를 선형탐색</u>해야한다.
         - 따라서, 이때 복잡도는 `선형시간` \\(O(n)\\)에 해당한다.
 
+<br>
 
 - 마지막으로, 전체적인 원소 삭제 과정을 함수(`popAt`)로 표현하면 다음과 같을 것이다.
     
@@ -342,7 +353,9 @@ comments: true
   1. ***L1.Tail***를  ***L2.Head***노드 바라보게 하기위해서<br>***L1.Tail***의 포인터에 ***L2.Head***의 주소를 할당한다.
   2. 병합된 ***L1.Tail***를 ***L2.Tail***로 전환하는 과정을 수행한다. <br>만약, 병합되는 연결리스트***L2***가 비어있을 경우 (즉, `L2.Tail = None`)<br>과정을 수행하지 않는다. 
   3. 기존 ***L1***과 ***L2***의 ***nodeCount***를 합산해 병합된 ***L1.nodeCount***에 할당한다.
-    
+  
+<br>
+
 - 위의 과정을 클래스 내 함수(`concat`)로 구현하면 다음과 같다.
     
     ```python
