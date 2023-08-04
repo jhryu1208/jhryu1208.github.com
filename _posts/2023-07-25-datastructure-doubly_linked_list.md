@@ -49,47 +49,47 @@ comments: true
     from .node import Node
     
     class DoublyLinkedList:
-          def __init__(self, item):
-              self.nodeCount = 0
-              self.head = Node(None)
-              self.tail = Node(None)
-              # Head노드의 포인터 정의
-              self.head.prev = None
-              self.head.next = self.tail
-              # Tail노드의 포인터 정의
-              self.tail.prev = self.head
-              self.tail.next = None
-          
-          def traverse(self):
-              """
-              (Head -> Tail방향) 연결리스트의 노드 데이터 확인용 함수
-              """
-              result = []
-              # 순회 시작점: Tail노드
-              curr = self.head
-              # curr.next로 조건 생성 시 Tail Dummy Node의 값도 반환됨
-              # 더불어, 빈 리스트의 순회도 가능하게함
-              while curr.next.next
-                      curr = curr.next
-                      result.append(curr.data)
+        def __init__(self, item):
+            self.nodeCount = 0
+            self.head = Node(None)
+            self.tail = Node(None)
+            # Head노드의 포인터 정의
+            self.head.prev = None
+            self.head.next = self.tail
+            # Tail노드의 포인터 정의
+            self.tail.prev = self.head
+            self.tail.next = None
+        
+        def traverse(self):
+            """
+            (Head -> Tail방향) 연결리스트의 노드 데이터 확인용 함수
+            """
+            result = []
+            # 순회 시작점: Tail노드
+            curr = self.head
+            # curr.next로 조건 생성 시 Tail Dummy Node의 값도 반환됨
+            # 더불어, 빈 리스트의 순회도 가능하게함
+            while curr.next.next
+                    curr = curr.next
+                    result.append(curr.data)
 
-              return result
-          
-          def reverse(self):
-              """
-              (Tail -> Head방향) 연결리스트의 노드 데이터 확인용 함수
-              """
-              result = []
-              # 순회 시작점: Tail노드
-              curr = self.tail
-              # curr.next로 조건 생성 시 Tail Dummy Node의 값도 반환됨
-              # 더불어, 빈 리스트의 순회도 가능하게함
-              while curr.next.next
-                      curr = curr.next
-                      result.append(curr.data)
+            return result
+        
+        def reverse(self):
+            """
+            (Tail -> Head방향) 연결리스트의 노드 데이터 확인용 함수
+            """
+            result = []
+            # 순회 시작점: Tail노드
+            curr = self.tail
+            # curr.next로 조건 생성 시 Tail Dummy Node의 값도 반환됨
+            # 더불어, 빈 리스트의 순회도 가능하게함
+            while curr.next.next
+                    curr = curr.next
+                    result.append(curr.data)
 
-              return result
-    		
+            return result
+          
     				
     ```
 
@@ -109,37 +109,37 @@ comments: true
     class Node:...
     
     class DoublyLinkedList:
-          def __init__(self, item):...
-          
-          def traverse(self):
-              """
-              (Head -> Tail방향) 연결리스트의 노드 데이터 확인용 함수
-              """
-              result = []
-              # 순회 시작점: Tail노드
-              curr = self.head
-              # curr.next로 조건 생성 시 Tail Dummy Node의 값도 반환됨
-              # 더불어, 빈 리스트의 순회도 가능하게함
-              while curr.next.next
-                  curr = curr.next
-                  result.append(curr.data)
-  
-              return result
-          
-          def reverse(self):
-              """
-              (Tail -> Head방향) 연결리스트의 노드 데이터 확인용 함수
-              """
-              result = []
-              # 순회 시작점: Tail노드
-              curr = self.tail
-              # curr.tail로 조건 생성 시 Tail Dummy Node의 값도 반환됨
-              # 더불어, 빈 리스트의 순회도 가능하게함
-              while curr.tail.tail
-                  curr = curr.tail
-                  result.append(curr.data)
+        def __init__(self, item):...
+        
+        def traverse(self):
+            """
+            (Head -> Tail방향) 연결리스트의 노드 데이터 확인용 함수
+            """
+            result = []
+            # 순회 시작점: Tail노드
+            curr = self.head
+            # curr.next로 조건 생성 시 Tail Dummy Node의 값도 반환됨
+            # 더불어, 빈 리스트의 순회도 가능하게함
+            while curr.next.next
+                curr = curr.next
+                result.append(curr.data)
 
-              return result
+            return result
+        
+        def reverse(self):
+            """
+            (Tail -> Head방향) 연결리스트의 노드 데이터 확인용 함수
+            """
+            result = []
+            # 순회 시작점: Tail노드
+            curr = self.tail
+            # curr.tail로 조건 생성 시 Tail Dummy Node의 값도 반환됨
+            # 더불어, 빈 리스트의 순회도 가능하게함
+            while curr.tail.tail
+                curr = curr.tail
+                result.append(curr.data)
+
+            return result
     ```
     
 <br>
@@ -152,38 +152,38 @@ comments: true
     from .node import Node
     
     class DoublyLinkedList:
-          def __init__(self, item):...
+        def __init__(self, item):...
+
+        def traverse(self):...
+
+        def reverse(self):...
+
+        def getAt(self, pos):...
+            """
+            노드 탐색용 함수
+            - pos: 탐색하고자하는 노드의 순서
+            """
+            if pos < 0 or pos > self.nodeCount:
+                return None
+            
+            i = 0				
+
+            # 탐색하는 위치가 중간보다 뒤일 때, Tail부터 탐색 시작
+            if pos > self.nodeCount//2:
+                curr = self.tail
+                while i < self.nodeCount-pos+1:
+                    curr = curr.prev
+                    i +=1
+            
+            # 탐색하는 위치가 중간보다 앞일 때, Head부터 탐색 시작 
+            else:	
+                curr = self.head
+                while i < pos:
+                        curr = curr.next
+                        i += 1
+                    
+            return curr
   
-          def traverse(self):...
-  
-          def reverse(self):...
-  
-          def getAt(self, pos):...
-              """
-              노드 탐색용 함수
-              - pos: 탐색하고자하는 노드의 순서
-              """
-              if pos < 0 or pos > self.nodeCount:
-                  return None
-              
-              i = 0				
-  
-              # 탐색하는 위치가 중간보다 뒤일 때, Tail부터 탐색 시작
-              if pos > self.nodeCount//2:
-                  curr = self.tail
-                  while i < self.nodeCount-pos+1:
-                      curr = curr.prev
-                      i +=1
-              
-              # 탐색하는 위치가 중간보다 앞일 때, Head부터 탐색 시작 
-              else:	
-                  curr = self.head
-                  while i < pos:
-                          curr = curr.next
-                          i += 1
-                      
-              return curr
-    
     if __name__ == '__main__':
         linkedlist = LinkedList()
         print(linkedlist.getAt(0)) # None
@@ -235,36 +235,36 @@ comments: true
     class Node:...
     
     class DoublyLinkedList:
-          def __init__(self, item):...
-  
-          def traverse(self):...
-  
-          def reverse(self):...
-  
-          def getAt(self, pos):...
-          
-          def insertAfter(self, prevNode, newNode):
-  
-              nextNode = prevNode.next
-              
-              newNode.prev = prevNode
-              newNode.next = nextNode
-              
-              prevNode.next = newNode
-              nextNode.prev = newNode
-              
-              self.nodeCount += 1				
-              return True
-                  
-          def insertAt(self, pos, newNode):
-                  
-              if pos <1 or pos > self.nodeCount+1:
-                  return False
-              
-              # 기존 Head Dummy Node와 함께 Tail Dummy Node가 추가되어
-              # 단방향 연결리스트에서 고려된 예외 처리를 수행할 필요가 없어졌다.
-              prevNode = self.getAt(pos).prev
-              return self.insertAfter(prevNode, newNode)
+        def __init__(self, item):...
+
+        def traverse(self):...
+
+        def reverse(self):...
+
+        def getAt(self, pos):...
+        
+        def insertAfter(self, prevNode, newNode):
+
+            nextNode = prevNode.next
+            
+            newNode.prev = prevNode
+            newNode.next = nextNode
+            
+            prevNode.next = newNode
+            nextNode.prev = newNode
+            
+            self.nodeCount += 1				
+            return True
+                
+        def insertAt(self, pos, newNode):
+                
+            if pos <1 or pos > self.nodeCount+1:
+                return False
+            
+            # 기존 Head Dummy Node와 함께 Tail Dummy Node가 추가되어
+            # 단방향 연결리스트에서 고려된 예외 처리를 수행할 필요가 없어졌다.
+            prevNode = self.getAt(pos).prev
+            return self.insertAfter(prevNode, newNode)
     ```
 <br>
 
@@ -309,33 +309,33 @@ comments: true
     class Node:...
     
     class DoublyLinkedList:
-          def __init__(self, item):...
+        def __init__(self, item):...
+
+        def traverse(self):...
+
+        def reverse(self):...
+
+        def getAt(self, pos):...
+        
+        def popAfter(self, prevNode):
+                
+            pop_value = prevNode.next.data
+            nextNode = prevNode.next.next
+        
+            prevNode.next = nextNode
+            nextNode.prev = prevNode
+
+            self.nodeCount-=1		
+            return pop_value
+                
+        def popAt(self, pos):
   
-          def traverse(self):...
-  
-          def reverse(self):...
-  
-          def getAt(self, pos):...
-          
-          def popAfter(self, prevNode):
-                  
-              pop_value = prevNode.next.data
-              nextNode = prevNode.next.next
-          
-              prevNode.next = nextNode
-              nextNode.prev = prevNode
-  
-              self.nodeCount-=1		
-              return pop_value
-                  
-          def popAt(self, pos):
+            if pos <= 0 or pos >= self.nodeCount+1:
+                raise IndexError
     
-              if pos <= 0 or pos >= self.nodeCount+1:
-                  raise IndexError
-      
-              prevNode = self.getAt(pos).prev
-      
-              return self.popAfter(prevNode)
+            prevNode = self.getAt(pos).prev
+    
+            return self.popAfter(prevNode)
     ```
 
 <br>
@@ -361,38 +361,38 @@ comments: true
     class Node:...
     
     class DoublyLinkedList:
-          def __init__(self, item):...
-  
-          def traverse(self):...
-  
-          def reverse(self):...
-  
-          def getAt(self, pos):...
-          
-          def concat(self, L2):
-              """
-              L2: 기존 연결리스트에 부착할 연결리스트 객체
-              """
-              # ***L1, L2***모두 비어있거나, ***L2***만 비어있는 경우
-              if L2.nodeCount == 0 or (self.nodeCount+L2.nodeCount==0):
-                  pass
-                      
-              # ***L1***만 비어있는 경우
-              elif self.nodeCount == 0:
-                  self.head = L2.head
-                  self.tail = L2.tail
-                      
-              # ***L1, L2***가 모두 비어있지 않는 경우
-              else:
-                  L1_Node = self.tail.prev
-                  L2_Node = L2.head.next
-                  L1_Node.next = L2_Node
-                  L2_Node.prev = L1_Node
-                  self.tail = L.tail
-      
-              self.nodeCount += L2.nodeCount
-      
-              return True
+        def __init__(self, item):...
+
+        def traverse(self):...
+
+        def reverse(self):...
+
+        def getAt(self, pos):...
+        
+        def concat(self, L2):
+            """
+            L2: 기존 연결리스트에 부착할 연결리스트 객체
+            """
+            # ***L1, L2***모두 비어있거나, ***L2***만 비어있는 경우
+            if L2.nodeCount == 0 or (self.nodeCount+L2.nodeCount==0):
+                pass
+                    
+            # ***L1***만 비어있는 경우
+            elif self.nodeCount == 0:
+                self.head = L2.head
+                self.tail = L2.tail
+                    
+            # ***L1, L2***가 모두 비어있지 않는 경우
+            else:
+                L1_Node = self.tail.prev
+                L2_Node = L2.head.next
+                L1_Node.next = L2_Node
+                L2_Node.prev = L1_Node
+                self.tail = L.tail
+    
+            self.nodeCount += L2.nodeCount
+    
+            return True
     ```
 
 <br>
