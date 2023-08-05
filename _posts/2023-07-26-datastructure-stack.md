@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[자료구조] 7. 양방향 연결리스트 (Doubly Linked Lists)"
-subtitle: "[자료구조] 7. 양방향 연결리스트 (Doubly Linked Lists)"
+title: "[자료구조] 8. 스택 (Stacks)"
+subtitle: "[자료구조] 8. 스택 (Stacks)"
 categories: data
 tags: datastructure
 comments: true
