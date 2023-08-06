@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "[자료구조] 8. 스택 (Stacks)"
-subtitle: "[자료구조] 8. 스택 (Stacks)"
+title: "[자료구조] 9. 스택의 응용: 수식의 후위 표기법"
+subtitle: "[자료구조] 8. 스택의 응용: 수식의 후위 표기법"
 categories: data
 tags: datastructure
 comments: true
 ---
 #### Contents
-- [스택 (Stacks)](#스택-stacks)
-- [스택의 추상적 자료구조 구현](#스택의-추상적-자료구조-구현)
-    - [(1) 연산의 정의](#1-연산의-정의)
-    - [(2) 배열(Array)를 이용하여 구현](#2-배열array를-이용하여-구현)
-    - [(3) 양방향 연결리스트 (Doubly Linked List)를 이용하여 구현](#3-양방향-연결리스트--Doubly-linked-list를-이용하여-구현)
-    - [(4) 파이썬 라이브러리](#4-파이썬-라이브러리)
+- [중위 표기법 & 후위 표기법 (Infix Notation & Postfix Notation)](#중위-표기법--후위-표기법-infix-notation--postfix-notation)
+- [중위 표현식 → 후위 표현식 with 스택 ](#중위-표현식-후위-표현식-with-스택)
+  - [(1) 우선순위: Stack.peek ≥ 비교 연산자](#1-우선순위-stackpeek--비교 연산자)
+  - [(2) 우선순위: 좌측 연산자 < 우측 연산자](#2-우선순위-좌측-연산자--우측 연산자)
+  - [(3) 괄호의 처리](#3-괄호의-처리)
+- [알고리즘의 설계](#알고리즘의-설계)
 
 <br>
 
