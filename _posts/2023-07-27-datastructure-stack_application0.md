@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[자료구조] 9. 스택의 응용: 수식의 후위 표기법"
-subtitle: "[자료구조] 8. 스택의 응용: 수식의 후위 표기법"
+subtitle: "[자료구조] 9. 스택의 응용: 수식의 후위 표기법"
 categories: data
 tags: datastructure
 comments: true
@@ -33,7 +33,7 @@ comments: true
         - \\(AB + CD + * = (A + B) * (C + D)\\)
     - ex2. \\(AB+C*\\)
         - \\(AB+=(A+B)\\)
-        - \\(AB+C*=(A+B)*C\\)
+        - \\(AB + C * = ( A + B ) * C\\)
 
 <br>
 
