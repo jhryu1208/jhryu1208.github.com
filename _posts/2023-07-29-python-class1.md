@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[Py: Class] 1.클래스와 객체의 본질"
-subtitle: "[Py: Class] 1.클래스와 객체의 본질"
+title: "[Py: Class] 2.클래스 상속"
+subtitle: "[Py: Class] 2.클래스 상속"
 categories: devlang
 tags: python
 comments: true
