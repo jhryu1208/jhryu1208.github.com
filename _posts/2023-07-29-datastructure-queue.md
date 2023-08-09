@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[자료구조] 10. 스택의 응용: 후위 표기 수식 계산"
-subtitle: "[자료구조] 10. 스택의 응용: 후위 표기 수식 계산"
+title: "[자료구조] 11. 큐 (Queue)"
+subtitle: "[자료구조] 11. 큐 (Queue)"
 categories: data
 tags: datastructure
 comments: true
