@@ -115,14 +115,14 @@ comments: true
     
     ```python
     class CircularQueue:
-    		def __init__(self, n): # n: 초기화할 환형 큐의 사이즈
-    				self.maxCount = n # 환형 큐의 사이즈 제한
-    				self.data = [None]*n # 환형 큐의 데이터 원소가 담길 배열 초기화
-    				self.count = 0 # 환형 큐에 저장된 유효 데이터 수 
-    
-    				# Empty상태에서는 Front포인터와 Rear포인터를 같은 위치로 초기화한다.
-    				self.front = -1 
-    				self.rear = -1
+        def __init__(self, n): # n: 초기화할 환형 큐의 사이즈
+            self.maxCount = n # 환형 큐의 사이즈 제한
+            self.data = [None]*n # 환형 큐의 데이터 원소가 담길 배열 초기화
+            self.count = 0 # 환형 큐에 저장된 유효 데이터 수 
+  
+            # Empty상태에서는 Front포인터와 Rear포인터를 같은 위치로 초기화한다.
+            self.front = -1 
+            self.rear = -1
     ```
 
 <br>    
