@@ -67,20 +67,20 @@ comments: true
 - 다음은 list객체 내에 object객체의 메서드 모두 포함되어있는지 확인하는 코드이다. object 객체는 총 23개의 메서드를 가지고 있으며, 해당 메서드들이 모두 list객체에 포함되어있는 것을 확인할 수 있다.
   
   ```python
-      from collections import Counter
-  
-      s = object()
-      object_method_lists = dir(object)
-      list_method_lists = dir(list)
-  
-      answer = []
-  
-      for object_method_list in object_method_lists:
-          answer.append(True) if object_method_list in list_method_lists else answer.append(False)
-  
-      print(f'object객체의 메서드 수: {len(object_method_lists)}') # 23
-      print(f'list객의 메드 수: {len(list_method_lists)}') # 47
-      print(Counter(answer)) # Counter({True: 23})
+  from collections import Counter
+
+  s = object()
+  object_method_lists = dir(object)
+  list_method_lists = dir(list)
+
+  answer = []
+
+  for object_method_list in object_method_lists:
+      answer.append(True) if object_method_list in list_method_lists else answer.append(False)
+
+  print(f'object객체의 메서드 수: {len(object_method_lists)}') # 23
+  print(f'list객의 메드 수: {len(list_method_lists)}') # 47
+  print(Counter(answer)) # Counter({True: 23})
   ```
 
 <br>
