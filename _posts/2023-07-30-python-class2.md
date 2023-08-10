@@ -23,7 +23,7 @@ comments: true
 
 <br>
 
-- 다음의 예시와 같이 object에 위치한 객체의 class가 classinfo에 위치한 class와 동일하다면  `True`를 반환한다.
+- 다음의 예시와 같이 `object`에 위치한 객체의 class가 classinfo에 위치한 class와 동일하다면  `True`를 반환한다.
 
   ```python
   class simple:
@@ -63,8 +63,8 @@ comments: true
 
 ## <span style="color:navy">object 클래스<span>
 
-- object클래스는 파이썬에서 <u>모든 클래스의 시작점</u>이다. 왜냐하면 <u>파이썬의 모든 클래스는 object클래스를 직접/간접 상속</u>하기 때문이다. 따라서, object 클래스는 최상위 수준에 있으며, <u>모든 기본적인 메서드와 속성을 제공</u>한다.
-- 다음은 list객체 내에 object객체의 메서드 모두 포함되어있는지 확인하는 코드이다. object 객체는 총 23개의 메서드를 가지고 있으며, 해당 메서드들이 모두 list객체에 포함되어있는 것을 확인할 수 있다.
+- `object`클래스는 파이썬에서 <u>모든 클래스의 시작점</u>이다. 왜냐하면 <u>파이썬의 모든 클래스는</u> `object`클래스를 직접/간접 상속</u>하기 때문이다. 따라서, `object` 클래스는 최상위 수준에 있으며, <u>모든 기본적인 메서드와 속성을 제공</u>한다.
+- 다음은 list객체 내에 `object`객체의 메서드 모두 포함되어있는지 확인하는 코드이다. `object` 객체는 총 23개의 메서드를 가지고 있으며, 해당 메서드들이 모두 list객체에 포함되어있는 것을 확인할 수 있다.
   
   ```python
   from collections import Counter
@@ -85,7 +85,7 @@ comments: true
 
 <br>
 
-- 더불어, `object`클래스의 상속을 명시하지 않아도 파이썬이 object를 직접 혹은 간접 상속하도록 클래스를 구성하기 때문에 모든 클래스의 객체를 생성하는데 일조하는 `type`까지 `object` class를 상속하는 것을 확인할 수 있다.
+- 더불어, `object`클래스의 상속을 명시하지 않아도 파이썬이 `object`를 직접 혹은 간접 상속하도록 클래스를 구성하기 때문에 모든 클래스의 객체를 생성하는데 일조하는 `type`까지 `object` class를 상속하는 것을 확인할 수 있다.
 
   ```python
   class simple:
@@ -102,7 +102,7 @@ comments: true
   - 모든 객체는 클래스의 인스턴스이다. 
   - `object`를 포함한 모든 클래스는 `type`의 인스턴스이다. 
   - `type`을 포함한 모든 클래스는 `object`를 상속한다.
-  - 즉, type은 object의 서브클래스이며, object는 type의 인스턴스으로 특별한 순환 관계를 갖고 있다.
+  - 즉, `type`은 `object`의 서브클래스이며, `object`는 `type`의 인스턴스으로 특별한 순환 관계를 갖고 있다.
 
   ```python
   print(isinstance(object, type))  # True
