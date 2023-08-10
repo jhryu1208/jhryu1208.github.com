@@ -56,7 +56,9 @@ comments: true
     - **Enqueue**: <u>Rear포인터가 이동 후, 해당 자리에 새로운 데이터를 저장</u>한다.
 
         <img src="/assets/img/circularqueue/Untitled_1.png">
-    
+  
+  <br>
+  
     - **Dequeue**: <u>Front포인터를 이동 후, 이동한 Front포인터 가리키는 자리의 데이터를 반환 후 삭제</u>한다. 따라서, `Dequeue` 작업이 수행된 결과 <u>Front가 가리키는 자리에는 데이터가 존재하지 않는다</u>.<br> (*이 부분은 환형 큐의 코드 구현 시 주의해야하는 부분에 해당한다.)
         
         <img src="/assets/img/circularqueue/Untitled_2.png">
