@@ -29,7 +29,7 @@ comments: true
   [![](https://mermaid.ink/img/eyJjb2RlIjoiICAgIGZsb3djaGFydCBUQlxuICAgIGNsYXNzRGVmIGdyZWVuIGZpbGw6Z3JlZW4sIHN0cm9rZTpibGFjaywgc3Ryb2tlLXdpZHRoOjJweCwgY29sb3I6d2hpdGVcbiAgICBcbiAgICBOb2RlMShcIjZcIilcbiAgICBOb2RlMihcIjJcIilcbiAgICBOb2RlMyhcIjNcIilcbiAgICBOb2RlNChcIjVcIilcbiAgICBcbiAgICBzdWJncmFwaCBcIlF1ZXVlXCJcbiAgICBcdE5vZGUxIC0tLSBOb2RlMiAtLS0gTm9kZTMgLS0tIE5vZGU0XG4gICAgZW5kOyIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)](https://mermaid-js.github.io/docs/deprecated-editor/#/edit/eyJjb2RlIjoiICAgIGZsb3djaGFydCBUQlxuICAgIGNsYXNzRGVmIGdyZWVuIGZpbGw6Z3JlZW4sIHN0cm9rZTpibGFjaywgc3Ryb2tlLXdpZHRoOjJweCwgY29sb3I6d2hpdGVcbiAgICBcbiAgICBOb2RlMShcIjZcIilcbiAgICBOb2RlMihcIjJcIilcbiAgICBOb2RlMyhcIjNcIilcbiAgICBOb2RlNChcIjVcIilcbiAgICBcbiAgICBzdWJncmFwaCBcIlF1ZXVlXCJcbiAgICBcdE5vZGUxIC0tLSBOb2RlMiAtLS0gTm9kZTMgLS0tIE5vZGU0XG4gICAgZW5kOyIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
     
   <br>  
-  그리고, <u>해당 큐의 우선순위는 작은 수가 우선순위가 높다고 가정</u>했을 때, dequeue의 순서는 2, 3, 5, 6순서대로 빠져나올 것이다. 왜냐하면, 즉, 들어온 순서와 상관없이 우선순위에 따라서 나가는 순서가 결정되었기 때문이다.
+  그리고, <u>해당 큐의 우선순위는 작은 수가 우선순위가 높다고 가정</u>했을 때, dequeue의 순서는 2, 3, 5, 6순서대로 빠져나올 것이다. 왜냐하면, 들어온 순서와 상관없이 우선순위에 따라서 나가는 순서가 결정되었기 때문이다.
     
   [![](https://mermaid.ink/img/eyJjb2RlIjoiICAgIGZsb3djaGFydCBMUlxuICAgIGNsYXNzRGVmIGdyZWVuIGZpbGw6Z3JlZW4sIHN0cm9rZTpibGFjaywgc3Ryb2tlLXdpZHRoOjJweCwgY29sb3I6d2hpdGVcbiAgICBcbiAgICBOb2RlMShcIjZcIilcbiAgICBOb2RlMihcIjJcIilcbiAgICBOb2RlMyhcIjNcIilcbiAgICBOb2RlNChcIjVcIilcbiAgICBcbiAgICBzdWJncmFwaCBcIlF1ZXVlXCJcbiAgICBcdE5vZGUxIC0tLSBOb2RlNFxuICAgIGVuZDtcbiAgICBOb2RlNCAtLT4gTm9kZTMgLS0-IE5vZGUyIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)](https://mermaid-js.github.io/docs/deprecated-editor/#/edit/eyJjb2RlIjoiICAgIGZsb3djaGFydCBMUlxuICAgIGNsYXNzRGVmIGdyZWVuIGZpbGw6Z3JlZW4sIHN0cm9rZTpibGFjaywgc3Ryb2tlLXdpZHRoOjJweCwgY29sb3I6d2hpdGVcbiAgICBcbiAgICBOb2RlMShcIjZcIilcbiAgICBOb2RlMihcIjJcIilcbiAgICBOb2RlMyhcIjNcIilcbiAgICBOb2RlNChcIjVcIilcbiAgICBcbiAgICBzdWJncmFwaCBcIlF1ZXVlXCJcbiAgICBcdE5vZGUxIC0tLSBOb2RlNFxuICAgIGVuZDtcbiAgICBOb2RlNCAtLT4gTm9kZTMgLS0-IE5vZGUyIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifSwidXBkYXRlRWRpdG9yIjpmYWxzZX0)
     
@@ -87,19 +87,19 @@ comments: true
 <br>
 
 - **공간적 측면**
-    - **선형 배열 기반**: 배열은 메모리 공간을 연속적으로 사용하기 때문에, <u>메모리 공간을 효율적으로 사용</u>할 수 있습니다.
+    - **선형 배열 기반**: 배열은 메모리 공간을 연속적으로 사용하기 때문에, <u>메모리 공간을 효율적으로 사용</u>할 수 있다.
     - **양방향 연결 리스트 기반**: 각 노드는 데이터와 두 개의 링크(앞 노드와 뒷 노드를 가리키는)를 갖고 있다. 이로 인해 <u>추가적인 메모리가 필요</u>하다.
 
 <br>
     
 - **시간적 측면**
-    - *(주의) 해당 측면을 비교 시 우선순위 비교 탐색과정(두 자료 구조의 탐색에 대한 시간 복잡도: \\(O(n)\\))은 삽입/삭제 과정과 독립되었다고 가정한다.
+    - *(주의) 해당 측면을 비교 시 (\\(O(n)\\)의 시간 복잡도를 가지는 우선순위 비교 탐색과정은 삽입/삭제 과정과 독립되었다고 가정한다.
     - **선형 배열 기반**: 배열에서의 삽입 및 삭제는 일반적으로 <u>인덱싱의 이동을 동반</u>하기 때문에 탐색과정을 고려하지 않아도 \\(O(n)\\)의 시간 복잡도를 가진다.
     - **양방향 연결 리스트 기반**: 선형 배열처럼 인덱싱의 이동이 발생하는 것이 아닌, 링크의 재구성 만이 이루어지기 때문에 <u>연결 리스트에서의 삽입과 삭제는 탐색과정을 고려하지 않았을 때</u> \\(O(1)\\)의 시간 복잡도를 가진다.
 
 <br>
 
-- 알고리즘 구성과 마찬가지로 기반이되는 자료구조 선정 시에도 양측 모두 장단점이 있어서 상황에 따라 효율성이 나누어질 것이다. <br>따라서, 무엇이 더 효율적이라고 단순히 제시할 수 없다.
+- 알고리즘 구성과 마찬가지로 기반이되는 자료구조 선정 시에도 양측 모두 장단점이 있어서 상황에 따라 효율성이 나누어질 것이다. 따라서, 무엇이 더 효율적이라고 단순히 제시할 수 없다.
 
 <br>
 
