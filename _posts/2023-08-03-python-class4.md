@@ -54,25 +54,25 @@ comments: true
 ## <span style="color:navy">\_\_call\_\_ 과 \_\_str\_\_ 메소드 오버로딩<span>
 
 - `__call __`
-  - `__init__` 인스턴스를 초기화하기 위해 사용한다면, 해당 스페셜 메소드는 <u>인스턴스가 호출되었을 때 실행하는 것</u>이다.
+  - `__init__` 인스턴스를 초기화하기 위해 사용한다면, 해당 스페셜 메소드는 <u>인스턴스가 호출되었을 때 실행</u>된다.
 
   <br>  
 
   - 다음의 예제에서 CallableClass의 인스턴스인 hello객체를 함수처럼 호출했더니, `__call__`메소드가 실행되며, 인자로 전달된 매개변수를 사용하여 프린팅하는 것을 확인할 수 있다.
-    ```python
-    class CallableClass:
-        def __init__(self, greeting):
-            self.greeting = greeting
-
-        def __call__(self, name):
-            print(f"{self.greeting}, {name}!")
-
-    # 객체 생성
-    hello = CallableClass("Hello")
-    
-    # 객체를 함수처럼 호출
-    hello("Alice")
-    ```
+      ```python
+      class CallableClass:
+          def __init__(self, greeting):
+              self.greeting = greeting
+  
+          def __call__(self, name):
+              print(f"{self.greeting}, {name}!")
+  
+      # 객체 생성
+      hello = CallableClass("Hello")
+      
+      # 객체를 함수처럼 호출
+      hello("Alice")
+      ```
 
 <br>
 
