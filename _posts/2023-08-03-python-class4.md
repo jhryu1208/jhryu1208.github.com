@@ -25,7 +25,7 @@ comments: true
 
 <br>
 
-- 예를 들어, 복소수(Complex) 객체에서 필요한 `+`연산을 아래와 같이 `__add__`메서드를 통해서 재정의/오버로드 할 수 있다.
+- 예를 들어, 복소수(Complex) 객체에서 필요한 `+`연산을 아래와 같이 `__add__`메소드를 통해서 재정의/오버로드 할 수 있다.
 
   ```python
   class Complex:
@@ -54,7 +54,7 @@ comments: true
 ## <span style="color:navy">\_\_call\_\_ 과 \_\_str\_\_ 메소드 오버로딩<span>
 
 - `__call __`
-  - 객체를 함수처럼 호출할 수 있게 해주는 스페셜 메서드
+  - 객체를 함수처럼 호출할 수 있게 해주는 스페셜 메소드
 
   <br>  
 
@@ -63,7 +63,7 @@ comments: true
 
   <br>  
 
-  - 다음의 예제에서 CallableClass의 인스턴스인 hello객체를 함수처럼 호출했더니, `__call__`메서드가 실행되며, 인자로 전달된 매개변수를 사용하여 프린팅하는 것을 확인할 수 있다.
+  - 다음의 예제에서 CallableClass의 인스턴스인 hello객체를 함수처럼 호출했더니, `__call__`메소드가 실행되며, 인자로 전달된 매개변수를 사용하여 프린팅하는 것을 확인할 수 있다.
     ```python
     class CallableClass:
         def __init__(self, greeting):
@@ -145,7 +145,7 @@ comments: true
 
 ### <span style="color:navy">(2) in-place 연산자 오버로딩<span>
 
-- `+=`이나 `-=`를 포함한 in-place연산자의 스페셜 메서드는 다음과 같다.
+- `+=`이나 `-=`를 포함한 in-place연산자의 스페셜 메소드는 다음과 같다.
   - `+=` : `__iadd__(self, other)`
   - `-=` : `__isub__(self, other)`
   - `*=` : `__imul__(self, other)`
