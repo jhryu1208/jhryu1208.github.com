@@ -95,18 +95,18 @@ comments: true
 
   <br>    
 
-  - 따라서, 객체의 속성이나 상태를 눈으로 빠르게 확인하는 정도의 목적이라면 `__str__` 메소드를 사용하는 것이 적절하다. 하지만, <u>보편적으로 위의 정보는 필요하지 않다</u>. 따라서, 다음과 같이 `__str__`의 경우 <u>메소드 오버라이딩 하는 것이 권장</u>된다.
+- 따라서, 객체의 속성이나 상태를 눈으로 빠르게 확인하는 정도의 목적이라면 `__str__` 메소드를 사용하는 것이 적절하다. 하지만, <u>보편적으로 위의 정보는 필요하지 않다</u>. 따라서, 다음과 같이 `__str__`의 경우 <u>메소드 오버라이딩 하는 것이 권장</u>된다.
 
-    ```python
-    class test2:
-        def __init__(self, a):
-            self.a = a
-        def __str__(self):
-            return f'test({self.a})'
+  ```python
+  class test2:
+      def __init__(self, a):
+          self.a = a
+      def __str__(self):
+          return f'test({self.a})'
     
-    x = test2(10)
-    print(x) # test(10)
-    ```
+  x = test2(10)
+  print(x) # test(10)
+  ```
     
 <br>
 
