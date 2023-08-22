@@ -85,7 +85,7 @@ comments: true
 
   <br>  
 
-  - `__str__`메소드를 <u>오버로딩하지 않고 사용하면</u> 다음과 같이 궁금하지 않은 <u>객체가 저장된 위치 정보를 출력</u>한다. (*모든 클래스는 object클래스를 상속하기 때문에 아래의 test1클래스 내에 직접 `__str__`이 정의되지 않아도 사용할 수 있다. ([참고](https://jhryu1208.github.io/devlang/2023/07/30/python-class2/#object-%ED%81%B4%EB%9E%98%EC%8A%A4)))
+  - `__str__`메소드를 <u>오버로딩하지 않고 사용하면</u> 다음과 같이 <u>객체가 저장된 위치 정보를 출력</u>한다. (*모든 클래스는 object클래스를 상속하기 때문에 아래의 test1클래스 내에 직접 `__str__`이 정의되지 않아도 사용할 수 있다. ([참고](https://jhryu1208.github.io/devlang/2023/07/30/python-class2/#object-%ED%81%B4%EB%9E%98%EC%8A%A4)))
 
     ```python
     class test1:
