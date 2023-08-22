@@ -56,7 +56,7 @@ comments: true
 ## <span style="color:navy">메소드 오버로딩<span>
 
 ### <span style="color:navy">(1) \_\_call \_\_<span>
-- `__init__` 인스턴스를 초기화하기 위해 사용한다면, `__call __`은 <u>인스턴스가 호출되었을 때 실행</u>된다.
+- `__init__` 인스턴스를 초기화하기 위해 사용한다면,<br> `__call __`은 <u>인스턴스가 호출되었을 때 실행</u>된다.
 
   <br>
 
@@ -163,7 +163,7 @@ comments: true
 
 <br>
 
-- 왜냐하면, `v1.__iadd__(v2)`에 의해 계산된 옳바른 값이 return되지 않았을 경우 다음과 같이 None이 반환되어 피연산자의 원본이 옳바르게 수정되지 않기 때문이다.
+- 왜냐하면, `v1.__iadd__(v2)`에 의해 계산된 바른 값이 return되지 않았을 경우 다음과 같이 None이 반환되어 피연산자의 원본이 올바르게 수정되지 않기 때문이다.
   ```python
   def __iadd__(self, o):
       self.x += o.x
