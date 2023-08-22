@@ -61,6 +61,7 @@ comments: true
   <br>
 
 - 다음의 예제에서 CallableClass의 인스턴스인 hello객체를 함수처럼 호출했더니, `__call__`메소드가 실행되며, 인자로 전달된 매개변수를 사용하여 프린팅하는 것을 확인할 수 있다.
+   
     ```python
     class CallableClass:
         def __init__(self, greeting):
