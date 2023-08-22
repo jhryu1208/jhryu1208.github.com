@@ -102,7 +102,7 @@ comments: true
   - 모든 객체는 클래스의 인스턴스이다. 
   - `object`를 포함한 모든 클래스는 `type`의 인스턴스이다. 
   - `type`을 포함한 모든 클래스는 `object`를 상속한다.
-  - 즉, `type`은 `object`의 서브클래스이며, `object`는 `type`의 인스턴스으로 특별한 순환 관계를 갖고 있다.
+  - 즉, `type`은 `object`의 서브클래스이며, `object`는 `type`의 인스턴스로 특별한 순환 관계를 갖고 있다.
 
   ```python
   print(isinstance(object, type))  # True
