@@ -194,7 +194,7 @@ comments: true
           x1 += 20
           after_id1 = id(x1)
     
-          print(before_id1 == after_id1) # False, *in-place연산 이후 객체의 주소가 다름
+          print(before_id1 == after_id1) # False
         ```
   
   <br>
@@ -210,7 +210,7 @@ comments: true
         x2 += [20]
         after_id2 = id(x2)
   
-        print(before_id2 == after_id2) # True, , *in-place연산 이후 객체의 주소가 동일
+        print(before_id2 == after_id2) # True
         ```
 <br>
 
