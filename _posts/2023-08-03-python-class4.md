@@ -7,12 +7,12 @@ tags: python
 comments: true
 ---
 #### Contents
-- [<span style="color:navy">연산자 오버로딩(Operator Overloading)<span>](#span-stylecolornavy연산자-오버로딩operator-overloadingspan)
-- [<span style="color:navy">\_\_call\_\_ 과 \_\_str\_\_ 메소드 오버로딩<span>](#span-stylecolornavycall-과-str-메소드-오버로딩span)
-- [<span style="color:navy">in-place 형태의 연산자 오버로딩<span>](#span-stylecolornavyin-place-형태의-연산자-오버로딩span)
-  - [<span style="color:navy">(1) in-place 연산자란?<span>](#span-stylecolornavy1-in-place-연산자란span)
-  - [<span style="color:navy">(2) in-place 연산자 오버로딩<span>](#span-stylecolornavy2-in-place-연산자-오버로딩span)
-- [<span style="color:navy">immutable & mutable 객체<span>](#span-stylecolornavyimmutable--mutable-객체span)[<span style="color:navy">References<span>](#span-stylecolornavyreferencesspan)
+- [연산자 오버로딩(Operator Overloading)](#연산자-오버로딩operator-overloading)
+- [\_\_call\_\_ 과 \_\_str\_\_ 메소드 오버로딩](#call-과-str-메소드-오버로딩)
+- [in-place 형태의 연산자 오버로딩](#in-place-형태의-연산자-오버로딩)
+  - [(1) in-place 연산자란?](#1-in-place-연산자란)
+  - [(2) in-place 연산자 오버로딩](#2-in-place-연산자-오버로딩)
+- [immutable & mutable 객체](#immutable--mutable-객체)
 
 <br>
 
