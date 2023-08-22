@@ -9,8 +9,8 @@ comments: true
 #### Contents
 - [연산자 오버로딩(Operator Overloading)](#연산자-오버로딩operator-overloading)
 - [메소드 오버로딩](#메소드-오버로딩)
-  - [(1) \_\_call\_\_](#1-call)
-  - [(2) \_\_str\_\_](#2-str)
+  - [(1) \_\_call\_\_](#1-call__)
+  - [(2) \_\_str\_\_](#2-str__)
 - [in-place 형태의 연산자 오버로딩](#in-place-형태의-연산자-오버로딩)
   - [(1) in-place 연산자란?](#1-in-place-연산자란)
   - [(2) in-place 연산자 오버로딩](#2-in-place-연산자-오버로딩)
