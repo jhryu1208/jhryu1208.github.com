@@ -56,7 +56,7 @@ comments: true
 ## <span style="color:navy">메소드 오버로딩<span>
 
 ### <span style="color:navy">(1) \_\_call \_\_<span>
-- `__init__` 인스턴스를 초기화하기 위해 사용한다면, `__call__`은 <u>인스턴스가 호출되었을 때 실행</u>된다.
+- `__init__` 인스턴스를 초기화할때 실행된다면, `__call__`은 <u>인스턴스가 호출되었을 때 실행</u>된다.
 
   <br>
 
