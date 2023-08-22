@@ -8,7 +8,9 @@ comments: true
 ---
 #### Contents
 - [연산자 오버로딩(Operator Overloading)](#연산자-오버로딩operator-overloading)
-- [\_\_call\_\_ 과 \_\_str\_\_ 메소드 오버로딩](#call-과-str-메소드-오버로딩)
+- [메소드 오버로딩](#메소드-오버로딩)
+  - [(1) \_\_call\_\_](#1-call)
+  - [(2) \_\_str\_\_](#2-str)
 - [in-place 형태의 연산자 오버로딩](#in-place-형태의-연산자-오버로딩)
   - [(1) in-place 연산자란?](#1-in-place-연산자란)
   - [(2) in-place 연산자 오버로딩](#2-in-place-연산자-오버로딩)
@@ -51,7 +53,7 @@ comments: true
 
 ---
 
-## <span style="color:navy">\_\_call\_\_ 과 \_\_str\_\_ 메소드 오버로딩<span>
+## <span style="color:navy">메소드 오버로딩<span>
 
 ### <span style="color:navy">(1) \_\_call \_\_<span>
 - `__init__` 인스턴스를 초기화하기 위해 사용한다면, `__call __`은 <u>인스턴스가 호출되었을 때 실행</u>된다.
