@@ -188,13 +188,13 @@ comments: true
     - 특정 주소에 한 번 생성된 내용을 <u>변경할 수 없는</u> 객체이다.
     - in-place 연산자를 해당 객체에 사용하면 <u>기존 객체가 저장된 주소와 다른 주소에 새로운 값을 저장</u>한다.
         ```python
-          x1 = 10
-          before_id1 = id(x1)
+        x1 = 10
+        before_id1 = id(x1)
         
-          x1 += 20
-          after_id1 = id(x1)
+        x1 += 20
+        after_id1 = id(x1)
     
-          print(before_id1 == after_id1) # False
+        print(before_id1 == after_id1) # False
         ```
   
   <br>
