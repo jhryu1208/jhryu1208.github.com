@@ -78,7 +78,7 @@ comments: true
 
 <br>
 
-### (2) <span style="color:navy">\_\_str\_\_<span>
+### <span style="color:navy">(2) \_\_str\_\_<span>
 
   - 객체의 문자열 표현을 반화하는 메소드이다. 이 메소드는 `print()` 함수나 `str()` 함수를 사용하여 객체를 문자열로 변환할 때 호출된다.
 
