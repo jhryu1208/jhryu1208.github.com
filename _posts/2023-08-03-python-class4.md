@@ -8,9 +8,6 @@ comments: true
 ---
 #### Contents
 - [연산자 오버로딩(Operator Overloading)](#연산자-오버로딩operator-overloading)
-- [메소드 오버로딩](#메소드-오버로딩)
-  - [(1) \_\_call\_\_](#1-call__)
-  - [(2) \_\_str\_\_](#2-str__)
 - [in-place 형태의 연산자 오버로딩](#in-place-형태의-연산자-오버로딩)
   - [(1) in-place 연산자란?](#1-in-place-연산자란)
   - [(2) in-place 연산자 오버로딩](#2-in-place-연산자-오버로딩)
@@ -49,68 +46,6 @@ comments: true
   
   ```
   
-<br>
-
----
-
-## <span style="color:navy">메소드 오버로딩<span>
-
-### <span style="color:navy">(1) \_\_call \_\_<span>
-- `__init__`이 객체를 초기화할때 실행된다면, `__call__`은 <u>인스턴스가 호출</u>되었을 때 실행된다.
-
-  <br>
-
-- 다음의 예제에서 CallableClass의 인스턴스인 hello객체를 함수처럼 호출했더니, `__call__`메소드가 실행되며, 인자로 전달된 매개변수를 사용하여 프린팅하는 것을 확인할 수 있다.
-   
-    ```python
-    class CallableClass:
-        def __init__(self, greeting):
-            self.greeting = greeting
-
-        def __call__(self, name):
-            print(f"{self.greeting}, {name}!")
-
-    # 객체 생성
-    hello = CallableClass("Hello")
-    
-    # 객체를 함수처럼 호출
-    hello("Alice")
-    ```
-
-<br>
-
-### <span style="color:navy">(2) \_\_str\_\_<span>
-
-  - 객체의 문자열 표현을 반환하는 스페셜 메소드이다. 이 메소드는 `print()` 함수나 `str()` 함수를 사용하여 객체를 문자열로 변환할 때 실행된다.
-
-  <br>  
-
-  - `__str__`메소드를 단순히 호출하면 <u>객체가 저장된 위치 정보를 출력</u>한다. (*모든 클래스는 object클래스를 상속하기 때문에 아래의 test1클래스 내에 직접 `__str__`이 정의되지 않아도 사용할 수 있다. ([참고](https://jhryu1208.github.io/devlang/2023/07/30/python-class2/#object-%ED%81%B4%EB%9E%98%EC%8A%A4)))
-
-    ```python
-    class test1:
-        def __init__(self, a):
-            self.a = a
-    
-    x = test1(10)
-    print(x) # <__main__.test1 object at 0x0000020276369988>
-    ```
-
-  <br>    
-
-- 따라서, 객체의 속성이나 상태를 눈으로 빠르게 확인하는 정도의 목적이라면 `__str__` 메소드를 사용하는 것이 적절하다. 하지만, <u>보편적으로 위의 정보는 필요하지 않다</u>. 따라서, 다음과 같이 `__str__`의 경우 <u>메소드 오버라이딩 하는 것이 권장</u>된다.
-
-  ```python
-  class test2:
-      def __init__(self, a):
-          self.a = a
-      def __str__(self):
-          return f'test({self.a})'
-    
-  x = test2(10)
-  print(x) # test(10)
-  ```
-    
 <br>
 
 ---
