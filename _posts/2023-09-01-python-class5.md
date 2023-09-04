@@ -63,7 +63,7 @@ comments: true
 
 <br>
 
-### <span style="color:navy">(2) 간접 접근 </span>
+### <span style="color:navy">(2) 간접 접근</span>
 
 - 메소드를 거쳐서 변수에 간접적으로 접근시키는 방식을 의미한다.
 - 해당 접근 방식으로 `정보 은닉`을 수행할 수 있다.
