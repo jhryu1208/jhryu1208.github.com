@@ -7,11 +7,11 @@ tags: datastructure
 comments: true
 ---
 #### Contents
-* [이진 트리의 순회 (Traversal)](#이진-트리의-순회-traversal)
-* [깊이 우선 탐색 (DFS)](#깊이-우선-탐색-dfs)
-  * [(1) 전위 순회 (Pre-order Traversal)](#1-전위-순회-pre-order-traversal)
-  * [(2) 중위 순회 (In-order Traversal)](#2-중위-순회-in-order-traversal)
-  * [(3) 후위 순회 (Post-order Traversal)](#3-후위-순회-post-order-traversal)
+- [이진 트리의 순회 (Traversal)](#이진-트리의-순회-traversal)
+- [깊이 우선 탐색 (DFS)](#깊이-우선-탐색-dfs)
+  - [(1) 전위 순회 (Pre-order Traversal)](#1-전위-순회-pre-order-traversal)
+  - [(2) 중위 순회 (In-order Traversal)](#2-중위-순회-in-order-traversal)
+  - [(3) 후위 순회 (Post-order Traversal)](#3-후위-순회-post-order-traversal)
 
 <br>
 
