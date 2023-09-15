@@ -42,7 +42,7 @@ comments: true
 
 - 전위 순회 과정의 예제는 다음과 같다.
 
-   ![in-order-traversal](file:///home/jihyun_ryu/Downloads/3fe9ab30-0fc7-4aab-8522-d8bb179216f0_Export-4d64873b-e9eb-44a5-839a-64a9544d56f1/%EC%9D%B4%EC%A7%84%20%ED%8A%B8%EB%A6%AC%EC%9D%98%20%EC%88%9C%ED%9A%8C(Traversal)%20%EC%97%B0%EC%82%B0%20%EA%B9%8A%EC%9D%B4%20%EC%9A%B0%EC%84%A0%20%E1%84%89%20d82f56b699b64afcbfdaa7b5dda77136/Untitled.png)
+  ![Untitled](https://github.com/jhryu1208/jhryu1208.github.com/assets/53929665/f3043c28-be83-48c5-9c7c-f5cadf77e28f)
 
    결과: A→B→D→H→E→C→G→F→I
 
