@@ -110,8 +110,8 @@ comments: true
 <br>
 
 - 하지만, 이를 동시에 진행하지 않고 빈 property객체의 `getter`와 `setter` 메소드를 이용하여 함수를 개별로 등록할 수 있다.
-  - property 객체의 `getter` 메소드: getter가 등록된 새로운 property 객체를 생성 및 반환 (기존 fset 유지)
-  - property 객체의 `setter` 메소드: setter가 등록된 새로운 property 객체를 생성 및 반환 (기존 fget 유)
+  - **property.getter 메소드**: getter가 등록된 새로운 property 객체를 생성 및 반환 (기존 fset 유지)
+  - **property.setter 메소드**: setter가 등록된 새로운 property 객체를 생성 및 반환 (기존 fget 유)
 
 <br>
 
