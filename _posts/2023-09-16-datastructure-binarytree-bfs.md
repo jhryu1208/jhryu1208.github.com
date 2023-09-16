@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[자료구조] 17. 이진 트리 순회: 넓이 우선 탐색(Breadth First Search, DFS)"
-subtitle: "[자료구조] 17. 이진 트리 순회: 넓이 우선 탐색(Breadth First Search, DFS)"
+title: "[자료구조] 17. 이진 트리 순회: 넓이 우선 탐색(Breadth First Search, BFS)"
+subtitle: "[자료구조] 17. 이진 트리 순회: 넓이 우선 탐색(Breadth First Search, BFS)"
 categories: data
 tags: datastructure
 comments: true
