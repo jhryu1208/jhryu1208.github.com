@@ -120,7 +120,7 @@ comments: true
   class natural:  
       def __init__(self, n):
           self.setn(n)
-      p=property() # property객체 생성
+      p = property() # property객체 생성
     
   
       def pm(self):
