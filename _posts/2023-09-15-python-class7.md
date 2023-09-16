@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[Py: Class] 8.Property와 Decorator"
-subtitle: "[Py: Class] 8.Property와 Decorator"
+title: "[Py: Class] 8.Property"
+subtitle: "[Py: Class] 8.Property"
 categories: devlang
 tags: python
 comments: true
