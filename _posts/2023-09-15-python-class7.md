@@ -145,7 +145,7 @@ comments: true
 
 <br>
 
-- 다음은 위의 예제를 @property를 이용해 재구성한 코드이다.
+- 다음은 위의 예제를 `@property`를 이용해 재구성한 코드이다.
   ```python
   class natural:  
       def __init__(self, n):
