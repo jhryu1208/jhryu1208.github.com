@@ -1,53 +1,94 @@
-## Github Blog
-- 이 블로그는 [박민](https://github.com/isme2n/isme2n.github.io)님 블로그 테마를 기반으로 제작되었습니다
-	- 박민님 테마 대비 다른 점은 검색 시스템을 붙인 점입니다
-- 본 테마(혹은 박민님 테마)를 사용하고 싶으신 경우, issue 또는 메일([snugyun01@gmail.com](snugyun01@gmail.com))로 사용 요청을 해주세요. 이 블로그의 소스는 zzsza님의 피와 땀으로 만들었기 때문에 요청을 주시는 것이 예의라고 생각합니다 :)
+<div align="center">
 
+  # Chirpy Jekyll Theme
 
-### Structure
-- 다른 분들이 이 테마를 Fork할 경우, 사용할 수 있도록 블로그 구조에 대해 설명합니다
+  A minimal, responsive, and feature-rich Jekyll theme for technical writing.
 
-```
-├── README.md
-├── _config.yml : 기본 설정이 저장된 파일
-├── _data : 유저 데이터가 저장된 폴더, author.yml만 수정하면 됨
-├── _draft : 초안 작성 폴더, 커밋해도 반영되지 않음
-├── _featured_categories : 카테고리(메뉴판의 큰 제목)
-├── _featured_tags : 카테고리의 태그(메뉴판의 소제목)
-├── _includes : 기본 홈페이지 포맷
-├── _ipynbs : ipynb 저장 폴더
-├── _js : 자바스크립트 소스 저장 폴더
-├── _layouts : 타입별 레이아웃 폴더
-├── _plugins : 플러그인 저장 폴더. 그러나 Github에서 빌드시 플러그인 사용 불가능
-├── _posts : 글 저장 폴더
-├── _sass
-├── _site : 빌드시 생기는 폴더, 신경쓸 필요 없음
-├── about.md : about에서 나타날 내용
-├── assets : css, js, img 등 저장하는 폴더
-├── favicon.ico : favicon 아이콘
-├── feed.xml
-├── index.html
-├── robots.xml
-├── search.html
-├── sitemap.xml
-├── tile-wide.png
-└── tile.png
-```
+  [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)][gem]&nbsp;
+  [![CI](https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml/badge.svg?branch=master&event=push)][ci]&nbsp;
+  [![Codacy Badge](https://app.codacy.com/project/badge/Grade/4e556876a3c54d5e8f2d2857c4f43894)][codacy]&nbsp;
+  [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)][license]&nbsp;
+  [![996.icu](https://img.shields.io/badge/link-996.icu-%23FF4D5B.svg)](https://996.icu)
 
-- ```_config.yml```, ```_data```, ```_featured_categories```, ```_featured_tags```, ```about.md``` 내용 수정
-- ```favicon.ico```, ```tile-wide.png```, ```tile.png``` 원하는 이미지로 설정
+  [**Live Demo →**][demo]
 
-### 로컬 빌드
-- Ruby가 설치되어 있어야 합니다
-- Ruby 설치는 [공식 문서](https://www.ruby-lang.org/ko/documentation/installation/) 참고
+  [![Devices Mockup](https://chirpy-img.netlify.app/commons/devices-mockup.png)][demo]
 
-```
-bundle exec jekyll serve
-```
+</div>
 
-### 원격 빌드
-- Github 저장소에 Push
+## Features
 
-### 글 작성
-- ```_featured_categories```, ```_featured_tags``` 설정한 후, ```_posts```에 글을 작성합니다
-- 글 제목 형태는 ```2018-01-03-title1.md``` 이런 방식처럼 작성! 날짜를 빼고 쓰면 반영되지 않습니다
+<details>
+  <summary>Click to expand/close details</summary>
+  &nbsp;
+
+- Dark / Light Theme Mode
+- Localized UI language
+- Pinned Posts on Home Page
+- Hierarchical Categories
+- Trending Tags
+- Table of Contents
+- Last Modified Date
+- Syntax Highlighting
+- Mathematical Expressions
+- Mermaid Diagrams & Flowcharts
+- Dark / Light Mode Images
+- Embed Videos
+- Disqus / Giscus / Utterances Comments
+- Built-in Search
+- Atom Feeds
+- PWA
+- Google Analytics
+- SEO & Performance Optimization
+
+</details>
+
+## Documentation
+
+To learn how to use, develop, and upgrade the project, please refer to the [Wiki][wiki].
+
+## Contributing
+
+Contributions (_pull requests_, _issues_, and _discussions_) are what make the open-source community such an amazing place
+to learn, inspire, and create. Any contributions you make are greatly appreciated.
+For details, see the "[Contributing Guidelines][contribute-guide]".
+
+## Credits
+
+This project was built primarily with the [Jekyll][jekyllrb] ecosystem,
+[Bootstrap][bootstrap], [Font Awesome][icons], and some other [wonderful tools][lib].
+The avatar and favicon design from [Clipart Max][image].
+
+Many thanks to the [contributors][contributors] who participated in the development
+and to the folks who reported bugs or shared ideas.
+
+Last but not least, thanks to [JetBrains][jetbrains] for providing the _Open Source License_.
+
+## Sponsoring
+
+If you like this project or have built something through it, please consider sponsoring it, and your support would be greatly appreciated.
+
+[![Ko-fi](https://img.shields.io/badge/Support_Me_on_Ko--fi-ff5e5b?logo=ko-fi&logoColor=white)][ko-fi]&nbsp;
+[![Wechat Pay](https://img.shields.io/badge/Support_Me_on_WeChat-brightgreen?logo=wechat&logoColor=white)][donation]&nbsp;
+[![Alipay](https://img.shields.io/badge/Support_Me_on_Alipay-blue?logo=alipay&logoColor=white)][donation]
+
+## License
+
+This project is published under [MIT License][license].
+
+[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
+[ci]: https://github.com/cotes2020/jekyll-theme-chirpy/actions/workflows/ci.yml?query=event%3Apush+branch%3Amaster
+[codacy]: https://app.codacy.com/gh/cotes2020/jekyll-theme-chirpy/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade
+[license]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
+[jekyllrb]: https://jekyllrb.com/
+[bootstrap]: https://getbootstrap.com/
+[icons]: https://fontawesome.com/
+[image]: https://www.clipartmax.com/middle/m2i8b1m2K9Z5m2K9_ant-clipart-childrens-ant-cute/
+[demo]: https://cotes2020.github.io/chirpy-demo/
+[wiki]: https://github.com/cotes2020/jekyll-theme-chirpy/wiki
+[contribute-guide]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/docs/CONTRIBUTING.md
+[contributors]: https://github.com/cotes2020/jekyll-theme-chirpy/graphs/contributors
+[lib]: https://github.com/cotes2020/chirpy-static-assets
+[jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
+[ko-fi]: https://ko-fi.com/coteschung/
+[donation]: https://sponsor.cotes.page/
