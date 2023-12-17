@@ -1,53 +1,106 @@
 {
-  "name": "hydejack",
-  "version": "6.4.0",
-  "description": "Hydejack is a pretentious two-column [Jekyll](http://jekyllrb.com) theme, stolen by [`@qwtel`](https://twitter.com/qwtel) from [Hyde](http://hyde.getpoole.com). You could say it was.. [hydejacked](http://media3.giphy.com/media/makedRIckZBW8/giphy.gif).",
-  "scripts": {
-    "clean": "rm -f assets/js/hydejack.js & rm -f assets/js/hydejack.min.js",
-    "test": "echo \"Warning: no test specified\" && exit 0",
-    "build": "cat _includes/copyright-header.txt > assets/js/hydejack.js; cross-env NODE_ENV=production browserify _js/src/index.js -g babelify | uglifyjs -c -m >> assets/js/hydejack.js",
-    "watch": "watchify -d _js/src/index.js -g babelify -o assets/js/hydejack.js",
-    "lint": "eslint _js/src",
-    "dev": "npm run watch",
-    "prepare": "npm run lint && npm run test && npm run clean && npm run build",
-    "resume": "json2yaml _data/resume.json > _data/resume.yml"
-  },
-  "author": "Florian Klampfer <f.klampfer@gmail.com> (https://qwtel.com)",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-eslint": "7.2.3",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.24.1",
-    "babel-plugin-transform-function-bind": "6.22.0",
-    "babel-preset-es2015": "6.24.1",
-    "babel-preset-es2016": "6.24.1",
-    "babelify": "7.3.0",
-    "browserify": "14.4.0",
-    "cross-env": "5.0.1",
-    "eslint": "4.18.2",
-    "eslint-config-airbnb": "15.0.1",
-    "eslint-plugin-import": "2.3.0",
-    "eslint-plugin-jsx-a11y": "5.0.3",
-    "eslint-plugin-react": "7.1.0",
-    "json2yaml": "1.1.0",
-    "uglify-js": "3.0.18",
-    "watchify": "3.9.0"
-  },
-  "dependencies": {
-    "color": "1.0.3",
-    "core-js": "2.4.1",
-    "elem-dataset": "1.1.1",
-    "katex": "0.7.1",
-    "rxjs": "5.4.1",
-    "web-animations-js": "2.2.5",
-    "y-drawer": "6.1.1",
-    "y-push-state": "6.3.0"
-  },
+  "name": "jekyll-theme-chirpy",
+  "version": "6.3.1",
+  "description": "A minimal, responsive, and feature-rich Jekyll theme for technical writing.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qwtel/hydejack.git"
+    "url": "git+https://github.com/cotes2020/jekyll-theme-chirpy.git"
   },
+  "author": "Cotes Chung",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/qwtel/hydejack/issues"
+    "url": "https://github.com/cotes2020/jekyll-theme-chirpy/issues"
   },
-  "homepage": "https://github.com/qwtel/hydejack#readme"
+  "homepage": "https://github.com/cotes2020/jekyll-theme-chirpy/",
+  "scripts": {
+    "prebuild": "npx rimraf assets/js/dist",
+    "build": "NODE_ENV=production npx rollup -c --bundleConfigAsCjs",
+    "prewatch": "npx rimraf assets/js/dist",
+    "watch": "npx rollup -c --bundleConfigAsCjs -w",
+    "test": "npx stylelint _sass/**/*.scss",
+    "fixlint": "npm run test -- --fix"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.23.5",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.6.1",
+    "rollup-plugin-license": "^3.2.0",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard-scss": "^11.1.0"
+  },
+  "prettier": {
+    "trailingComma": "none"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 0.2%",
+    "not dead"
+  ],
+  "commitlint": {
+    "rules": {
+      "body-max-line-length": [
+        0,
+        "always"
+      ]
+    }
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard-scss",
+    "rules": {
+      "no-descending-specificity": null,
+      "shorthand-property-no-redundant-values": null,
+      "at-rule-no-vendor-prefix": null,
+      "property-no-vendor-prefix": null,
+      "selector-no-vendor-prefix": null,
+      "value-no-vendor-prefix": null,
+      "color-function-notation": "legacy",
+      "alpha-value-notation": "number",
+      "selector-not-notation": "simple",
+      "color-hex-length": "long",
+      "declaration-block-single-line-max-declarations": 3,
+      "scss/operator-no-newline-after": null,
+      "rule-empty-line-before": [
+        "always",
+        {
+          "ignore": [
+            "after-comment",
+            "first-nested"
+          ]
+        }
+      ],
+      "value-keyword-case": [
+        "lower",
+        {
+          "ignoreProperties": [
+            "/^\\$/"
+          ]
+        }
+      ],
+      "media-feature-range-notation": "prefix"
+    }
+  },
+  "standard-version": {
+    "skip": {
+      "commit": true,
+      "tag": true
+    },
+    "types": [
+      {
+        "type": "feat",
+        "section": "Features"
+      },
+      {
+        "type": "fix",
+        "section": "Bug Fixes"
+      },
+      {
+        "type": "perf",
+        "section": "Improvements"
+      }
+    ]
+  }
 }
