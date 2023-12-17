@@ -41,8 +41,8 @@ social:
   email: jhryu1208@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://www.linkedin.com/in/jhryu1208 # linkedin
     - https://github.com/jhryu1208 # github
+    - https://www.linkedin.com/in/jhryu1208 # linkedin
 
 google_site_verification: # fill in to your verification string
 
