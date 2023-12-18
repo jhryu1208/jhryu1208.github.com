@@ -14,7 +14,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Daily LV Up!! # the main title
+title: Daily Lv Up!! # the main title
 
 tagline: Data Engineer # it will display as the sub-title
 
