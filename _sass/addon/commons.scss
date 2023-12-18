@@ -689,7 +689,7 @@ $btn-mb: 0.5rem;
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
-  //background: var(--sidebar-bg);
+  /* background: var(--sidebar-bg); */
   background: url('/assets/img/background/blog_back_image_5.jpg');
   background-size: 100% 100%;
   background-position: center;
@@ -754,14 +754,14 @@ $btn-mb: 0.5rem;
     letter-spacing: 0.25px;
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
-    color: rgba(254, 254, 254, 99%);
+    color: rgba(254, 254, 254, 0.99);
 
     a {
       @extend %clickable-transition;
       @extend %sidebar-link-hover;
 
-      //color: var(--site-title-color);
-      color: rgba(254, 254, 254, 99%);
+      /* color: var(--site-title-color); */
+      color: rgba(254, 254, 254, 0.99);
     }
   }
 
@@ -773,7 +773,7 @@ $btn-mb: 0.5rem;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: rgba(254, 254, 254, 99%);
+    color: rgba(254, 254, 254, 0.99);
   }
 
   .site-description {
@@ -782,7 +782,7 @@ $btn-mb: 0.5rem;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: rgba(254, 254, 254, 99%);
+    color: rgba(254, 254, 254, 0.99);
   }
 
   ul {
@@ -803,7 +803,7 @@ $btn-mb: 0.5rem;
         align-items: center;
         border-radius: 0.75rem;
         font-weight: 700;
-        color: rgba(254, 254, 254, 99%);
+        color: rgba(254, 254, 254, 0.99);
 
 
         &:hover {
@@ -855,7 +855,6 @@ $btn-mb: 0.5rem;
       margin-bottom: $btn-mb; // multi line gap
       border-radius: 50%;
       color: var(--sidebar-btn-color);
-
       background-color: var(--sidebar-btn-bg);
       text-align: center;
       display: flex;
