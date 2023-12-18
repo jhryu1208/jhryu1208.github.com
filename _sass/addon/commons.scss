@@ -689,7 +689,11 @@ $btn-mb: 0.5rem;
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
-  background: var(--sidebar-bg);
+  //background: var(--sidebar-bg);
+  background: url('/assets/img/background/blog_back_image_5.jpg');
+  background-size: 100% 100%;
+  background-position: center;
+
   border-right: 1px solid var(--sidebar-border-color);
 
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -711,16 +715,21 @@ $btn-mb: 0.5rem;
     @extend %sidebar-links;
   }
 
-  #avatar {
+  #avatar { // avatar 사이즈 조정
     display: block;
-    width: 7rem;
-    height: 7rem;
+    width: 10rem;
+    height: 10rem;
     overflow: hidden;
     box-shadow: var(--avatar-border-color) 0 0 0 2px;
     transform: translateZ(0); /* fixed the zoom in Safari */
 
     img {
       transition: transform 0.5s;
+      width: 100%; /* 이미지가 컨테이너를 꽉 채우도록 설정 */
+      height: 100%; /* 이미지가 컨테이너를 꽉 채우도록 설정 */
+      object-fit: cover; /* 이미지가 컨테이너 안에서 비율을 유지하며 꽉 차도록 설정 */
+      object-position: center; /* 이미지가 컨테이너의 중앙에 위치하도록 설정 */
+
 
       &:hover {
         transform: scale(1.2);
@@ -745,24 +754,35 @@ $btn-mb: 0.5rem;
     letter-spacing: 0.25px;
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
+    color: rgba(254, 254, 254, 99%);
 
     a {
       @extend %clickable-transition;
       @extend %sidebar-link-hover;
 
-      color: var(--site-title-color);
+      //color: var(--site-title-color);
+      color: rgba(254, 254, 254, 99%);
     }
   }
 
   .site-subtitle {
     font-size: 95%;
-    color: var(--site-subtitle-color);
     margin-top: 0.25rem;
     word-spacing: 1px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    color: rgba(254, 254, 254, 99%);
+  }
+
+  .site-description {
+    margin-top: 0.5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: rgba(254, 254, 254, 99%);
   }
 
   ul {
@@ -774,20 +794,24 @@ $btn-mb: 0.5rem;
       padding-left: 1.5rem;
       padding-right: 1.5rem;
 
+
       a.nav-link {
         @include pt-pb(0.6rem);
 
+        /* nav바 스트링 (링크X) */
         display: flex;
         align-items: center;
         border-radius: 0.75rem;
-        font-weight: 600;
+        font-weight: 700;
+        color: rgba(254, 254, 254, 99%);
+
 
         &:hover {
           background-color: var(--sidebar-hover-bg);
         }
 
         i {
-          font-size: 95%;
+          font-size: 150%;
           opacity: 0.8;
           margin-right: 1.5rem;
         }
@@ -800,6 +824,7 @@ $btn-mb: 0.5rem;
 
       &.active {
         .nav-link {
+          /* nav바 link된 경우 */
           color: var(--sidebar-active-color);
           background-color: var(--sidebar-hover-bg);
 
@@ -816,9 +841,11 @@ $btn-mb: 0.5rem;
   }
 
   .sidebar-bottom {
-    padding-left: 2rem;
-    padding-right: 1rem;
-    margin-bottom: 1.5rem;
+    padding-left: 4rem; // side bottom 아이콘 left 마진
+    padding-right: 4rem; // side bottom 아이콘 right 마진
+    margin-bottom: 2rem; // side bottom 아이콘 bottom 마진
+    justify-content: space-between; // 아이콘들 사이에 동일한 간격을 유지
+    align-items: center;
 
     $btn-size: 1.75rem;
 
@@ -828,6 +855,7 @@ $btn-mb: 0.5rem;
       margin-bottom: $btn-mb; // multi line gap
       border-radius: 50%;
       color: var(--sidebar-btn-color);
+
       background-color: var(--sidebar-btn-bg);
       text-align: center;
       display: flex;
@@ -868,6 +896,7 @@ $btn-mb: 0.5rem;
       @include ml-mr(calc(($sb-btn-gap - $btn-border-width) / 2));
 
       background-color: var(--sidebar-btn-color);
+
       content: '';
       width: $btn-border-width;
       height: $btn-border-width;
@@ -1035,6 +1064,7 @@ search {
     &::before {
       content: '#';
       color: var(--text-muted-color);
+
       padding-right: 0.2rem;
     }
 
@@ -1522,7 +1552,7 @@ search {
     }
 
     .sidebar-bottom {
-      padding-left: 2.75rem;
+      padding-left: 1.75rem;
       margin-bottom: 1.75rem;
 
       a:not(:last-child) {
