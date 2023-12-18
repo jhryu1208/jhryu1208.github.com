@@ -689,6 +689,7 @@ $btn-mb: 0.5rem;
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
+
   /* background: var(--sidebar-bg); */
   background: url('/assets/img/background/blog_back_image_5.jpg');
   background-size: 100% 100%;
@@ -895,7 +896,6 @@ $btn-mb: 0.5rem;
       @include ml-mr(calc(($sb-btn-gap - $btn-border-width) / 2));
 
       background-color: var(--sidebar-btn-color);
-
       content: '';
       width: $btn-border-width;
       height: $btn-border-width;
@@ -1063,7 +1063,6 @@ search {
     &::before {
       content: '#';
       color: var(--text-muted-color);
-
       padding-right: 0.2rem;
     }
 
