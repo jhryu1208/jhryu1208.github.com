@@ -19,7 +19,7 @@ mermaid: true
 
 <br>
 
-- [이전 포스팅](https://jhryu1208.github.io/data/2023/09/15/datastructure-binarytree-dfs/)에서 언급되었듯이 이진 트리의 순회 로직은 `깊이 우선 순회`와 `넓이 우선 순회`로 구분되며, 이번 포스팅에서는 `넓이 우선 순회`에 관해서 정리할 것이다.
+- [이전 포스팅](https://jhryu1208.github.io/posts/datastructure-binarytree-dfs/)에서 언급되었듯이 이진 트리의 순회 로직은 `깊이 우선 순회`와 `넓이 우선 순회`로 구분되며, 이번 포스팅에서는 `넓이 우선 순회`에 관해서 정리할 것이다.
 
 <br>
 

@@ -173,7 +173,7 @@ mermaid: true
 
 <br>
 
-- 그리고 이를 코드로 구현화하면 다음과 같을 것이다.<br> (선형 배열 기반의 Stack 모듈에 대한 코드는 [이전](https://jhryu1208.github.io/data/2023/07/26/datastructure-stack/) 것을 이용한다.)
+- 그리고 이를 코드로 구현화하면 다음과 같을 것이다.<br> (선형 배열 기반의 Stack 모듈에 대한 코드는 [이전](https://jhryu1208.github.io/posts/datastructure-stack/) 것을 이용한다.)
     
     ```python
     from utils_practice.stack import ArrayStack

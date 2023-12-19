@@ -88,7 +88,7 @@ mermaid: true
 ### <span style="color:navy">(3) 양방향 연결리스트 (Doubly Linked List)를 이용하여 구현<span>
 
 - 위에서 설명했듯이, 배열 기반의 선형 큐는 `dequeue`작업 수행 시 선형 시간\\(O(n)\\) 알고리즘에 해당하여 담고 있는 데이터 원소의 수가 증가할수록 비효율적이다. 따라서, <u>배열보다는 인덱싱 이동이 필요없는 양방향 연결리스트로 구현하는 것</u>이 배열 기반으로 구현하는 것보다 <u>시간복잡도 측면에서 효율적</u>이다.
-- 코드로 구현하면 다음과 같다.([모듈 코드 참고 링크](https://jhryu1208.github.io/data/2023/07/25/datastructure-doubly_linked_list/))
+- 코드로 구현하면 다음과 같다.([모듈 코드 참고 링크](https://jhryu1208.github.io/posts/datastructure-doubly_linked_list/))
     
     ```python
     from utils_practice.node_v2 import Node
