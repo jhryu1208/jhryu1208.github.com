@@ -38,7 +38,7 @@ mermaid: true
 - `양방향 연결리스트 기반의 큐`의 경우, 위의 비효율성을 타개할 수 있었다. 그리고, 현재 소개되어지는 `환형 큐(Circular Queue)`의 경우에도 위의 비효율성 문제를 타개할 수 있다. 즉, 양방향 연결리스트 기반의 큐와 환형 큐는 <u>배열 기반의 선형 큐에 의해서 발생되는 비효율성을 해결하기위한 자료구조</u>에 해당한다.
 - 현재 소개되는 <u>환형 큐는 기존 선형 배열 큐의 처음과 끝을 붙인 원형의 형태로 생각하여 정해진 개수의 저장 공간을 돌려가며 사용하는 큐</u>이다.
 
-  <img src="1z_6owk_FYrtBQBDb6nnAFZxa6_cUhoUj">
+  <img src="1z_6owk_FYrtBQBDb6nnAFZxa6_cUhoUj", alt="circular queue">
  
 <br>
 
@@ -49,13 +49,13 @@ mermaid: true
 
     - **Enqueue**: <u>Rear포인터가 이동 후, 해당 자리에 새로운 데이터를 저장</u>한다.
 
-        <img src="1yq4zq0SBwnHp5N_r5aC0Ymus13yc6LGm">
+        <img src="1yq4zq0SBwnHp5N_r5aC0Ymus13yc6LGm", alt="enqueue process of circular queue">
   
   <br>
   
     - **Dequeue**: <u>Front포인터를 이동 후, 이동한 Front포인터 가리키는 자리의 데이터를 반환 후 삭제</u>한다. 따라서, `Dequeue` 작업이 수행된 결과 <u>Front가 가리키는 자리에는 데이터가 존재하지 않는다</u>.<br> (*이 부분은 환형 큐의 코드 구현 시 주의해야하는 부분에 해당한다.)
         
-        <img src="1VMg45aCCuX7E5Gb17PuDaG1gwVFJKQeT">
+        <img src="1VMg45aCCuX7E5Gb17PuDaG1gwVFJKQeT", alt="dequeue process of circular queue">
            
       따라서, 환형 큐는 Front와 Rear 포인터가 이동하며 처리할 데이터 원소를 가리키는 형태이기에, <u>삽입 & 삭제 작업 시에 선형 배열처럼 데이터 원소를 이동시키거나 순차적으로 탐색할 필요가 없다</u>. 따라서, <u>환형 큐의 삽입과 삭제 연산은</u> \\(O(1)\\) <u>의 시간 복잡도</u>를 가진다.
 
