@@ -69,7 +69,7 @@ theme_mode: light # [light|dark]
 #
 img_cdn: "https://drive.google.com/uc?id=" # Google Drive Share CDN
 # the avatar on sidebar, support local or CORS resources
-avatar: "11MWeoojxHSde0YZmlZQStPu2BB-zTYwj"
+avatar: "1C9ajkt2D0N4q8fNjzUlV5Y47XzRHVrS6"
 # https://drive.google.com/file/d/[Blabla]/view?usp=sharing:
 
 # boolean type, the global switch for TOC in posts.

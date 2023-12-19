@@ -717,8 +717,8 @@ $btn-mb: 0.5rem;
 
   #avatar { // avatar 사이즈 조정
     display: block;
-    width: 10rem;
-    height: 10rem;
+    width: 8.5rem;
+    height: 8.5rem;
     overflow: hidden;
     box-shadow: var(--avatar-border-color) 0 0 0 2px;
     transform: translateZ(0); /* fixed the zoom in Safari */
@@ -727,12 +727,11 @@ $btn-mb: 0.5rem;
       transition: transform 0.5s;
       width: 100%; /* 이미지가 컨테이너를 꽉 채우도록 설정 */
       height: 100%; /* 이미지가 컨테이너를 꽉 채우도록 설정 */
-      object-fit: cover; /* 이미지가 컨테이너 안에서 비율을 유지하며 꽉 차도록 설정 */
       object-position: center; /* 이미지가 컨테이너의 중앙에 위치하도록 설정 */
 
 
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.0);
       }
     }
   }
