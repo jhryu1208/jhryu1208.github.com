@@ -3,7 +3,7 @@ layout: post
 title: "[BigQuery] ARRAY, UNNEST, STRUCT (2)"
 date: 2020-10-21 00:00:00 +0900
 categories: [GCP, Bigquery]
-tags: [GCP, Bigquery, Array, Unnesst, Struct]
+tags: [GCP, Bigquery, Array, Unnest, Struct]
 comments: true
 math: true
 mermaid: true
