@@ -2,8 +2,8 @@
 layout: post
 title: "[자료구조] 17. 이진 트리 순회: 넓이 우선 탐색(Breadth First Search, BFS)"
 date: 2023-09-16 00:00:00 +0900
-categories: [Data, 자료구조]
-tags: [자료구조]
+categories: [Data, Data Structure]
+tags: [Data, Data Structure, Tree, Traversal, Depth First Search, Breadth First Search, Pre-order Traversal, In-order Traversal, Post-order Traversal]
 comments: true
 math: true
 mermaid: true
