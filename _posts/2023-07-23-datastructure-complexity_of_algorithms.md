@@ -51,7 +51,7 @@ mermaid: true
 
 ### (1) 빅오 표기법 성능
 
-<img src="/assets/img/20230723/bigonotation.png">
+<img src="1UB1KhyMkHcVoZeywdg9WfafM2-7_jQoB", alt="time complexity performance of big-o notation>
 
 위의 자료는 빅오 표기의 시간 복잡도에 대한 성능을 비교한 차트이다. <br>해당 차트에 제시된 성능을 비교하면 다음과 같이 요약할 수 있다.<br>(<u>좌에서 우로 갈수록 알고리즘의 효율성이 낮아진다</u>)
 
