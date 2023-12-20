@@ -9,6 +9,7 @@ math: true
 mermaid: true
 ---
 
+
 ## <span style="color:navy">트리 (Tree)<span>
 
 - `트리(Tree)`자료구조는 `노드(Node,정점)`들이 `엣지(Edge, 간선)`으로 연결된 데이터의 배치를 추상적으로 보여주는 <u>계층적 구조</u>이다.
