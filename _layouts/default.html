@@ -37,9 +37,6 @@ layout: compress
 
             <div class="access">
               {% include_cached update-list.html lang=lang %}
-            </div>
-
-            <div class="access">
               {% include_cached trending-tags.html lang=lang %}
             </div>
 
@@ -48,9 +45,8 @@ layout: compress
               {% include {{ _include_path }} lang=lang %}
             {% endfor %}
 
-            <div class="access">
-              {% include_cached adsense/main-panel-adsense.html %}
-            </div>
+            {% include_cached adsense/main-panel-adsense.html %}
+
           </aside>
         </div>
 
