@@ -45,7 +45,9 @@ layout: compress
               {% include {{ _include_path }} lang=lang %}
             {% endfor %}
 
-            {% include_cached adsense/main-panel-adsense.html %}
+            <div class="access">
+              {% include_cached adsense/main-panel-adsense.html %}
+            </div>
 
           </aside>
         </div>
