@@ -3,7 +3,7 @@ layout: post
 title:  "[Pandas] 데이터전처리 : NaN값 처리"
 date: 2021-10-03 00:00:00 +0900
 categories: [Data, Pandas]
-tags: [Data, Pandas, DataFrame]
+tags: [Data, Pandas, DataFrame, Preprocesssing, value_counts, isnull, notnull, fillna, dropna]
 comments: true
 math: true
 mermaid: true
@@ -258,7 +258,7 @@ print(f'\n[ deck 혹은 age필드에 NaN이 있을 경우 레코드 제거 ] \
 
 <br>
 
-### <span style="color:navy">(2-2) 치환 : fillna<span>
+### <span style="color:navy">치환 : fillna<span>
 
 `fillna`메소드를 이용해서 데이터프레임의 <u>누락값을 특정 값으로 치환</u>할 수 있다. <br> 더불어,  `fillna`의 기본형식 및 옵션은 다음과 같다.
 
