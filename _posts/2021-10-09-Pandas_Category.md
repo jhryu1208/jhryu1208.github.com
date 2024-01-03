@@ -163,8 +163,6 @@ print(df1.info())
 df1
 ```
 
-<img src="https://user-images.githubusercontent.com/53929665/136663971-a6aff3cd-86b5-476a-923b-dfdcab443e96.png" alt="categor_fig2">
-
 <br>
 
 ---
