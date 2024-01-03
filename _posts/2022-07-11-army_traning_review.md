@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "훈련소 후기 (2022/06/16 ~ 2022/07/07)"
-date: 2022-02-27 00:00:00 +0900
+date: 2022-07-11 00:00:00 +0900
 categories: [Repository, Daily]
 tags: [산업기능요원, 훈련소]
 comments: true
