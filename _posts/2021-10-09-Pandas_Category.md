@@ -53,7 +53,6 @@ print(df)
 
 그리고, 생성한 데이터프레임을 총 4개의 구간으로 분할하기 위해서 `bins=4`로 지정하였다. 그 결과 구간에 속하는 값의 개수와 경계값 리스트를 반환하였다.  위의 정수 배열을 완벽하게 4분할 할 수 없기 때문에 마지막 구간에 4개가 할당된 것을 확인할 수 있다.
 
-<img src="https://user-images.githubusercontent.com/53929665/136663970-b670f591-5659-4fd1-9322-764070634509.png" alt="category_fig1">
 
 ```python
 cnt, bnd_list = np.histogram(df, bins = 4)
@@ -163,7 +162,6 @@ print(df1.info())
 df1
 ```
 
-<img src="https://user-images.githubusercontent.com/53929665/136663971-a6aff3cd-86b5-476a-923b-dfdcab443e96.png" alt="categor_fig2">
 
 <br>
 
