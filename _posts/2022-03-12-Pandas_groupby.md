@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Pandas] 데이터 그룹 집계1 : groupby"
-date: 2022-03-06 00:00:00 +09003
+date: 2022-03-12 00:00:00 +09003
 categories: [Data, Pandas]
 tags: [Data, Pandas, groupby]
 comments: true
