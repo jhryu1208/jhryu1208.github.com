@@ -119,7 +119,7 @@ mermaid: true
   <br>
 
   \\[
-  Depth \;of\;트리 = Depth\;of\;L서브 트리 +Depth \;of\; R서브트리 + 1
+  Depth \;of\;트리 = MAX(Depth\;of\;L서브 트리, Depth \;of\; R서브트리) + 1
   \\]
     
   <br>  
