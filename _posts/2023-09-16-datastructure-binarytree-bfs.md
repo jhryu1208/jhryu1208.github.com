@@ -5,7 +5,7 @@ date: 2023-09-16 00:00:00 +0900
 categories: [Data, Data Structure]
 tags: [Data, Data Structure, Tree, Traversal, Depth First Search, Breadth First Search, Pre-order Traversal, In-order Traversal, Post-order Traversal]
 comments: true
-math: true
+math: true 
 mermaid: true
 ---
 
